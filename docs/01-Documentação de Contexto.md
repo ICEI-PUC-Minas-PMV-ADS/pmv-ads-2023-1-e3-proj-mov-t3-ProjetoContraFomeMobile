@@ -1,6 +1,6 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O projeto consiste na criação de umaplicativo, de forma simples, rápida e eficiente, possibilitar que qualquer cidadão faça uma doação, sendo essa de qualquer tipo ou gênero, bem como encontrar pontos de doação próximos a sua localização. A inspiração para o desenvolvimento deste projeto é baseada em uma necessidade comprovada formalmente por meio de entrevista realizada com Fernando, membro pertencente a uma comunidade religiosa. Em tal comunidade, existe um departamento organizado e especializado no auxílio de doações a pessoas/famílias necessitadas e/ou em situação econômica frágil. O departamento é carente de gerenciamento informatizado e, por esse motivo, acaba perdendo a oportunidade de receber mais doações, uma vez que depende exclusivamente do doador conhecer a instituição religiosa para levar pessoalmente algum tipo de mantimento. De acordo com Fernando, “a criação da aplicação pode alavancar as doações, pois irá atingir outro tipo de público, que não é atingido atualmente, bem como dará mais visibilidade as instituições que nescessitam de doações."
 
 ## Problema
 Muitas pessoas procuram formas de conseguirem auxiliar outras pessoas através de doações de alimentos, porém existem aquelas que não sabem os locais certos para fazendo as doações.
