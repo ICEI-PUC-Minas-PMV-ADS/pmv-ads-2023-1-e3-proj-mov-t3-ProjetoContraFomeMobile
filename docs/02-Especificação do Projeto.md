@@ -81,63 +81,40 @@ As personas levantadas durante o processo de entendimento do problema são apres
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
-
-## Modelagem do Processo de Negócio 
-
-### Análise da Situação Atual
-
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
-
-### Descrição Geral da Proposta
-
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
-
-### Processo 1 – NOME DO PROCESSO
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
-
-![Processo 1](img/02-bpmn-proc1.png)
-
-### Processo 2 – NOME DO PROCESSO
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
-
-![Processo 2](img/02-bpmn-proc2.png)
-
-## Indicadores de Desempenho
-
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
-
-Usar o seguinte modelo: 
-
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
+|Isabella  | Uma aplicação que forneça pontos de coleta para doações de mantimentos próximo a minha residência | Para ajudar pessoas em vulnerabilidade social.| 
+|Carlos    | Pesquisar por locais próximos à minha residência e ao meu trabalho, para que eu possa doar alimentos| Sente que necessita ajudar a combater a fome no Brasil.|
+|Juarez |Um APP que contenha um mapa com pontos de mobilização social e que receba doações de alimentos e itens de necessidade básica. | Sente que precisa ajudar as pessoas que possuem vulnerabilidade social, principalmente realizando doações de itens de necessidade básica  |
+|Barbara |Um aplicativo seguro e transparente para realizar doações financeiras a uma instituição que distribui mantimentos.|Ajudar o próximo através de doações financeiras.|
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
-
+A tabela a seguir apresenta os requisitos funcionais do projeto, identificando suas respectivas prioridades de entrega.
+    
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O aplicativo deve apresentar uma aba no cabeçalho para com um botão Login para as instituições acessarem suas contas ou criar uma conta.   | ALTA | 
+|RF-002| A aplicação deve conter um formulário de cadastro de novas campanhas para as instituições.  | ALTA |
+|RF-003| A aplicação deve apresentar funcionalidades para que as instituições possam gerenciar as doações e campanhas.    | ALTA | 
+|RF-004| A aplicação deve conter uma notificação para confirmar o recebimento de doações.   | ALTA |
+|RF-005| A aplicação deve apresentar a possibilidade de mostrar ao usuário o local de recebimento de mantimento, para o caso de doações físicas.   | MÉDIA | 
+|RF-006| A aplicação deve permitir que dentro da conta da instituição, apareçam as opções de criar novas campanhas de recebimento de alimentos e (excluir ou editar) as campanhas cadastradas.   | MÉDIA| 
+|RF-007| A aplicação deve colher o aceite do usuário para os termos de Política de Cookies / Privacidade, flutuante com alinhamento vertical inferior, e horizontal ao centro.    |ALTA |
+|RF-008| A aplicação deve conter uma página de "Fale com Nosso Encarregado de Dados" (DPO) atendendo à LGPD, contendo um formulário colhendo nome, e-mail, telefone, assunto e texto.    |ALTA |
+|RF-009| A aplicação deve conter uma página de "Política de Privacidade” contendo informações sobre a privacidade.  | ALTA | 
+|RF-010| A  aplicação deve permitir que o usuário realize suas doações.  | ALTA | 
+|RF-011| A aplicação deve validar o login da instituição.    | ALTA |
+|RF-012| A aplicação deve ter a possibilidade de redefinir senha.   | ALTA |
+|RF-013| A aplicação deve conter uma página de “Fale conosco”.   | BAIXA | 
+|RF-014| A aplicação deve apresentar imagens que auxiliem o entendimento do leitor para cada assunto exposto no corpo da página.    | ALTA |
+|RF-015| A aplicação deve apresentar um rodapé com os contatos da página, contendo telefone, Whatsapp, Instagram, e-mail.  | ALTA | 
+|RF-016| A aplicação deve apresentar em todas as páginas, no footer, políticas de privacidade e termos de uso. | ALTA | 
+
 
 ### Requisitos não Funcionais
 
