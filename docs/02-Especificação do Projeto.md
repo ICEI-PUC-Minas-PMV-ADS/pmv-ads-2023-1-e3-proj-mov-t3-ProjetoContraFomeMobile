@@ -156,7 +156,7 @@ As restrições podem ser explicadas como tarefas que limitam e comprometem a ex
 ## Diagrama de Casos de Uso
 
 <tr>
-    <th rowspan="2"><img src="./img/diagrama-caso-uso.pdf" width="800"></th>    
+    <th rowspan="2"><img src="./img/Diagrama.PNG" width="800"></th>    
 </tr>
 
 # Matriz de Rastreabilidade
