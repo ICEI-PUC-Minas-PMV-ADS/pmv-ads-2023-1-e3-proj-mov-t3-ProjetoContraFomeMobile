@@ -118,25 +118,24 @@ A tabela a seguir apresenta os requisitos funcionais do projeto, identificando s
 
 ### Requisitos não Funcionais
 
+A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá atender, identificando suas prioridades de entrega.
+
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| A aplicação deve ser publicada em um ambiente acessível publicamente na Internet (GitHub Pages).    | ALTA | 
+|RNF-002| A aplicação deve ser responsiva, permitindo a visualização em diversos modelos de celular.  |  ALTA | 
+|RNF-003| A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade.      | MÉDIA | 
+|RNF-004| A aplicação deve ser compatível com dispositivos Android e Ios.    | ALTA |
+|RNF-005| O desenvolvimento front-end deve ser através do framework React Native.  | MÉDIA | 
+|RNF-006| O sistema back-end deve ser desenvolvido na linguagem C#, podendo utilizar frameworks. |ALTA |
+|RNF-007| O banco de dados utilizado é o MySQL.   | MÉDIA | 
+|RNF-008| A aplicação deve ter pontuação acima de 50 no requisito “Desempenho”, verificado pelo Lighthouse no navegador Google Chrome.   | MÉDIA |
+|RNF-009| A aplicação  deve ter pontuação acima de 50 no requisito “Práticas Recomendadas”, verificado pelo Lighthouse no navegador Google Chrome.   | MÉDIA | 
+|RNF-010| A aplicação deve ter pontuação acima de 70 no requisito “Acessibilidade”, verificado pelo Lighthouse no navegador Google Chrome.  | MÉDIA |
+|RNF-011| A aplicação deve ter pontuação acima de 60 no requisito “SEO”, verificado pelo Lighthouse no navegador Google Chrome.  | MÉDIA | 
+|RNF-012| A aplicação deve apresentar a funcionalidade que permita o usuário alterar o tamanho da letra.  | MÉDIA | 
+|RNF-013| A aplicação deve apresentar a funcionalidade de modificar o tamanho da imagem através da tecla ALT.   | MÉDIA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
