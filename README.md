@@ -1,23 +1,23 @@
 # PROJETO CONTRA FOME
 
-`CURSO`
+Tecnologia em Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+PROJETO: DESENVOLVIMENTO DE UMA APLICAÇÃO INTERATIVA
 
-`SEMESTRE`
+PRIMEIRO SEMESTRE DE 2023
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O Objetivo Geral deste presente trabalho é apresentar A soluções para o desenvolvimento de um aplicativo, no intuito de ajudar instituições na arrecadação de alimentos.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Armando Xavier de Amorim
+* João Paulo Faria do Nascimento
+* Silvia Cristina de Oliveira Teixeira
+
 
 ## Orientador
 
-* Nome completo do professor 1
+* Mateus Curcino De Lima
 
 ## Instruções de utilização
 
