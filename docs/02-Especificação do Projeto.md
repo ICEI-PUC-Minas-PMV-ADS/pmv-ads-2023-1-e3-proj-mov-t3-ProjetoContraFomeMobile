@@ -16,12 +16,12 @@ As personas levantadas durante o processo de entendimento do problema são apres
     <td colspan="2" align="right"><b>Isabela</b> </td>
 </tr>
 <tr>
-    <td><b>Idade:</b> 35 <br><br> <b>Dificuldades:</b> Sua maior dificuldade foi encontrar um site que reúna pontos de coleta para doações de mantimentos próximos à sua residência
+    <td><b>Idade:</b> 35 <br><br> <b>Dificuldades:</b> Sua maior dificuldade foi encontrar um APP que reúna pontos de coleta para doações de mantimentos próximos à sua residência 
 
  <br><br>       
     </td> 
     <br>
-    <td><b>Em relação ao projeto: </b> Disse que usaria um site ou aplicativo que ajudasse pessoas em vulnerabilidade social a encontrarem pontos de distribuição gratuita de alimentos e refeições. O ponto de distribuição gratuita de alimentos deverá fornecer pontos de coleta para doações de mantimentos próximos a sua residência.
+    <td><b>Em relação ao projeto: </b> Disse que usaria uma aplicação móvel ou site que ajudasse pessoas em vulnerabilidade social a encontrarem pontos de distribuição gratuita de alimentos e refeições. O ponto de distribuição gratuita de alimentos deverá fornecer pontos de coleta para doações de mantimentos próximos a sua residência. 
     </td>  
 </tr>
 </table>
@@ -36,10 +36,10 @@ As personas levantadas durante o processo de entendimento do problema são apres
     <td colspan="2" align="right"><b>Carlos</b></td>
 </tr>
 <tr>
-    <td><b>Idade:</b> 19 <br><br> <b>Dificuldades:</b> Sente que necessita ajudar a combater a fome no Brasil. Para isso, considera necessário ter um site que reúna todos os pontos de coleta para doação de mantimentos próximo de sua residência e próximo ao seu local de trabalho. Para ele, o site deve ser amigável, acessível e bem projetado.
+    <td><b>Idade:</b> 19 <br><br> <b>Dificuldades:</b> Sente que necessita ajudar a combater a fome no Brasil. Para isso, considera necessário ter uma aplicação móvel que reúna todos os pontos de coleta para doação de mantimentos próximo de sua residência e próximo ao seu local de trabalho. Para ele, a aplicação deve ser amigável, acessível e bem projetada.
  <br><br>     
     </td> 
-    <td> <b>Em relação ao projeto:</b> Apresentou entusiasmo ao saber que vai ser desenvolvido um site que pode fornecer pontos de coleta para doações de mantimentos de forma permanente e não quando acontece algum tipo de catástrofe.
+    <td> <b>Em relação ao projeto:</b> Apresentou entusiasmo ao saber que vai ser desenvolvido um APP que pode fornecer pontos de coleta para doações de mantimentos de forma permanente e não quando acontece algum tipo de catástrofe. 
     </td>  
 </tr>
 
@@ -53,10 +53,10 @@ As personas levantadas durante o processo de entendimento do problema são apres
     <td colspan="2" align="right"><b>Juarez</b></td>
 </tr>
 <tr>
-    <td><b>Idade:</b> 15 <br><br> <b>Dificuldades:</b> Morador da periferia e ativista, sente que precisa fazer algo para amenizar o sofrimento da população em situação de vulnerabilidade social. Sente que precisa de um site que crie um mapa contendo pontos de mobilização social, que receba doações de alimentos e itens de necessidade básica.
+    <td><b>Idade:</b> 15 <br><br> <b>Dificuldades:</b> Morador da periferia e ativista, sente que precisa fazer algo para amenizar o sofrimento da população em situação de vulnerabilidade social. Sente que precisa de um APP que crie um mapa contendo pontos de mobilização social, que receba doações de alimentos e itens de necessidade básica.
  <br><br>     
     </td> 
-    <td> <b>Em relação ao projeto:</b> Ficou super interessado e disse que usaria um aplicativo web que fornecesse ferramentas que viabilizassem a procura de pontos de coleta de doações.
+    <td> <b>Em relação ao projeto:</b> Ficou super interessado e disse que usaria uma aplicação móvel que fornecesse ferramentas que viabilizassem a procura de pontos de coleta de doações.
     </td>  
 </tr>
 
@@ -70,10 +70,10 @@ As personas levantadas durante o processo de entendimento do problema são apres
     <td colspan="2" align="right"><b>Barbara</b></td>
 </tr>
 <tr>
-    <td><b>Idade:</b> 60 <br><br> <b>Dificuldades:</b> Precisa de um site seguro e transparente para realizar doações financeiras a uma instituição que distribui mantimentos.
+    <td><b>Idade:</b> 60 <br><br> <b>Dificuldades:</b> Precisa de uma aplicação segura e transparente para realizar doações financeiras a uma instituição que distribui mantimentos. 
  <br><br>     
     </td> 
-    <td> <b>Em relação ao projeto:</b> Disse que usaria um site que fosse transparente e mostrasse para onde a sua doação estivesse indo.
+    <td> <b>Em relação ao projeto:</b> Disse que usaria um aplicativo que fosse transparente e mostrasse para onde a sua doação estava indo, pois ela possui maior facilidade em utilizar um aplicativo no celular do que um site através do computador. 
     </td>  
 </tr>
 </table>
