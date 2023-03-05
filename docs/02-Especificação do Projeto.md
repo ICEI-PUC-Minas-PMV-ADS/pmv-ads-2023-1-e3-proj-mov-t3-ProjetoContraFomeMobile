@@ -98,22 +98,24 @@ A tabela a seguir apresenta os requisitos funcionais do projeto, identificando s
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| O aplicativo deve apresentar uma aba no cabeçalho para com um botão Login para as instituições acessarem suas contas ou criar uma conta.   | ALTA | 
-|RF-002| A aplicação deve conter um formulário de cadastro de novas campanhas para as instituições.  | ALTA |
-|RF-003| A aplicação deve apresentar funcionalidades para que as instituições possam gerenciar as doações e campanhas.    | ALTA | 
-|RF-004| A aplicação deve conter uma notificação para confirmar o recebimento de doações.   | ALTA |
-|RF-005| A aplicação deve apresentar a possibilidade de mostrar ao usuário o local de recebimento de mantimento, para o caso de doações físicas.   | MÉDIA | 
-|RF-006| A aplicação deve permitir que dentro da conta da instituição, apareçam as opções de criar novas campanhas de recebimento de alimentos e (excluir ou editar) as campanhas cadastradas.   | MÉDIA| 
-|RF-007| A aplicação deve colher o aceite do usuário para os termos de Política de Cookies / Privacidade, flutuante com alinhamento vertical inferior, e horizontal ao centro.    |ALTA |
-|RF-008| A aplicação deve conter uma página de "Fale com Nosso Encarregado de Dados" (DPO) atendendo à LGPD, contendo um formulário colhendo nome, e-mail, telefone, assunto e texto.    |ALTA |
-|RF-009| A aplicação deve conter uma página de "Política de Privacidade” contendo informações sobre a privacidade.  | ALTA | 
-|RF-010| A  aplicação deve permitir que o usuário realize suas doações.  | ALTA | 
-|RF-011| A aplicação deve validar o login da instituição.    | ALTA |
-|RF-012| A aplicação deve ter a possibilidade de redefinir senha.   | ALTA |
-|RF-013| A aplicação deve conter uma página de “Fale conosco”.   | BAIXA | 
-|RF-014| A aplicação deve apresentar imagens que auxiliem o entendimento do leitor para cada assunto exposto no corpo da página.    | ALTA |
-|RF-015| A aplicação deve apresentar um rodapé com os contatos da página, contendo telefone, Whatsapp, Instagram, e-mail.  | ALTA | 
-|RF-016| A aplicação deve apresentar em todas as páginas, no footer, políticas de privacidade e termos de uso.. | ALTA | 
+|RF-001| O aplicativo deve permitir o cadastro de uma instituição   | ALTA | 
+|RF-002| O aplicativo deve permitir o login de uma instituição   | ALTA | 
+|RF-003| A aplicação deve conter um formulário de cadastro de novas campanhas para as instituições.  | ALTA |
+|RF-004| A aplicação deve apresentar funcionalidades para que as instituições possam gerenciar as doações   | ALTA | 
+|RF-005| A aplicação deve apresentar funcionalidades para que as instituições possam gerenciar as campahas cadastradas  | ALTA |
+|RF-006| A aplicação deve conter uma notificação para confirmar o recebimento de doações.   | ALTA |
+|RF-007| A aplicação deve apresentar a possibilidade de mostrar ao usuário o local de recebimento de mantimento, para o caso de doações físicas.   | MÉDIA | 
+|RF-008| A aplicação deve permitir que dentro da conta da instituição, apareçam as opções de criar novas campanhas de recebimento de alimentos e (excluir ou editar) as campanhas cadastradas.   | MÉDIA| 
+|RF-009| A aplicação deve colher o aceite do usuário para os termos de Política de Cookies / Privacidade, flutuante com alinhamento vertical inferior, e horizontal ao centro.    |ALTA |
+|RF-010| A aplicação deve conter uma página de "Fale com Nosso Encarregado de Dados" (DPO) atendendo à LGPD, contendo um formulário colhendo nome, e-mail, telefone, assunto e texto.    |ALTA |
+|RF-011| A aplicação deve conter uma página de "Política de Privacidade” contendo informações sobre a privacidade.  | ALTA | 
+|RF-012| A  aplicação deve permitir que o usuário realize suas doações.  | ALTA | 
+|RF-013| A aplicação deve validar o login da instituição.    | ALTA |
+|RF-014| A aplicação deve ter a possibilidade de redefinir senha.   | ALTA |
+|RF-015| A aplicação deve conter uma página de “Fale conosco”.   | BAIXA | 
+|RF-016| A aplicação deve apresentar imagens que auxiliem o entendimento do leitor para cada assunto exposto no corpo da página.    | ALTA |
+|RF-017| A aplicação deve apresentar um rodapé com os contatos da página, contendo telefone, Whatsapp, Instagram, e-mail.  | ALTA | 
+|RF-018| A aplicação deve apresentar em todas as páginas, no footer, políticas de privacidade e termos de uso.. | ALTA | 
 
 
 ### Requisitos não Funcionais
@@ -125,8 +127,8 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 |RNF-001| A aplicação deve ser publicada em um ambiente acessível publicamente na Internet (GitHub Pages).    | ALTA | 
 |RNF-002| A aplicação deve ser responsiva, permitindo a visualização em diversos modelos de celular.  |  ALTA | 
 |RNF-003| A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade.      | MÉDIA | 
-|RNF-004| A aplicação deve ser compatível com dispositivos Android e Ios.    | ALTA |
-|RNF-005| O desenvolvimento front-end deve ser através do framework React Native.  | MÉDIA | 
+|RNF-004| O aplicativo deve ser compatível com as principais plataformas do mercado (IOS, Android).    | ALTA |
+|RNF-005| O desenvolvimento front-end deve ser através do framework React Native.  | ALTA | 
 |RNF-006| O sistema back-end deve ser desenvolvido na linguagem C#, podendo utilizar frameworks. |ALTA |
 |RNF-007| O banco de dados utilizado é o MySQL.   | MÉDIA | 
 |RNF-008| A aplicação deve ter pontuação acima de 50 no requisito “Desempenho”, verificado pelo Lighthouse no navegador Google Chrome.   | MÉDIA |
