@@ -131,7 +131,7 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 |RNF-005| O sistema back-end deve ser desenvolvido na linguagem C#, podendo utilizar frameworks. |ALTA |
 |RNF-006| O banco de dados utilizado é o MySQL.   | MÉDIA | 
 |RNF-007| A aplicação deve ter pontuação acima de 50 no requisito “Desempenho”, verificado pelo Lighthouse no navegador Google Chrome.   | MÉDIA |
-|RNF-008| A aplicação  deve ter pontuação acima de 50 no requisito “Práticas Recomendadas”, verificado pelo Lighthouse no navegador Google Chrome.   | MÉDIA | 
+|RNF-008| A aplicação  deve ter pontuação acima de 50 no requisito “Práticas Recomendadas”, verificado pelo Lighthouse no navegador Google Chrome.   | BAIXA | 
 |RNF-009| A aplicação deve ter pontuação acima de 70 no requisito “Acessibilidade”, verificado pelo Lighthouse no navegador Google Chrome.  | MÉDIA |
 |RNF-010| A aplicação deve ter pontuação acima de 60 no requisito “SEO”, verificado pelo Lighthouse no navegador Google Chrome.  | MÉDIA | 
 |RNF-011| O sistema deverá estar disponível 24 horas por dia e 7 dias na semana. | ALTA | 
