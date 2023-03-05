@@ -135,8 +135,9 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 |RNF-009| A aplicação  deve ter pontuação acima de 50 no requisito “Práticas Recomendadas”, verificado pelo Lighthouse no navegador Google Chrome.   | MÉDIA | 
 |RNF-010| A aplicação deve ter pontuação acima de 70 no requisito “Acessibilidade”, verificado pelo Lighthouse no navegador Google Chrome.  | MÉDIA |
 |RNF-011| A aplicação deve ter pontuação acima de 60 no requisito “SEO”, verificado pelo Lighthouse no navegador Google Chrome.  | MÉDIA | 
-|RNF-012| A aplicação deve apresentar a funcionalidade que permita o usuário alterar o tamanho da letra.  | MÉDIA | 
-|RNF-013| A aplicação deve apresentar a funcionalidade de modificar o tamanho da imagem através da tecla ALT.   | MÉDIA | 
+|RNF-012| O sistema deverá estar disponível 24 horas por dia e 7 dias na semana. | ALTA | 
+
+## Priorização de Requisitos
 
 
 ## Restrições
