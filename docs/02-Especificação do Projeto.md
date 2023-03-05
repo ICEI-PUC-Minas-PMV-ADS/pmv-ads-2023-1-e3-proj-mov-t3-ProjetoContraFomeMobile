@@ -137,7 +137,7 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 |RNF-011| O sistema deverá estar disponível 24 horas por dia e 7 dias na semana. | ALTA | 
 
 ## Priorização de Requisitos
-
+A técnica para priorização de requisitos utilizada foi a Escala de Três Níveis e a imagem abaixo retrata a análise realizada.
 
 ## Restrições
 
