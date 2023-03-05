@@ -113,7 +113,7 @@ A tabela a seguir apresenta os requisitos funcionais do projeto, identificando s
 |RF-013| A aplicação deve conter uma página de “Fale conosco”.   | BAIXA | 
 |RF-014| A aplicação deve apresentar imagens que auxiliem o entendimento do leitor para cada assunto exposto no corpo da página.    | ALTA |
 |RF-015| A aplicação deve apresentar um rodapé com os contatos da página, contendo telefone, Whatsapp, Instagram, e-mail.  | ALTA | 
-|RF-016| A aplicação deve apresentar em todas as páginas, no footer, políticas de privacidade e termos de uso. | ALTA | 
+|RF-016| A aplicação deve apresentar em todas as páginas, no footer, políticas de privacidade e termos de uso.. | ALTA | 
 
 
 ### Requisitos não Funcionais
