@@ -124,18 +124,18 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser publicada em um ambiente acessível publicamente na Internet (GitHub Pages).    | ALTA | 
-|RNF-002| A aplicação deve ser responsiva, permitindo a visualização em diversos modelos de celular.  |  ALTA | 
-|RNF-003| A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade.      | MÉDIA | 
-|RNF-004| O aplicativo deve ser compatível com as principais plataformas do mercado (IOS, Android).    | ALTA |
-|RNF-005| O desenvolvimento front-end deve ser através do framework React Native.  | ALTA | 
-|RNF-006| O sistema back-end deve ser desenvolvido na linguagem C#, podendo utilizar frameworks. |ALTA |
-|RNF-007| O banco de dados utilizado é o MySQL.   | MÉDIA | 
-|RNF-008| A aplicação deve ter pontuação acima de 50 no requisito “Desempenho”, verificado pelo Lighthouse no navegador Google Chrome.   | MÉDIA |
-|RNF-009| A aplicação  deve ter pontuação acima de 50 no requisito “Práticas Recomendadas”, verificado pelo Lighthouse no navegador Google Chrome.   | MÉDIA | 
-|RNF-010| A aplicação deve ter pontuação acima de 70 no requisito “Acessibilidade”, verificado pelo Lighthouse no navegador Google Chrome.  | MÉDIA |
-|RNF-011| A aplicação deve ter pontuação acima de 60 no requisito “SEO”, verificado pelo Lighthouse no navegador Google Chrome.  | MÉDIA | 
-|RNF-012| O sistema deverá estar disponível 24 horas por dia e 7 dias na semana. | ALTA | 
+
+|RNF-001| A aplicação deve ser responsiva, permitindo a visualização em diversos modelos de celular.  |  ALTA | 
+|RNF-002| A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade.      | MÉDIA | 
+|RNF-003| O aplicativo deve ser compatível com as principais plataformas do mercado (IOS, Android).    | ALTA |
+|RNF-004| O desenvolvimento front-end deve ser através do framework React Native.  | ALTA | 
+|RNF-005| O sistema back-end deve ser desenvolvido na linguagem C#, podendo utilizar frameworks. |ALTA |
+|RNF-006| O banco de dados utilizado é o MySQL.   | MÉDIA | 
+|RNF-007| A aplicação deve ter pontuação acima de 50 no requisito “Desempenho”, verificado pelo Lighthouse no navegador Google Chrome.   | MÉDIA |
+|RNF-008| A aplicação  deve ter pontuação acima de 50 no requisito “Práticas Recomendadas”, verificado pelo Lighthouse no navegador Google Chrome.   | MÉDIA | 
+|RNF-009| A aplicação deve ter pontuação acima de 70 no requisito “Acessibilidade”, verificado pelo Lighthouse no navegador Google Chrome.  | MÉDIA |
+|RNF-010| A aplicação deve ter pontuação acima de 60 no requisito “SEO”, verificado pelo Lighthouse no navegador Google Chrome.  | MÉDIA | 
+|RNF-011| O sistema deverá estar disponível 24 horas por dia e 7 dias na semana. | ALTA | 
 
 ## Priorização de Requisitos
 
