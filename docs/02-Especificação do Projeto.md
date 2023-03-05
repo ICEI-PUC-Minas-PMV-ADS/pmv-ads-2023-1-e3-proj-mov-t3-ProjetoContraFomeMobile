@@ -141,18 +141,11 @@ A técnica para priorização de requisitos utilizada foi a Escala de Três Nív
 
 ## Restrições
 
-As restrições podem ser explicadas como tarefas que limitam e comprometem a execução e o desenvolvimento do projeto, servindo como marco delimitador daquilo que precisará ser realizado para que o projeto seja considerado pronto.  
-
- A tabela abaixo, apresenta as seguintes restrições do projeto. 
+O projeto está restrito pelos itens apresentados na tabela a seguir. 
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|RE-01| A aplicação deve ser restringida aos frameworks React Native e ASP. NET Core e as linguagens de programação Javascript e C#.   |
-|RE-02| A aplicação deve ter a homologação das fases de testes (QA) e operação assistida antes do processo de subida para produção.        |
-|RE-03| A aplicação deve conter a documentação técnica (Solution Design Document) para facilitar a equipe de suporte em futuros ajustes no código.    |
-|RE-04| A aplicação deverá ficar restrita a um único idioma, que será o “pt-br” (português).          |
-|RE-05| A aplicação deve ser entregue até o dia 05/06/2023. |
-|RE-06| A aplicação deve ser publicada no GitHub.       |
+|RE-01| A equipe não pode subcontratar o desenvolvimento do trabalho   |
 
 
 ## Diagrama de Casos de Uso
