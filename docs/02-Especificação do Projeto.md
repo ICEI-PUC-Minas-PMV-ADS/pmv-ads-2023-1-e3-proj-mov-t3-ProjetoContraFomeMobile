@@ -177,4 +177,8 @@ A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualizaç
 
 
 ## Gestão de Orçamento
+O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
 
+<tr>
+    <th rowspan="2"><img src="./img/GestaoDeOrcamento.png" width="800"></th>    
+</tr>
