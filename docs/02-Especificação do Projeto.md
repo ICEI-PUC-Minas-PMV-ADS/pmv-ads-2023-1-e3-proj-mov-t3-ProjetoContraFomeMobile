@@ -171,7 +171,7 @@ De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar 
 ## Gerenciamento de Tempo
 Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
 <tr>
-    <th rowspan="2"><img src="./img/gestaoDeTempo.png" width="800"></th>    
+    <th rowspan="2"><img src="./img/gestaoDetempo.png" width="800"></th>    
 </tr>
 
 
