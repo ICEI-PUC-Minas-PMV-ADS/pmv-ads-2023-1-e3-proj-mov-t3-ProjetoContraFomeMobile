@@ -6,7 +6,7 @@ PROJETO: DESENVOLVIMENTO DE UMA APLICAÇÃO INTERATIVA
 
 PRIMEIRO SEMESTRE DE 2023
 
-O Objetivo Geral deste presente trabalho é apresentar A soluções para o desenvolvimento de um aplicativo, no intuito de ajudar instituições na arrecadação de alimentos.
+O Objetivo Geral deste presente trabalho é apresentar soluções para o desenvolvimento de um aplicativo movel, no intuito de ajudar instituições na arrecadação de alimentos.
 
 ## Integrantes
 
