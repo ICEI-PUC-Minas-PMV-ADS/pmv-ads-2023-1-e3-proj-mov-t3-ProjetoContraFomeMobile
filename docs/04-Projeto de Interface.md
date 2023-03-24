@@ -25,12 +25,10 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 #HomePage
 
 <p align="center">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+  <img width="460" height="300" src="./img/HomePage.PNG">
 </p>
 
-<center>
-    <th rowspan="2"><img src="./img/HomePage.PNG" width="300"></th>    
-</center>
+
 
 
 
