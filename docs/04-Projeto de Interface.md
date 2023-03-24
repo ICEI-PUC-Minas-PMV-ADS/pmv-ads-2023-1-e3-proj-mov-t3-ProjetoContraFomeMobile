@@ -61,4 +61,12 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 <p align="center">
   <img width="400" height="600" src="./img/EditarCampanha.PNG">
 </p>
+ <br>
+ <p align="center">
+#Cadastrar Ong
+</p>
+<br>
+<p align="center">
+  <img width="400" height="600" src="./img/CadastrarOng.PNG">
+</p>
 
