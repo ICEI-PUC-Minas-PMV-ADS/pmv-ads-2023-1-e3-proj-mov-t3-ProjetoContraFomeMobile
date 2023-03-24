@@ -39,7 +39,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 </p>
  <br>
  <p align="center">
-#HGerenciar Campanhas e Doações
+#Gerenciar Campanhas e Doações
 </p>
 <br>
 <p align="center">
@@ -47,7 +47,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 </p>
  <br>
  <p align="center">
-#HCadastrar Campanha
+#Cadastrar Campanha
 </p>
 <br>
 <p align="center">
@@ -55,7 +55,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 </p>
  <br>
  <p align="center">
-#HEditar Campanha
+#Editar Campanha
 </p>
 <br>
 <p align="center">
