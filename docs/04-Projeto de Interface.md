@@ -79,7 +79,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 </p>
  <br>
  <p align="center">
-#TFale Conosco
+#Fale Conosco
 </p>
 <br>
 <p align="center">
