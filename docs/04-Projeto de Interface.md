@@ -69,4 +69,20 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 <p align="center">
   <img width="400" height="600" src="./img/CadastrarOng.PNG">
 </p>
+ <br>
+ <p align="center">
+#Termos de Uso
+</p>
+<br>
+<p align="center">
+  <img width="400" height="600" src="./img/TermosDeUso.PNG">
+</p>
+ <br>
+ <p align="center">
+#TFale Conosco
+</p>
+<br>
+<p align="center">
+  <img width="400" height="600" src="./img/FaleConosco.PNG">
+</p>
 
