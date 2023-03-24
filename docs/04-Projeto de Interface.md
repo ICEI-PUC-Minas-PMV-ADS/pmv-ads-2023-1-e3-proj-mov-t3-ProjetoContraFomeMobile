@@ -85,4 +85,20 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 <p align="center">
   <img width="400" height="600" src="./img/FaleConosco.PNG">
 </p>
+ <br>
+ <p align="center">
+#Sobre Nós
+</p>
+<br>
+<p align="center">
+  <img width="400" height="600" src="./img/SobreNos.PNG">
+</p>
+ <br>
+ <p align="center">
+#Política de Privacidade
+</p>
+<br>
+<p align="center">
+  <img width="400" height="600" src="./img/PoliticaDePrivacidade.PNG">
+</p>
 
