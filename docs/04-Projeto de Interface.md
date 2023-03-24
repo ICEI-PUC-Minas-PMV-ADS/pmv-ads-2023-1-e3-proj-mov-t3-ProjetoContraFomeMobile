@@ -24,9 +24,9 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 #HomePage
 
-<tr>
-    <th rowspan="2"><img align="center" src="./img/HomePage.PNG" width="300"></th>    
-</tr>
+<center>
+    <th rowspan="2"><img src="./img/HomePage.PNG" width="300"></th>    
+</center>
 
 
 
