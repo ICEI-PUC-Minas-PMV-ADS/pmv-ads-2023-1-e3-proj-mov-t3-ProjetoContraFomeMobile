@@ -39,10 +39,26 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 </p>
  <br>
  <p align="center">
-#HomePage
+#HGerenciar Campanhas e Doações
 </p>
 <br>
 <p align="center">
   <img width="400" height="600" src="./img/Gerenciar.PNG">
+</p>
+ <br>
+ <p align="center">
+#HCadastrar Campanha
+</p>
+<br>
+<p align="center">
+  <img width="400" height="600" src="./img/CadastrarCampanha.PNG">
+</p>
+ <br>
+ <p align="center">
+#HEditar Campanha
+</p>
+<br>
+<p align="center">
+  <img width="400" height="600" src="./img/EditarCampanha.PNG">
 </p>
 
