@@ -22,14 +22,18 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 ## Wireframes
 
+<p align="center">
 #HomePage
-
+</p>
+<br>
 <p align="center">
   <img width="400" height="600" src="./img/HomePage.PNG">
 </p>
-
+<br>
+<p align="center" font-size:300px>
 #Login
-
+</p>
+ <br>
 <p align="center">
   <img width="400" height="600" src="./img/Login.PNG">
 </p>
