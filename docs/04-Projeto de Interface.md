@@ -21,12 +21,14 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 > - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
 
 ## Wireframes
-<p align="left" font-size:"60px">
+
 #HomePage
-</p>
+
 <p align="center">
   <img width="400" height="600" src="./img/HomePage.PNG">
 </p>
+
+#Login
 
 
 
