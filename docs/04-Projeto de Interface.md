@@ -101,4 +101,20 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 <p align="center">
   <img width="400" height="600" src="./img/PoliticaDePrivacidade.PNG">
 </p>
+ <br>
+ <p align="center">
+#Campanhas Cadastradas
+</p>
+<br>
+<p align="center">
+  <img width="400" height="600" src="./img/CampanhasCadastradas.PNG">
+</p>
+ <br>
+ <p align="center">
+#Detalhes da Campanha
+</p>
+<br>
+<p align="center">
+  <img width="400" height="600" src="./img/DetalhesDaCampanha.PNG">
+</p>
 
