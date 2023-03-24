@@ -25,7 +25,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 #HomePage
 
 <p align="center">
-  <img width="460" height="300" src="./img/HomePage.PNG">
+  <img width="600" height="600" src="./img/HomePage.PNG">
 </p>
 
 
