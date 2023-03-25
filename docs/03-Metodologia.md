@@ -3,7 +3,8 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+Está sendo utilizado no projeto a metodologia Ágil, através do uso FrameWork SCRUM. Sendo assim o grupo separou o projeto em 4 sprints e dentro de cada sprint foi listado um backlog do produto. A equipe de Desenvolverdor organiza as tarefas de cada sprint utilizando o quadro TO DO / In Progress / Done.
+Além de realizar uma reuião seamal de 20 minutos no intuito de cada componente explciar o que foi feito durante a última semana e o que será feito na próxima semana.
 
 ## Relação de Ambientes de Trabalho
 
