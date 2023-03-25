@@ -153,7 +153,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 ## Diagrama de Casos de Uso
 
 <tr>
-    <th rowspan="2"><img src="./img/Diagrama.PNG" width="800"></th>    
+    <th rowspan="2"><img src="./img/DiagramaCaso.PNG" width="800"></th>    
 </tr>
 
 # Matriz de Rastreabilidade
