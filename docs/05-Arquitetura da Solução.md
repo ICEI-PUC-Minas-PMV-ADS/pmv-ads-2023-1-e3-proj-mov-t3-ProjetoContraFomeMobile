@@ -23,10 +23,22 @@ Definição de como o software é estruturado em termos dos componentes que faze
 Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
 
 ## Tecnologias Utilizadas
+IDE: vscode
+Ferramentas de comunicação: Teams / Discord / Whatsapp
+Ferramenta para desenho de tela e diagramas: Figma / Lucidchart / Marvelapp
+Criação do documento: Google Docs
+Gerenciamento do Projeto: Github Projects
+Repositório do código fonte: Github
+Linguagens utilizadas no Front-end: Html, css, javascript
+Linguagem utilizada no Back-end: C#
+Framework Front-end: Bootstrap, react-native
+Framework para integração entre back-end e banco de dados: Entity Framework
+Banco de Dados: Microsoft SQL Server, SQLite
+Servidor para banco de dados: SmarterASP.NET
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+Escolhemos o google docs como local de produção do documento. Para gestão do projeto e repositório remoto, escolhemos o GitHub pela integração com a universidade.
 
 ## Hospedagem
 
