@@ -4,7 +4,7 @@
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
 Está sendo utilizado no projeto a metodologia Ágil, através do FrameWork SCRUM. Sendo assim o grupo separou o projeto em 4 sprints e dentro de cada sprint foi listado um backlog do produto. A equipe de Desenvolvedores organiza as tarefas de cada sprint utilizando o quadro To Do / In Progress / Done.
-Além de realizar uma reuião semanal de 20 minutos no intuito de cada componente explciar o que foi feito durante a última semana e o que será feito na próxima semana.
+Além de realizar uma reuião semanal de 20 minutos no intuito de cada componente explicar o que foi feito durante a última semana e o que será feito na próxima semana.
 
 ## Relação de Ambientes de Trabalho
 
