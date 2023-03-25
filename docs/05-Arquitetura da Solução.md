@@ -2,7 +2,8 @@
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
-![Arquitetura da Solução](img/02-mob-arch.png)
+
+ <th rowspan="2"><img src="./img/Arquitetura.PNG" width="900"></th> 
 
 ## Diagrama de Classes
 
