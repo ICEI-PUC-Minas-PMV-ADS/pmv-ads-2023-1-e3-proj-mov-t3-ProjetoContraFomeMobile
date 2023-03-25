@@ -58,6 +58,6 @@ Abaixo, a forma que nosso Kanban está organizado:
 <p> Backlog do Produto</p>
  <th rowspan="2"><img src="./img/Kanbam1.PNG" width="900"></th> 
  <br>
- <p> Srprints</p>
+ <p>Sprints</p>
   <th rowspan="2"><img src="./img/Kanbam2.PNG" width="900"></th> 
 
