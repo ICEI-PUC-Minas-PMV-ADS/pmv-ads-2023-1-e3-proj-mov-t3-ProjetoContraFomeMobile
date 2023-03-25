@@ -12,6 +12,10 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ## Diagrama ER 
 
   <th rowspan="2"><img src="./img/DiagramaER.PNG" width="800"></th>  
+ ## Diagrama ER 
+
+  <th rowspan="2"><img src="./img/BancoDados.PNG" width="800"></th> 
+  
 
 ## Modelo Físico
 
