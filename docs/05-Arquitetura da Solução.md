@@ -56,8 +56,11 @@ As subcategorias escolhidas acima permitirão que seja construído um Aplicativo
 
 As métricas que permitirão a equipe avaliar as subcategorias de interesse acima são:
 
-*
-*
-*
-*
+* Testes unitários e de Qualidade realizado pelos desenvolvedores no código.
+* Organização do código em pastas distintas que são: "componentes", "context", "pages", "navegation", "servers"
+* Autenticação do usuário ao fazer login em sua conta no APP.
+* Integração com um bando de dados utilizando WEB API.
+* Medir a quantidade de RF que foram implementados.
+* Quantidade de vezes que o RF precisou ser alterado.
+* Realizar teste das funcionalidades implementadas a cada sprint junto com o usuário permitindo assim avaliar se o produto que está sendo entregue está atendendo o cliente na visão funcional e esttética. (Utilização de entrevistas/Brainstorm/Mínimo Produto Viável/FeedBack).
 
