@@ -11,6 +11,7 @@ O Objetivo Geral deste presente trabalho é apresentar soluções para o desenvo
 ## Integrantes
 
 * Armando Xavier de Amorim
+* Bianca Campos Xavier
 * João Paulo Faria do Nascimento
 * Silvia Cristina de Oliveira Teixeira
 
