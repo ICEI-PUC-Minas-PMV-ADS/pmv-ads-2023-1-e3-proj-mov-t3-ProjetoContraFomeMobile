@@ -1,4 +1,5 @@
 # Tabela Cadastro
+
 using Microsoft.VisualBasic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -104,6 +105,7 @@ namespace API_mySQL.Models
 
     }
 }
+
 # Tabela Doação
 
 using System.ComponentModel.DataAnnotations.Schema;
