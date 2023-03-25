@@ -3,7 +3,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-Está sendo utilizado no projeto a metodologia Ágil, através do FrameWork SCRUM. Sendo assim o grupo separou o projeto em 4 sprints e dentro de cada sprint foi listado um backlog do produto. A equipe de Desenvolvedores organiza as tarefas de cada sprint utilizando o quadro To Do / In Progress / Done.
+Está sendo utilizado no projeto a metodologia Ágil, através do FrameWork SCRUM. Sendo assim o grupo separou o projeto em 5 sprints e dentro de cada sprint foi listado um backlog do produto. A equipe de Desenvolvedores organiza as tarefas de cada sprint utilizando o quadro To Do / In Progress / Done.
 Além de realizar uma reuião semanal de 20 minutos no intuito de cada componente explicar o que foi feito durante a última semana e o que será feito na próxima semana.
 
 ## Controle de Versão
@@ -55,4 +55,9 @@ Essa branch sera trabalhada localmente, enquanto a funcionalidade não estiver p
 O projeto será gerenciado pelo GitHub projects, assim como a marcação das entregas, também feita pelo próprio GitHub.
 
 Abaixo, a forma que nosso Kanban está organizado:
+<p> Backlog do Produto</p>
+ <th rowspan="2"><img src="./img/Kanbam1.PNG" width="900"></th> 
+ <br>
+ <p> Srprints</p>
+  <th rowspan="2"><img src="./img/Kanbam2.PNG" width="900"></th> 
 
