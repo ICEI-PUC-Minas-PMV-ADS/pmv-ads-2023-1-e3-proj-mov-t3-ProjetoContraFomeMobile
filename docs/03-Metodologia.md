@@ -23,7 +23,7 @@ O projeto segue a seguinte convenção para o nome de branches:
 
 *Exemplo da nossa gestão de código:*
 
-![fluxo gestao de codigo](./img/FluxoCodigo.jpg" width="900")
+![fluxo gestao de codigo](./img/FluxoCodigo.jpg")
 <!--![logo](imagem.png)-->
 
 
