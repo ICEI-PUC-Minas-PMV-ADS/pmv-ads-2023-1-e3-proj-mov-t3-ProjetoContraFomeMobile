@@ -50,4 +50,6 @@ O Backend do APP será hospedado no SmarterASP.NET e o App será publicado na pl
 
 <th rowspan="2"><img src="./img/Qualidade2.PNG" width="800"></th> 
 
+O grupo estará analisando com maior detalhes para construção da aplicação as subcategorias: Completude Funcional, Comportamento Temporal, Interoperabilidade, Acessibilidade, Reconhecimento Apropriado, Proteção contra erros do Usuário, Disponibilidade, Tolerância a Falhas, Confidencialidade, Integridade, Autenticidade, Modularidade, Reusabilidade, Adaptabilidade e Instalabilidade.
+
  Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão a equipe avaliar os objetos de interesse.
