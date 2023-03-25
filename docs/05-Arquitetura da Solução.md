@@ -12,7 +12,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
  
 ## Modelo ER (Projeto Conceitual)
 
-  <th rowspan="2"><img src=./img/DiagramaER.PNG" width="800"></th>  
+  <th rowspan="2"><img src="./img/DiagramaER.PNG" width="800"></th>  
 
 ## Esquema Relacional
 
