@@ -6,6 +6,16 @@
 Está sendo utilizado no projeto a metodologia Ágil, através do FrameWork SCRUM. Sendo assim o grupo separou o projeto em 5 sprints e dentro de cada sprint foi listado um backlog do produto. A equipe de Desenvolvedores organiza as tarefas de cada sprint utilizando o quadro To Do / In Progress / Done.
 Além de realizar uma reuião semanal de 20 minutos no intuito de cada componente explicar o que foi feito durante a última semana e o que será feito na próxima semana.
 
+## Relação de Ambientes de Trabalho
+
+Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
+|`AMBIENTE`| `PLATAFORMA` |`FUNCIONALIDADE`               |
+|--------------------|------------------------------------|----------------------------------------|
+|Repositório do código fonte  | GitHub | colocar link| 
+|Documentos do projeto  | GitHub | Colocar link do doc do projeto.| 
+|Projeto de Interface e Wireframes  | Marvel | Colocar link do marvel.| 
+|Gerenciamento do Projeto | GitHub | Colocar link gerenciamento de projeto.| 
+
 ## Controle de Versão
 
 A ferramenta de controle de versão adotada no projeto foi o [Git](https://git-scm.com/), sendo que o [Github](https://github.com) foi utilizado para hospedagem do repositório.
