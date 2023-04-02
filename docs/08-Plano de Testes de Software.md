@@ -62,8 +62,7 @@ Os requisitos para a execução para este teste são:
 |Caso de Teste CT-08: |Verificar envio de mensagens para o suporte | 
 | --- | --- |
 | Objetivo do teste |O sistema deverá ser capaz de receber mensagens dos usuários informando algum erro, duvidas ou sugestões, referentes ao sistema.|
-| Passos|1.Acessar o aplicativo através do celular. 2. Na tela Home deverá clicar no icone Contatos. 3.
-Em seguida deverá abrir uma opção de bate papo, onde o usuário poderá enviar uma mensagem para o suporte.|
+| Passos|1.Acessar o aplicativo através do celular. 2. Na tela Home deverá clicar no icone Contatos. 3. Em seguida deverá abrir uma opção de bate papo, onde o usuário poderá enviar uma mensagem para o suporte.|
 | Caso de sucesso |Em caso de êxito, o usuário deverá ser direcionado para a tela onde existem os campos a serem preenchidos e deverá conseguir submeter a dúvida informada. |
 | Caso de insucesso |Em caso de insucesso deve aparecer uma mensagem para o usuário informando que a dúvida/sugestão dele não foi enviada para o setor de suporte, após o mesmo clicar em submeter o envio da mensagem|
 
