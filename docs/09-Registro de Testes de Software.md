@@ -5,6 +5,5 @@
 
 ## CT-01 – TESTE DE NAVEGABILIDADE
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
 
 # Evidências do Teste:
