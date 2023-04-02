@@ -29,7 +29,7 @@ O projeto segue a seguinte convenção para o nome de branches:
 - `testing` : versão em testes de software
 
 *Exemplo da nossa gestão de código:*
- <th rowspan="2"><img src="./img/FluxoCodigo.PNG" width="900"></th> 
+ <th rowspan="2"><img src="./img/Branch.PNG" width="900"></th> 
 
 
 
