@@ -96,6 +96,10 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 Nesse processo, o usuário pode ou não efetuar doações
 <img src="./img/Doacao.png">
 
+## Processo Proposto - PROJETO CONTRA FOME - Todo mundo ajudando um pouco, ajuda o outro
+Nesse processo, a Ong pode fazer o login para gerenciar campanhas cadastradas, doações e dados cadastrais
+<img src = "./img/BPMNONG.png">
+
 
 ## Requisitos
 
