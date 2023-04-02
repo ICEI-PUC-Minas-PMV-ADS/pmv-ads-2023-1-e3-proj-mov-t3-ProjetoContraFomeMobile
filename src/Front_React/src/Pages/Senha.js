@@ -33,7 +33,7 @@ const Senha = () => {
 
         } else {
 
-            Alert.alert('Usuário ou Senha inválidos');
+            alert("Usuário ou Senha inválidos");
 
         }
     };
