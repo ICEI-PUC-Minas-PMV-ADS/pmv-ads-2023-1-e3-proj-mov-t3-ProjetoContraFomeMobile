@@ -82,7 +82,7 @@ Abaixo, a forma que nosso Kanban está organizado:
 |Ferramenta de desenho de telas  | Marvel | <a href="https://marvelapp.com">  Marvel</a>| 
 |Repositório | GitHub | <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t3-ProjetoContraFomeMobile"> Repositório</a>|
 |Ferramenta de criação de diagramas | Camunda | <a href="https://weblogin.cloud.camunda.io"> Camunda</a>|
-|Ferramenta de versionamento de códigos | Git | <a href="https://git-scm.com/"> Camunda</a>|
+|Ferramenta de versionamento de códigos | Git | <a href="https://git-scm.com/"> git</a>|
 
 O editor de código foi escolhido porque ele possui integração com o Git e GitHub.
 
