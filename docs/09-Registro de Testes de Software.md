@@ -30,16 +30,16 @@
 ## Teste 1 - Realizar Login - (Caso de Sucesso)
 <img src="./img/Testes_imagem/Login.PNG" width="300">
 
-# Usuário logado - (Caso de Sucesso)
+### Usuário logado - (Caso de Sucesso)
 <img src="./img/Testes_imagem/CasoDeSucesso.PNG" width="300">
 
 ## Teste2 - Realizar Login  (Caso de Insucesso)
 <img src="./img/Testes_imagem/Login.PNG" width="300">
 
-# Usuário Não Logadado - (CNPJ inválido) - Caso de Insucesso)
+### Usuário Não Logadado - (CNPJ inválido) - Caso de Insucesso)
 <img src="./img/Testes_imagem/CasoDeInsucessoErroNoCNPJ.PNG" width="300">
 
-# Usuário Não Logadado - (Senha inválida) - Caso de Insucesso)
+### Usuário Não Logadado - (Senha inválida) - Caso de Insucesso)
 <img src="./img/Testes_imagem/CasoDeInsucessoErroNaSenha.PNG" width="300">
 
 
