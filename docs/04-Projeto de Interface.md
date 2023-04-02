@@ -122,5 +122,10 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 # Gráficos De Indicadores De Desempenho
 
+## Avaliação dos usuários
+<p align="center">
+  <img width="400" height="600" src="./img/Tabela_Avaliacao.png">
+</p>
+
 
 
