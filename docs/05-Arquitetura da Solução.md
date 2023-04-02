@@ -43,7 +43,7 @@ Escolhemos o google docs como local de produção do documento. Para gestão do 
 
 ## Hospedagem
 
-O Backend do APP será hospedado no SmarterASP.NET e o App será publicado na play store para downloads.
+A hospedagem será realizada pelo Heroku, uma plataforma de nuvem como serviço que suporta várias linguagens de programação.
 
 
 ## Qualidade de Software
