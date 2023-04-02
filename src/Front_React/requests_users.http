@@ -1,0 +1,24 @@
+### URSERS
+
+GET http://localhost:3000/users
+
+###REGISTERS
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "name": "João Paulo",
+    "email":"jp_faria@id.uff.br",
+    "password":"pucminas"
+
+}
+
+###LOGIN
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"jp_faria@id.uff.br",
+    "password":"pucminas"
+}
