@@ -122,9 +122,11 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 # Gráficos De Indicadores De Desempenho
 
-## Avaliação dos usuários
+## Indicadores de desempenho
+<img src="./img/IndicadorDesempenho.png">
 
-  <img src="./img/Tabela_Avaliacao.png">
+## Avaliação dos usuários
+<img src="./img/Tabela_Avaliacao.png">
 
 ## Quantidade De Falhas no Aplicativo em 2023
  <img src="./img/PIZZA.png">
