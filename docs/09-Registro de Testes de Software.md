@@ -3,7 +3,7 @@
 <span style="color:red">Esta seção apresenta as evidências e resultados dos testes definidos anteriormente em Plano de Testes de Software.</span>
 
 
-## CT-01 – TESTE DE NAVEGABILIDADE
+## TESTE DE NAVEGABILIDADE
 
 
 # Evidências do Teste:
