@@ -75,6 +75,15 @@ Abaixo, a forma que nosso Kanban está organizado:
 
 ### Ferramentas
 
+|`FUNÇÃO`| `PLATAFORMA` |`LINK DE ACESSO`               |
+|--------------------|------------------------------------|----------------------------------------|
+|Editor de código  | Visual Studio Code | <a href="https://visualstudio.microsoft.com/pt-br/">  Visual Studio Code</a>| 
+|Ferramenta de comunicação  | Microsoft Teams |  <a href="https://teams.microsoft.com/"> Microsoft Teams</a>| 
+|Ferramenta de desenho de telas  | Marvel | <a href="https://marvelapp.com">  Marvel</a>| 
+|Repositório | GitHub | <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t3-ProjetoContraFomeMobile"> Repositório</a>|
+|Ferramenta de criação de diagramas | Camunda | <a href="https://weblogin.cloud.camunda.io"> Camunda</a>|
+|Ferramenta de versionamento de códigos | Git | <a href="https://git-scm.com/"> Camunda</a>|
+
 O editor de código foi escolhido porque ele possui integração com o Git e GitHub.
 
 A ferramenta de comunicação utilizada é completa e de fácil acesso, sendo assim, viável para comunicar por computador e smartphone, além de ser possível o compartilhamento de tela para que o grupo consiga visualizar e contribuir na execução de etapas do projeto de forma simultânea.
