@@ -120,3 +120,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
   <img width="400" height="600" src="./img/FacaDoacao.PNG">
 </p>
 
+# Gráficos De Indicadores De Desempenho
+
+
+
