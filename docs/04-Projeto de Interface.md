@@ -124,7 +124,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Avaliação dos usuários
 
-  <img width="600" height="600" src="./img/Tabela_Avaliacao.png">
+  <img src="./img/Tabela_Avaliacao.png">
 
 ## Quantidade De Falhas no Aplicativo em 2023
  <img src="./img/PIZZA.png">
