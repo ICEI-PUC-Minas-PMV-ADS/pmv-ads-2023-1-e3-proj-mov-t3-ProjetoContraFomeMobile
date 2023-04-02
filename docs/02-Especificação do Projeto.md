@@ -100,6 +100,20 @@ Nesse processo, o usuário pode ou não efetuar doações
 Nesse processo, a Ong pode fazer o login para gerenciar campanhas cadastradas, doações e dados cadastrais
 <img src = "./img/BPMNONG.png">
 
+##Indicadores de Desempenho
+
+| # | Indicador |  Objetivos| Descrição |Cálculo | Fonte | Meta |
+|---|-|---------- |---------|-|--------|-------|
+|001| Número de integrantes que fizeram doação| Promover possibilidade de doação de valores monetários para ongs cadastradas|Contabilizar a média de pessoas que doaram por Ong| Média de quantas pessoas doaram| Banco de dados do projeto | Pelo menos 1 doação por pessoa|
+|002| Número de ONG's cadastradas | Proporcionar fácil acesso as ONG's em termo de gerenciamento de campanhas e doações  | Avaliar a quantidade de ONG'S disponiveis  | Quantidade de ONG's disponíves   | Banco de dados do projeto | Ter 10 ongs cadastradas por mês |  
+|004| Número de downloads  | Aumentar a taxa de crescimento do aplicativo  | Avaliar a taxa de downloads realizados   | Média do número de downloads por mês  | Estátisticas fornecidas pela Playstore/AppleStore | Aumentar a taxa de crescimento do app 10% ao mês   |  
+|005| Número de desinstalações do aplicativo | Diminuir o  número de desinstalações | Avaliar o que precisa ser mudado no Aplicativo para evitar futuras desinstalações | Média do número de desinstalações realizadas por mês  | Estátisticas fornecidas pela Playstore/AppleStore | Diminuir  o número de desinstalações em 20%.  |   
+|006| Nota do Aplicativo  | Aumentar a nota de satisfação do usuário | Verificar a nota do App exibida aos usuários  | Calculada com base nas notas mais recente  | Estátisticas fornecidas pela Playstore/AppleStore | Aumentar a nota do Aplicativo para 5 estrelas.  |   
+|007| Análise de Engajamento  | Aumentar a taxa de engajamento  | Gerar relatório de ONG's ativas  | Número de  ONG'S ativas por dia e em 28 dias e recorrentes  | Estátisticas fornecidas pela Playstore/AppleStore | Aumentar o número de usuários ativos no App em 10%.  |
+|008| Qualidade do aplicativo | Diminuir quantidade de falhas que o aplicativo apresentou | Medir os insights de qualidades | Quantidade de falhas que o aplicativo apresentou por mês | Estátisticas fornecidas pela Playstore/AppleStore | Corrigir e verificar as falhas ocorridas no aplicativo para menos de 3 por mês | 
+
+
+
 
 ## Requisitos
 
