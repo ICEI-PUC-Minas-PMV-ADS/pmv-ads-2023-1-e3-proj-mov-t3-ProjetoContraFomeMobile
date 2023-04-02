@@ -73,3 +73,16 @@ Abaixo, a forma que nosso Kanban está organizado:
  <p>Sprints</p>
   <th rowspan="2"><img src="./img/Kanbam2.PNG" width="900"></th> 
 
+### Ferramentas
+
+O editor de código foi escolhido porque ele possui integração com o Git e GitHub.
+
+A ferramenta de comunicação utilizada é completa e de fácil acesso, sendo assim, viável para comunicar por computador e smartphone, além de ser possível o compartilhamento de tela para que o grupo consiga visualizar e contribuir na execução de etapas do projeto de forma simultânea.
+
+A ferramenta de desenho de telas é bem completa e pode ser usada de forma gratuita, além de possibilitar a edição simultânea de telas por diferentes membros do grupo.
+
+O repositório utilizado foi definido pela faculdade e é o mais moderno e usual, funcionando bem com Git.
+
+A ferramenta de criação de diagramas foi escolhida devido a usabilidade, gratuidade e a facilidade, atendendo assim, a demanda de criações de diagramas por todo o projeto.
+
+A ferramenta de versionamento de código foi escolhida devido a fácil utilização, modernidade e por funcionar muito bem com o repositório que foi definido pela faculdade.
