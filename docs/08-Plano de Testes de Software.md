@@ -87,7 +87,7 @@ Em seguida deverá abrir uma opção de bate papo, onde o usuário poderá envia
 | Caso de sucesso |Em caso de êxito, deverá ser enviado um e-mail para a instituição solicitando a confirmação de validação do cadastro.|
 | Caso de insucesso |Em caso de insucesso deve aparecer uma mensagem para o usuário informando o motivo da impossibilidade qeu pode ser erro no CNPJ, senha com segurança fraca, falta de informações ao cadastrar no cadastro|
 
-|Caso de Teste CT-12: |Verificar validação de cadastro do usuário.| 
+|Caso de Teste CT-12: |Verificar redefinição de senhas de usuários| 
 | --- | --- |
 | Objetivo do teste |O sistema deverá ser capaz de realizar a atualização de senha de acesso ao aplicativo caso o usuário deseje.|
 | Passos|1.Acessar o aplicativo através do celular. 2.Na tela de login/cadastro, realizar o realizar o login inserindo as credenciais de acesso.3.Clicar em “Entrar”. 4.Clicar no campo destinado à foto dentro do ambiente do usuário. 5.Escolher a opção de “Gerenciar conta” 6.Dentro do gerenciamento da conta escolher a opção para mudança de senhas. 7.Informar a senha atual e definir a nova senha desejada. 8.Clicar em “Alterar senha” |
