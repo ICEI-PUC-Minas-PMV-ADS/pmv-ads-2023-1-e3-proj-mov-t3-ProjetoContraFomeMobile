@@ -124,7 +124,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Avaliação dos usuários
 
-  <img width="400" height="600" src="./img/Tabela_Avaliacao.png">
+  <img width="600" height="600" src="./img/Tabela_Avaliacao.png">
 
 
 
