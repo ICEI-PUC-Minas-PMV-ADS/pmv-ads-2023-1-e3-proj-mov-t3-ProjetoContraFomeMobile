@@ -131,4 +131,8 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 ## Quantidade De Falhas no Aplicativo em 2023
  <img src="./img/PIZZA.png">
 
+ ## Nota do aplicativo em 2023
+ <img src="./img/notaAPP.png">
 
+ ## Quantas vezes o aplicativo foi desinstalado
+ <img src="./img/desinstalacao.png">
