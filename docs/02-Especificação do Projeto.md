@@ -90,6 +90,12 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 |Juarez |Um APP que contenha um mapa com pontos de mobilização social e que receba doações de alimentos e itens de necessidade básica. | Sente que precisa ajudar as pessoas que possuem vulnerabilidade social, principalmente realizando doações de itens de necessidade básica  |
 |Barbara |Um aplicativo seguro e transparente para realizar doações financeiras a uma instituição que distribui mantimentos.|Ajudar o próximo através de doações financeiras.|
 
+
+## Processo Proposto - PROJETO CONTRA FOME - Todo mundo ajudando um pouco, ajuda o outro
+
+Nesse processo, o usuário pode descrever um projeto e o mesmo fica aberto para que outras pessoas participem.
+
+
 ## Requisitos
 
 A tabela a seguir apresenta os requisitos funcionais do projeto, identificando suas respectivas prioridades de entrega.
