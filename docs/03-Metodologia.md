@@ -25,6 +25,8 @@ O projeto segue a seguinte convenção para o nome de branches:
 - `main`: versão estável já testada do software
 - `develop`: versão de desenvolvimento do software
 - Para cada nova funcionalidade serão criadas branches locais, que posteriormente serão mergeadas à `develop` e por fim à `main`
+- `unstable`: versão já testada do software, porém instável
+- `testing` : versão em testes de software
 
 *Exemplo da nossa gestão de código:*
  <th rowspan="2"><img src="./img/FluxoCodigo.PNG" width="900"></th> 
