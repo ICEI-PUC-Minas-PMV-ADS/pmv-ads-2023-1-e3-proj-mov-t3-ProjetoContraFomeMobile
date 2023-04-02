@@ -8,5 +8,5 @@
 
 # Evidências do Teste:
 
-# Navegabilidade Página Inicial
+# Navegabilidade Home
 <img src="./img/Inicial2.png" width="800">
