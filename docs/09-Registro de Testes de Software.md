@@ -7,3 +7,6 @@
 
 
 # Evidências do Teste:
+
+# Navegabilidade Página Inicial
+<img src="./img/Inicial2.png" width="800">
