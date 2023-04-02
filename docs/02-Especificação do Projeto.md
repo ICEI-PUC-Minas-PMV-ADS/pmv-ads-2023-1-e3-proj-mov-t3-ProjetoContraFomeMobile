@@ -93,8 +93,8 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 ## Processo Proposto - PROJETO CONTRA FOME - Todo mundo ajudando um pouco, ajuda o outro
 
-Nesse processo, o usuário cadastra no aplicativo para efetuar doações.
-<img src="./img/Doacao.png" width="400">
+Nesse processo, o usuário pode ou não efetuar doações
+<img src="./img/Doacao.png">
 
 
 ## Requisitos
