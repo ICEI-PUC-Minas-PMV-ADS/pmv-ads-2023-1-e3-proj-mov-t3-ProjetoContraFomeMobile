@@ -10,6 +10,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 <tr>
     <th></th>
     <td></td>
+    <td></td>
 </tr>
 <tr>
     <th rowspan="2"><img src="./img/laura.png" width="800"></th>  
