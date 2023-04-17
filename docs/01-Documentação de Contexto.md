@@ -25,4 +25,6 @@ Mostrar quanto foi arrecadado para uma maior transparência.
 
 Nos dias atuais milhares de pessoas querem ajudar ao próximo, por meio de instituições e até mesmo por conta própria, este trabalho visa fornecer uma alternativa para estas pessoas que querem ajudar. Sendo instituições que distribuem alimentos, ou um canal de pessoas físicas que querem contribuir, criando um catalisador de oportunidades para ambos, instituição e doador. A transparência deste processo segue como uma premissa para mostrar que não haverá fraudes em todo o processo. 
 
+## Público-Alvo
 
+Embora a criação de um aplicativo, indicando os locais de doação, auxilie as pessoas que queiram  ajudar de alguma forma (seja com alimentos, roupas ou até financeiramente), o foco do projeto está nas pessoas que buscam doar produtos alimentícios não perecíveis.
