@@ -7,11 +7,7 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 As personas levantadas durante o processo de entendimento do problema são apresentadas nas tabelas que se seguem.
 
 <table border="1" width="70%">
-<tr>
-    <th></th>
-    <td></td>
-    <td></td>
-</tr>
+
 <tr>
     <th rowspan="2"><img src="./img/laura.png" width="800"></th>  
     <td colspan="2" align="right"><b>Isabela</b> </td>
