@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { BottomNavigation, Text } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
-
+import { useUser } from '../contexts/UseContext';
 
 import Login from './Login';
 import Privacidade from './Privacidade';

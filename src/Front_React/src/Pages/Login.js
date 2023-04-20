@@ -1,4 +1,4 @@
-import React, { useState, } from 'react';
+import React, { useState} from 'react';
 import { StyleSheet, View, Alert, Text } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { TextInput, Button, Headline } from 'react-native-paper';
@@ -13,7 +13,7 @@ import { useUser } from '../contexts/UseContext';
 const Login = () => {
 
     const navigation = useNavigation();
-    const { setSigned, setName } = useUser();
+    //onst { setSigned, setName } = useUser();
 
 
     const [email, setEmail] = useState('');
@@ -51,13 +51,13 @@ const Login = () => {
                 <Button
                     style={styles.button}
                     mode="contained"
-                     onPress={''}>
+                    onPress={''}>
                     <Text style={styles.buttonTextStyle}>
                         CLIQUE AQUI PARA FAZER SUA DOAÇÃO!!
                     </Text>
 
                 </Button>
-               
+
                 <Button
                     style={styles.button}
                     mode="outlined"
@@ -67,7 +67,7 @@ const Login = () => {
                     </Text>
 
                 </Button>
-              
+
                 <Button
                     style={styles.button}
                     mode="outlined"
@@ -77,6 +77,8 @@ const Login = () => {
                     </Text>
 
                 </Button>
+
+
 
             </Body>
 

@@ -17,6 +17,7 @@ import DateTimePicker from '@react-native-community/datetimepicker';
 import moment from 'moment';
 import { postGasto, updateGasto, deleteGasto } from '../Services/Gastos.services';
 import { insertGastos, updateGastos, deleteGastos } from '../Services/GastosServicesDb';
+import { useUser } from '../contexts/UseContext';
 const Abastecimento = ({ route }) => {
   const navigation = useNavigation();
   const { item } = route.params ? route.params : {};

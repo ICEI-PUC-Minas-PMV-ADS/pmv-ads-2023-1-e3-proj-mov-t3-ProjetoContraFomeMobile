@@ -10,20 +10,14 @@ const Route = () =>{
     const {signed} = useUser();
 
     return (
-
         <>
         {
             signed
             ?<Main2/>
             :<Main/>
         }
-
         </>
     )
-
-
-
 }
-
 export default Route;
 

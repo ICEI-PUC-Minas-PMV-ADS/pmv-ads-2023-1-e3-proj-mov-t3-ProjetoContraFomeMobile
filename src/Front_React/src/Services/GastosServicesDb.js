@@ -1,5 +1,5 @@
 import Database from './DbServices';
-
+import { useUser } from '../contexts/UseContext';
 const DB_EXECT = Database.getConnection();
 
 export const getGastos = async () => {

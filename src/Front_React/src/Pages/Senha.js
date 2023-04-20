@@ -6,7 +6,7 @@ import Body from '../Componentes/Body';
 import Input from '../Componentes/input';
 import Logo from '../Componentes/Logo';
 import { useNavigation } from '@react-navigation/native';
-import { testeLogin } from '../Services/AuthServices';
+import { login} from '../Services/AuthServices';
 import { useUser } from '../contexts/UseContext';
 
 
@@ -14,27 +14,32 @@ import { useUser } from '../contexts/UseContext';
 const Senha = () => {
 
     const navigation = useNavigation();
-    const { setSigned, setnomeDaOng } = useUser();
-    const [cnpj, setcnpj] = useState('50048784');
-    const [senha, setPassword] = useState('111111');
+    const {setSigned,setNomeFantasia,setIdCampanha,idCampanha,codigo,setCodigo, cnpj,setCNPJ,senha,setSenha} = useUser();
+    const [CNPJ, setcnpj2] = useState('50048784');
+    const [Senha, setPassword] = useState('111111');
     //const [teste, setTeste] = useState();
 
 
     const handleLogin = async () => {
 
-        let res = await testeLogin(cnpj, senha);
-        //setTeste(res)
+        let res = await login(CNPJ, Senha);
 
+       
 
-
-        if (res) {
+        if (res.nomeFantasia) {
             setSigned(true);
-            setnomeDaOng(res.nomeFantasia);
+            setNomeFantasia(res.nomeFantasia);
+            setIdCampanha(res.cadastroCampanhas)
+            setCodigo(res.codigo)
+            setCNPJ(res.cnpj)
+            setSenha(res.senha)
+          
+   
 
         } else {
 
-            alert("Usuário ou Senha inválidos");
-
+           
+            Alert.alert('Usuário ou Senha inválidos');
         }
     };
 
@@ -48,16 +53,17 @@ const Senha = () => {
             <Body>
                 <Input
                     label="CNPJ"
-                    value={cnpj}
+                    value={CNPJ}
                     keyboardType='decimal-pad'
-                    onChangeText={(number) => setcnpj(number)}
+                    maxLength={8}
+                    onChangeText={(number) => setcnpj2(number)}
                     // @ts-ignore
                     left={<TextInput.Icon icon="account" />}
                 />
 
                 <Input
                     label="Senha"
-                    value={senha}
+                    value={Senha}
                     secureTextEntry
                     onChangeText={(text) => setPassword(text)}
                     // @ts-ignore
