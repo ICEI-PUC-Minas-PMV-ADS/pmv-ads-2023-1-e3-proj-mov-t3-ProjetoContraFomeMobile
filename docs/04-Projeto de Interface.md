@@ -120,3 +120,19 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
   <img width="400" height="600" src="./img/FacaDoacao.PNG">
 </p>
 
+# Gráficos De Indicadores De Desempenho
+
+## Indicadores de desempenho
+<img src="./img/IndicadorDesempenho.png">
+
+## Avaliação dos usuários
+<img src="./img/Tabela_Avaliacao.png">
+
+## Quantidade De Falhas no Aplicativo em 2023
+ <img src="./img/PIZZA.png">
+
+ ## Nota do aplicativo em 2023
+ <img src="./img/notaAPP.png">
+
+ ## Quantas vezes o aplicativo foi desinstalado
+ <img src="./img/desinstalacao.png">

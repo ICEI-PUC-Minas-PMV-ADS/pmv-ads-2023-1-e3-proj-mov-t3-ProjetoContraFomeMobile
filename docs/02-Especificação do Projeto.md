@@ -7,10 +7,7 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 As personas levantadas durante o processo de entendimento do problema são apresentadas nas tabelas que se seguem.
 
 <table border="1" width="70%">
-<tr>
-    <th></th>
-    <td></td>
-</tr>
+
 <tr>
     <th rowspan="2"><img src="./img/laura.png" width="800"></th>  
     <td colspan="2" align="right"><b>Isabela</b> </td>
@@ -89,6 +86,31 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 |Carlos    | Pesquisar por locais próximos à minha residência e ao meu trabalho, para que eu possa doar alimentos| Sente que necessita ajudar a combater a fome no Brasil.|
 |Juarez |Um APP que contenha um mapa com pontos de mobilização social e que receba doações de alimentos e itens de necessidade básica. | Sente que precisa ajudar as pessoas que possuem vulnerabilidade social, principalmente realizando doações de itens de necessidade básica  |
 |Barbara |Um aplicativo seguro e transparente para realizar doações financeiras a uma instituição que distribui mantimentos.|Ajudar o próximo através de doações financeiras.|
+
+
+## Processo Proposto - PROJETO CONTRA FOME - Todo mundo ajudando um pouco, ajuda o outro
+
+Nesse processo, o usuário pode ou não efetuar doações
+<img src="./img/Doacao.png">
+
+## Processo Proposto - PROJETO CONTRA FOME - Todo mundo ajudando um pouco, ajuda o outro
+Nesse processo, a Ong pode fazer o login para gerenciar campanhas cadastradas, doações e dados cadastrais
+<img src = "./img/BPMNONG.png">
+
+##Indicadores de Desempenho
+
+| # | Indicador |  Objetivos| Descrição |Cálculo | Fonte | Meta |
+|---|-|---------- |---------|-|--------|-------|
+|001| Número de integrantes que fizeram doação| Promover possibilidade de doação de valores monetários para ongs cadastradas|Contabilizar a média de pessoas que doaram por Ong| Média de quantas pessoas doaram| Banco de dados do projeto | Pelo menos 1 doação por pessoa|
+|002| Número de ONG's cadastradas | Proporcionar fácil acesso as ONG's em termo de gerenciamento de campanhas e doações  | Avaliar a quantidade de ONG'S disponiveis  | Quantidade de ONG's disponíves   | Banco de dados do projeto | Ter 10 ongs cadastradas por mês |  
+|003| Número de downloads  | Aumentar a taxa de crescimento do aplicativo  | Avaliar a taxa de downloads realizados   | Média do número de downloads por mês  | Estátisticas fornecidas pela Playstore/AppleStore | Aumentar a taxa de crescimento do app 10% ao mês   |  
+|004| Número de desinstalações do aplicativo | Diminuir o  número de desinstalações | Avaliar o que precisa ser mudado no Aplicativo para evitar futuras desinstalações | Média do número de desinstalações realizadas por mês  | Estátisticas fornecidas pela Playstore/AppleStore | Diminuir  o número de desinstalações em 20%.  |   
+|005| Nota do Aplicativo  | Aumentar a nota de satisfação do usuário | Verificar a nota do App exibida aos usuários  | Calculada com base nas notas mais recente  | Estátisticas fornecidas pela Playstore/AppleStore | Aumentar a nota do Aplicativo para 5 estrelas.  |   
+|006| Análise de Engajamento  | Aumentar a taxa de engajamento  | Gerar relatório de ONG's ativas  | Número de  ONG'S ativas por dia e em 28 dias e recorrentes  | Estátisticas fornecidas pela Playstore/AppleStore | Aumentar o número de usuários ativos no App em 10%.  |
+|007| Qualidade do aplicativo | Diminuir quantidade de falhas que o aplicativo apresentou | Medir os insights de qualidades | Quantidade de falhas que o aplicativo apresentou por mês | Estátisticas fornecidas pela Playstore/AppleStore | Corrigir e verificar as falhas ocorridas no aplicativo para menos de 3 por mês | 
+
+
+
 
 ## Requisitos
 
