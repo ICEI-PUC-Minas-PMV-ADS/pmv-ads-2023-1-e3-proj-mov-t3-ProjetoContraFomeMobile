@@ -44,7 +44,7 @@ const Login = () => {
                     mode="contained"
                     onPress={()=> navigation.navigate('Campanhas')}>
                     <Text style={styles.buttonTextStyle}>
-                        CLIQUE AQUI PARA FAZER SUA DOAÇÃO!!
+                    CLIQUE AQUI E FAÇA SUA DOAÇÃO!!
                     </Text>
 
                 </Button>
@@ -54,7 +54,7 @@ const Login = () => {
                     mode="outlined"
                     onPress={() => navigation.navigate('Register')}>
                     <Text style={styles.buttonTextStyle}>
-                        CLIQUE AQUI PARA CADASTRAR SUA ONG!!
+                        CLIQUE AQUI PARA CADASTRAR ONG!!
                     </Text>
 
                 </Button>
@@ -64,7 +64,7 @@ const Login = () => {
                     mode="outlined"
                     onPress={() => navigation.navigate('Senha')}>
                     <Text style={styles.buttonTextStyle}>
-                        CLIQUE AQUI PARA FAZER LOGIN!!
+                        CLIQUE AQUI PARA FAZER LOGIN DA ONG!!
                     </Text>
 
                 </Button>

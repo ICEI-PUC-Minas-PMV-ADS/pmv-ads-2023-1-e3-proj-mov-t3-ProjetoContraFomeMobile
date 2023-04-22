@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, Alert, View, FlatList, SafeAreaView } from 'react-native';
 import Container from '../Componentes/Container';
 import { List, Text, FAB } from 'react-native-paper';
-import Privacidade from './Privacidade';
+
 
 
 import { useUser } from '../contexts/UseContext';
@@ -33,14 +33,14 @@ const Campanhas = () => {
             left={props => <List.Icon {...props} color={'green'} icon="copyright" />}
             //right={props => <Text {...props} style={{ alignSelf: 'center' }}>{item.estado}</Text>}
 
-            onPress={() => navigation.navigate('Privacidade', { item })}
+            onPress={() => navigation.navigate('CampanhasCadastradas', { item })}
         />
 
     );
 
     return (
         <Container>
-            <Header title={'Faça sua Doção'} goBack={() => navigation.goBack()}>
+            <Header title={'Escolha uma Campanha'} goBack={() => navigation.goBack()}>
             </Header>
             <Body>
                 <SafeAreaView style={styles.container}>

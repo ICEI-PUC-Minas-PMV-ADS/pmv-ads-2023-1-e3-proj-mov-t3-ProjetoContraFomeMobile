@@ -5,6 +5,7 @@ import Senha from '../Pages/Senha';
 import Register from '../Pages/Register';
 import Campanhas from '../Pages/Campanhas'
 import Privacidade from '../Pages/Privacidade';
+import CampanhasCadastradas from '../Pages/CampanhasCadastradas';
 
 const Stack = createNativeStackNavigator();
 
@@ -40,9 +41,16 @@ const Main = () => {
           header: () => null,
         }}
       />
-           <Stack.Screen
+      <Stack.Screen
         name="Privacidade"
         component={Privacidade}
+        options={{
+          header: () => null,
+        }}
+      />
+      <Stack.Screen
+        name="CampanhasCadastradas"
+        component={CampanhasCadastradas}
         options={{
           header: () => null,
         }}

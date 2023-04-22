@@ -31,51 +31,6 @@ const Abastecimento = ({ route }) => {
   const [odometro, setOdometro] = useState('');
 
 
-  // useEffect(() => {
-  //   if (item) {
-  //     console.log(item)
-  //     setTipo(item.tipo == 0 ? 'gas' : 'eta')
-  //     setData(item.data);
-  //     setPreco(item.preco.toString());
-  //     setValor(item.valor.toString());
-  //     setOdometro(item.odometro.toString());
-  //   }
-
-  // }, []);
-
-
-  // const handleSalvar = () => {
-  //   if (item) {
-  //     updateGasto({
-  //       tipo: tipo == 'gas' ? 0 : 1,
-  //       data: data,
-  //       preco: preco,
-  //       valor: valor,
-  //       odometro: odometro,
-  //       id: item.id
-  //     }).then(res => {
-  //       navigation.goBack();
-  //     });
-  //   } else {
-  //     postGasto({
-  //       tipo: tipo == 'gas' ? 0 : 1,
-  //       data: data,
-  //       preco: preco,
-  //       valor: valor,
-  //       odometro: odometro
-  //     }).then(res => {
-  //       navigation.goBack()
-  //     });
-  //   }
-  //   //navigation.goBack();
-  // };
-  // const handleExcluir = () => {
-  //   console.log(item.id)
-  //   deleteGasto(item.id).then(res => {
-  //     navigation.goBack();
-  //   });
-
-  // };
   return (
     <Container>
       <Header title={'Abastecime'} goBack={() => navigation.goBack()}>

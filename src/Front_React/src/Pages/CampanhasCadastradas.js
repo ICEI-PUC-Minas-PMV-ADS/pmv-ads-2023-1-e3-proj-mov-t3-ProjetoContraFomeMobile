@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, View, FlatList, SafeAreaView, ScrollView, Alert } from 'react-native';
-import { Appbar, TextInput, Button } from 'react-native-paper';
 import Container from '../Componentes/Container';
-import { List, Text, FAB } from 'react-native-paper';
+import { List, FAB } from 'react-native-paper';
 import Header from '../Componentes/Header';
 import Body from '../Componentes/Body';
 import Input from '../Componentes/input'
 import { useNavigation } from '@react-navigation/native';
 import { Picker } from "@react-native-picker/picker";
 import { useUser } from '../contexts/UseContext';
-import { postGasto, updateGasto, deleteGasto } from '../Services/Gastos.services';
-import { useIsFocused } from '@react-navigation/native';
-import { login } from '../Services/AuthServices';
+import {
+  RadioButton,
+  Text,
+  TextInput,
+  Button,
+  Appbar,
+} from 'react-native-paper';
 
-
-const CadastroCampanha = ({ route }) => {
+const CampanhasCadastradas = ({ route }) => {
   const { codigo, setCodigo, senha, cnpj, setSigned, setGastos, idCampanha, nomeDaOng, nomeFantasia } = useUser();
   const navigation = useNavigation();
   const [nomeDaOng2, setNomeDaOng] = useState(nomeFantasia);
@@ -32,26 +34,16 @@ const CadastroCampanha = ({ route }) => {
   const [cursos, setcursos] = useState(['Selecione um estado', 'RJ', 'SP', 'PI', 'MG', 'RS', 'MA'])
   const [cursoSelecionado, setCursoSelecionado] = useState([]);
   const { item } = route.params ? route.params : {};
-
-  const isFocused = useIsFocused();
-
-  const handleLogin = async () => {
-
-    let res = await login(cnpj, senha);
-    console.log(res.cadastroCampanhas)
-    setGastos(res.cadastroCampanhas);
-
-
+  const [tipo, setTipo] = useState('gas');
+  const [valor, setValor] = useState('');
+  const [radiopix,setradiopix]=useState(true)
+  const retornoOi = () => {
+    console.log('Doar')
   }
 
 
-
-
-
   useEffect(() => {
-
     if (item) {
-
       setNomeDaOng(item.nomeDaOng);
       setNomeDaCampanha(item.nomeDaCampanha);
       setDescricaoDacamp(item.descricaoDaCampanha);
@@ -79,109 +71,15 @@ const CadastroCampanha = ({ route }) => {
         setfisico('Não');
       }
       setCadastroCod(item.cadastroCod)
-
-
-
-    } else {
-      setNomeDaOng(nomeDaOng2);
     }
-
-
 
   }, [item]);
-  const handleSalvar = () => {
-
-    if ((Telefone.toString()).length != 8) {
-      Alert.alert('Número do Telefone incorreto. Digite apenas o número do telefone - (são 8 dígitos)')
-      return
-    }
-
-    if (Telefone == "" || nomeDaCampanha == "" || DescricaoDaCamp == "" || Email == "" || Pais == "" || Cidade == "" || Endereco == "") {
-      Alert.alert('Existe campo(s) vazio(s), favor, verificar!!')
-      return
-    }
-    if (cursoSelecionado == 'Selecione um estado' || cursoSelecionado == '') {
-      Alert.alert('Favor, selecionar um estado')
-      return
-    }
-
-    if (item) {
-      updateGasto({
-        idCampanha: item.idCampanha,
-        nomeDaOng: nomeDaOng2,
-        nomeDaCampanha: nomeDaCampanha,
-        descricaoDaCampanha: DescricaoDaCamp,
-        telefone: Telefone,
-        email: Email,
-        endereco: Endereco,
-        cidade: Cidade,
-        estado: cursoSelecionado,
-        pais: Pais,
-        pix: pix == 'Sim' ? true : false,
-        cartaoDeCredito: cc == 'Sim' ? true : false,
-        receberFisico: fisico == 'Sim' ? true : false,
-        cadastroCodigo: item.cadastroCodigo
-
-      }).then(res => {
-        handleLogin()
-        navigation.goBack();
-      });
-
-
-
-
-
-    } else {
-
-      postGasto({
-        nomeDaOng: nomeDaOng2,
-        nomeDaCampanha: nomeDaCampanha,
-        descricaoDaCampanha: DescricaoDaCamp,
-        telefone: Telefone,
-        email: Email,
-        endereco: Endereco,
-        cidade: Cidade,
-        estado: cursoSelecionado,
-        pais: Pais,
-        pix: pix == 'Sim' ? true : false,
-        cartaoDeCredito: cc == 'Sim' ? true : false,
-        receberFisico: fisico == 'Sim' ? true : false,
-        cadastroCodigo: codigo,
-
-      }).then(res => {
-        handleLogin()
-        navigation.goBack();
-      });
-
-    }
-  }
-  const handleExcluir = () => {
-    deleteGasto(item.idCampanha).then(res => {
-      handleLogin()
-
-      navigation.goBack();
-    })
-  }
-
-
   return (
-
     <Container>
-      <Header title={'Cadastrar/Editar Campanha'} goBack={() => navigation.goBack()}>
-        <Appbar.Action icon="check" onPress={handleSalvar} />
-        {
-          item &&
-          <Appbar.Action icon="trash-can" onPress={handleExcluir} />
-
-
-        }
-
+      <Header title={'Detalhes da Campanha'} goBack={() => navigation.goBack()}>
       </Header>
-
       <Body>
-
         <ScrollView contentContainerStyle={styles.text}>
-
           <Input
             label="Nome da Ong - (Campo não editável)"
             value={nomeDaOng2}
@@ -193,12 +91,14 @@ const CadastroCampanha = ({ route }) => {
           <Input
             label="Nome da Campanha"
             value={nomeDaCampanha}
+            disabled={true}
             onChangeText={(text) => setNomeDaCampanha(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
           <Input
             label="Descrição da Campanha"
             value={DescricaoDaCamp}
+            disabled={true}
             onChangeText={(text) => setDescricaoDacamp(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
@@ -206,6 +106,7 @@ const CadastroCampanha = ({ route }) => {
             label="Telefone"
             //value={Telefone}
             value={Telefone.toString()}
+            disabled={true}
             maxLength={8}
             keyboardType="numeric"
             onChangeText={(text) => SetTelefone(text)}
@@ -215,87 +116,105 @@ const CadastroCampanha = ({ route }) => {
           <Input
             label="Email"
             value={Email}
+            disabled={true}
             onChangeText={(text) => setEmail(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
           <Input
             label="Endereço"
             value={Endereco}
+            disabled={true}
             onChangeText={(text) => setEndereco(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
           <Input
             label="Cidade"
             value={Cidade}
+            disabled={true}
             onChangeText={(text) => setCidade(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
-          <View>
-            <Picker
-              style={styles.input}
-              selectedValue={cursoSelecionado}
-              onValueChange={(itemValue) =>
-                setCursoSelecionado(itemValue)
 
-
-              }>
-              {
-                cursos.map(cr => {
-                  return <Picker.Item label={cr} value={cr} />
-                })
-              }
-            </Picker>
-          </View>
+          <Input
+            label="Estado"
+            value={cursoSelecionado}
+            disabled={true}
+            onChangeText={(text) => setCidade(text)}
+            left={<TextInput.Icon icon="chevron-right" />}
+          />
 
           <Input
             label="Pais"
             value={Pais}
+            disabled={true}
             onChangeText={(text) => setPais(text)}
             left={<TextInput.Icon icon="chevron-right" />}
-
-
           />
           <Input
             label="Aceita PIX? - (Digite Sim ou Não)"
             value={pix}
+            disabled={true}
             onChangeText={(text) => setpix(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
           <Input
             label="Aceita Cartão de Crédito? - (Digite Sim ou Não)"
             value={cc}
+            disabled={true}
             onChangeText={(text) => setcc(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
           <Input
             label="Aceita Doação física? - (Digite Sim ou Não)"
             value={fisico}
+            disabled={true}
             onChangeText={(text) => setfisico(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
+          <Text>
+            {'\n'}
+          </Text>
+          <Input style={styles.inputValor}
+            label="Digite o valor de Sua Doação"
+            onChangeText={(text) => setValor(text)}
+            left={<TextInput.Icon icon="chevron-right" />}
+          />
+          <View style={styles.containerRadio}>
+            <View style={styles.containerRadioItem}>
+              <RadioButton
+                value="first"
+                status={tipo === 'gas' ? 'checked' : 'unchecked'}
+                color={'red'}
+                onPress={() => setTipo('gas')}
+              />
+              <Text>PIX</Text>
+            </View>
+            <View style={styles.containerRadioItem}>
+              <RadioButton
+                value="first"
+                status={tipo === 'eta' ? 'checked' : 'unchecked'}
+                color={'green'}
+                onPress={() => setTipo('eta')}
+              />
+              <Text>Cartão de Crédito</Text>
+            </View>
+          </View>
+
           <Button mode="contained"
-            style={styles.button1}
-            onPress={handleSalvar}>
-
-            SALVAR
+            color={'green'}
+            style={styles.button2}
+            onPress={retornoOi}
+          >
+            DOAR
           </Button>
-
-          {item && (
-
-            <Button mode="contained"
-              color={'red'}
-              style={styles.button2}
-              onPress={handleExcluir}>
-              EXCLUIR
-            </Button>
-          )}
-
-
         </ScrollView>
       </Body>
     </Container >
   );
 };
+
+
+
 const styles = StyleSheet.create({
   button: {
     marginBottom: 8
@@ -306,7 +225,7 @@ const styles = StyleSheet.create({
   header: {
     alignItems: "center",
     marginTop: 70,
-    marginBottom: 12
+    marginBottom: 12,
   },
   TextInputMask: {
     backgroundColor: '#90ee90',
@@ -319,6 +238,9 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     flex: 1,
     height: 62,
+  },
+  inputValor: {
+    backgroundColor: '#C0C0C0',
   },
   text: {
     textAlign: 'center',
@@ -338,7 +260,18 @@ const styles = StyleSheet.create({
     marginBottom: 23,
 
   },
+  containerRadio: {
+    flexDirection: 'row',
+    margin: 8,
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
+  containerRadioItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
 });
 
 
-export default CadastroCampanha;
+export default CampanhasCadastradas;
