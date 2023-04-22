@@ -36,7 +36,7 @@ const CampanhasCadastradas = ({ route }) => {
   const { item } = route.params ? route.params : {};
   const [tipo, setTipo] = useState('gas');
   const [valor, setValor] = useState('');
-  const [radiopix,setradiopix]=useState(true)
+  const [radiopix, setradiopix] = useState(true)
   const retornoOi = () => {
     console.log('Doar')
   }
@@ -175,26 +175,27 @@ const CampanhasCadastradas = ({ route }) => {
             {'\n'}
           </Text>
           <Input style={styles.inputValor}
-            label="Digite o valor de Sua Doação"
+            label={pix === 'Não' && cc === 'Não' && fisico === 'Não' ? "Campanha Não aceita mais nenhuim tipo de Doação" : pix === 'Não' && cc === 'Não' && fisico === 'Sim' ? "Campanha Aceita Apenas Doação Física" : "Digite sua Doação"}
+            disabled={pix === 'Não' && cc == 'Não' ? true : false}
             onChangeText={(text) => setValor(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
           <View style={styles.containerRadio}>
-            <View style={styles.containerRadioItem}>
+            <View style={pix === 'Não' ? styles.containerRadioItempixn : styles.containerRadioItempixs}>
               <RadioButton
                 value="first"
-                status={tipo === 'gas' ? 'checked' : 'unchecked'}
+                status={pix === 'Não' ? 'unchecked' : 'checked'}
                 color={'red'}
-                onPress={() => setTipo('gas')}
+              //onPress={() => setTipo('gas')}
               />
               <Text>PIX</Text>
             </View>
-            <View style={styles.containerRadioItem}>
+            <View style={cc === 'Não' ? styles.containerRadioItemccn : styles.containerRadioItemccs}>
               <RadioButton
                 value="first"
-                status={tipo === 'eta' ? 'checked' : 'unchecked'}
+                status={cc === 'Não' ? 'unchecked' : 'checked'}
                 color={'green'}
-                onPress={() => setTipo('eta')}
+              //onPress={() => setTipo('eta')}
               />
               <Text>Cartão de Crédito</Text>
             </View>
@@ -202,7 +203,7 @@ const CampanhasCadastradas = ({ route }) => {
 
           <Button mode="contained"
             color={'green'}
-            style={styles.button2}
+            style={pix === 'Não' && cc === 'Não' ? styles.button3 : styles.button2}
             onPress={retornoOi}
           >
             DOAR
@@ -241,6 +242,12 @@ const styles = StyleSheet.create({
   },
   inputValor: {
     backgroundColor: '#C0C0C0',
+    fontWeight: 'bold',
+
+  },
+  inputValor2: {
+    backgroundColor: '#C0C0C0',
+    disabled: '{true}'
   },
   text: {
     textAlign: 'center',
@@ -260,6 +267,11 @@ const styles = StyleSheet.create({
     marginBottom: 23,
 
   },
+  button3: {
+    marginBottom: 23,
+    display: 'none'
+
+  },
   containerRadio: {
     flexDirection: 'row',
     margin: 8,
@@ -270,6 +282,28 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-evenly',
+  },
+  containerRadioItempixs: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
+  containerRadioItempixn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    display: 'none'
+  },
+  containerRadioItemccs: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
+  containerRadioItemccn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    display: 'none'
   },
 });
 
