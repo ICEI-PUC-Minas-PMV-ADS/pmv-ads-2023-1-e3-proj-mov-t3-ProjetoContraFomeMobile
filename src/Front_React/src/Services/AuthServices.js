@@ -2,22 +2,7 @@
 import API from './webApiServices';
 import { BASE_URL } from './urls';
 
-// export const register = async (param) => {
-//     try {
-//         return await API.post(`${BASE_URL}/register`, param).then(
-//             response => {
-//                 return response.data;
-//             },
-//             error => {
-//                 console.log(error);
-//                 return null;
-//             }
-//         );
-//     } catch (error) {
-//         console.log(error);
-//         return null;
-//     }
-// }
+
 
 export const verifica = async (CNPJ,Senha) => {
     console.log(CNPJ, Senha);
@@ -76,6 +61,21 @@ export const login = async (CNPJ, Senha) => {
             transformRequest: (data) => { return data }
         })
         console.log(rest.data)
+        return rest.data
+    } catch (error) {
+        console.log(error);
+        return null;
+    }
+}
+
+
+export const Atualizar = async () => {
+    try {
+        const rest = await API.get(`${BASE_URL}api/CadastroCampanhas/`, {
+
+
+        });
+        //console.log(rest.data)
         return rest.data
     } catch (error) {
         console.log(error);

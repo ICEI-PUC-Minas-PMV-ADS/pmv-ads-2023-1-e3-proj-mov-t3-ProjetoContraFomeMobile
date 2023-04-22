@@ -3,7 +3,7 @@ import Header from '../Componentes/Header';
 import Container from '../Componentes/Container';
 import Body from '../Componentes/Body';
 import { List, Text, FAB, Button } from 'react-native-paper';
-import { FlatList, View, StyleSheet } from 'react-native';
+import { FlatList, View, StyleSheet, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { useIsFocused } from '@react-navigation/native';
 import { useUser } from '../contexts/UseContext';
@@ -12,14 +12,13 @@ import Home from './Home';
 
 
 const Gastos = () => {
-  const { setSigned, nomeFantasia,codigo,cnpj} = useUser();
+  const { setSigned, nomeFantasia,codigo,cnpj,nomeDaOng} = useUser();
   const navigation = useNavigation();
   const isFocused = useIsFocused();
 
   //const [gastos, setGastos] = useState([]);
 
   const hand = async () => {
-   
     setSigned(false);
    
 

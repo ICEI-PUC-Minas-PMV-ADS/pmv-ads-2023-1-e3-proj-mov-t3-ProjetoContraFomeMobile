@@ -1,8 +1,7 @@
 //@ts-ignore
 import API from './webApiServices';
 import { BASE_URL } from './urls';
-import { useUser } from '../contexts/UseContext';
-let userlogado
+
 
 export const getGasto = async (idCampanha) => {
 

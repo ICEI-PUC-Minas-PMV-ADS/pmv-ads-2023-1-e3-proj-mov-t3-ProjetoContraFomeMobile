@@ -16,7 +16,6 @@ const Calculadora = () => {
   const {gastos,idCampanha,nomeDaOng, setIdCampanha,setGastos} = useUser();
   const isFocused = useIsFocused();
   const navigation = useNavigation();
-  //const [gastos, setGastos] =useState([]);
 
   useEffect(()=>{
   

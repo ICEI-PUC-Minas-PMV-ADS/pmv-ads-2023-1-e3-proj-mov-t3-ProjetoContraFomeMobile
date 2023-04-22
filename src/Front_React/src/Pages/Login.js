@@ -7,6 +7,7 @@ import Body from '../Componentes/Body';
 import Logo from '../Componentes/Logo';
 import { useNavigation } from '@react-navigation/native';
 import { useUser } from '../contexts/UseContext';
+import { Atualizar } from '../Services/AuthServices';
 
 
 
@@ -14,27 +15,17 @@ const Login = () => {
 
     const navigation = useNavigation();
     //onst { setSigned, setName } = useUser();
-
-
+    const {setIdCampanha2,idCampanha2,setGastos2} = useUser();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    // const handleLogin = () => {
-    //     login({
-    //         cnpj: cnpj,
-    //         senha: password
-    //     }).then(res => {
-    //         console.log(res);
+    const hand = async () => {
 
-    //         if (res) {
-    //             setSigned(true);
-    //             setName(res.user.name);
-    //              AsyncStorage.setItem('@TOKEN_KEY', res.accessToken).then();
-    //         } else {
-    //             Alert.alert('Atenção', 'Usuário ou senha inválidos!');
-    //         }
-    //     });
-    // }
+        let res = await Atualizar();
+        setGastos2(res);
+    }
+
+    hand()
 
     return (
         <Container>
@@ -51,7 +42,7 @@ const Login = () => {
                 <Button
                     style={styles.button}
                     mode="contained"
-                    onPress={''}>
+                    onPress={()=> navigation.navigate('Campanhas')}>
                     <Text style={styles.buttonTextStyle}>
                         CLIQUE AQUI PARA FAZER SUA DOAÇÃO!!
                     </Text>

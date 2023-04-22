@@ -36,6 +36,8 @@ export default function UserProvider({ children }) {
     const [receberFisico, setReceberFisico]= useState('');
     const [telefone2, setTelefone2] = useState('');
     const [gastos, setGastos] =useState([]);
+    const [gastos2, setGastos2] =useState([]);
+    const [idCampanha2, setIdCampanha2] = useState('');
 
     return (
 
@@ -60,7 +62,11 @@ export default function UserProvider({ children }) {
                 senha,
                 setSenha,
                 gastos,
-                setGastos
+                setGastos,
+                gastos2,
+                setGastos2,
+                setIdCampanha2,
+                idCampanha2
             
             }}
         >
@@ -72,7 +78,7 @@ export default function UserProvider({ children }) {
 export function useUser() {
     const context = useContext(UserContext);
 
-    const { signed, setSigned, nomeDaOng, setnomeDaOng, nomeFantasia, setNomeFantasia, NomeDaCampanha, setNomeDaCampanha, idCampanha, setIdCampanha, DescricaoDaCamp,setDescricaoDacamp,codigo,setCodigo,cnpj,setCNPJ,senha,setSenha, gastos,setGastos} = context;
+    const { signed, setSigned, nomeDaOng, setnomeDaOng, nomeFantasia, setNomeFantasia, NomeDaCampanha, setNomeDaCampanha, idCampanha, setIdCampanha, DescricaoDaCamp,setDescricaoDacamp,codigo,setCodigo,cnpj,setCNPJ,senha,setSenha, gastos,setGastos,gastos2,setGastos2,idCampanha2,setIdCampanha2} = context;
 
-    return { signed, setSigned, nomeDaOng, setnomeDaOng, nomeFantasia, setNomeFantasia, NomeDaCampanha, setNomeDaCampanha, idCampanha, setIdCampanha,DescricaoDaCamp,setDescricaoDacamp,codigo,setCodigo,cnpj,setCNPJ,senha,setSenha, gastos,setGastos};
+    return { signed, setSigned, nomeDaOng, setnomeDaOng, nomeFantasia, setNomeFantasia, NomeDaCampanha, setNomeDaCampanha, idCampanha, setIdCampanha,DescricaoDaCamp,setDescricaoDacamp,codigo,setCodigo,cnpj,setCNPJ,senha,setSenha, gastos,setGastos,gastos2,setGastos2,idCampanha2,setIdCampanha2};
 }

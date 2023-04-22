@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, View, FlatList, SafeAreaView, ScrollView } from 'react-native';
+import { StyleSheet, View, FlatList, SafeAreaView, ScrollView, Alert } from 'react-native';
 import { Appbar, TextInput, Button } from 'react-native-paper';
 import Container from '../Componentes/Container';
 import { List, Text, FAB } from 'react-native-paper';
@@ -15,8 +15,9 @@ import { login } from '../Services/AuthServices';
 
 
 const CadastroCampanha = ({ route }) => {
+  const { codigo, setCodigo, senha, cnpj, setSigned, setGastos, idCampanha, nomeDaOng, nomeFantasia } = useUser();
   const navigation = useNavigation();
-  const [nomeDaOng, setNomeDaOng] = useState('');
+  const [nomeDaOng2, setNomeDaOng] = useState(nomeFantasia);
   const [nomeDaCampanha, setNomeDaCampanha] = useState('');
   const [DescricaoDaCamp, setDescricaoDacamp] = useState('');
   const [Telefone, SetTelefone] = useState('');
@@ -31,7 +32,7 @@ const CadastroCampanha = ({ route }) => {
   const [cursos, setcursos] = useState(['Selecione um estado', 'RJ', 'SP', 'PI', 'MG', 'RS', 'MA'])
   const [cursoSelecionado, setCursoSelecionado] = useState([]);
   const { item } = route.params ? route.params : {};
-  const { codigo, setCodigo, senha, cnpj, setSigned, setGastos, idCampanha } = useUser();
+
   const isFocused = useIsFocused();
 
   const handleLogin = async () => {
@@ -48,6 +49,7 @@ const CadastroCampanha = ({ route }) => {
 
 
   useEffect(() => {
+
     if (item) {
 
       setNomeDaOng(item.nomeDaOng);
@@ -80,16 +82,56 @@ const CadastroCampanha = ({ route }) => {
 
 
 
+    } else {
+      setNomeDaOng(nomeDaOng2);
     }
 
 
 
   }, [item]);
   const handleSalvar = () => {
+
+    if ((Telefone.toString()).length != 8) {
+      Alert.alert('Número do Telefone incorreto. Digite apenas o número do telefone - (são 8 dígitos)')
+      return
+    }
+
+    if (Telefone == "" || nomeDaCampanha == "" || DescricaoDaCamp == "" || Email == "" || Pais == "" || Cidade == "" || Endereco == "") {
+      Alert.alert('Existe campo(s) vazio(s), favor, verificar!!')
+      return
+    }
+    if (cursoSelecionado == 'Selecione um estado' || cursoSelecionado == '') {
+      Alert.alert('Favor, selecionar um estado')
+      return
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     if (item) {
       updateGasto({
         idCampanha: item.idCampanha,
-        nomeDaOng: nomeDaOng,
+        nomeDaOng: nomeDaOng2,
         nomeDaCampanha: nomeDaCampanha,
         descricaoDaCampanha: DescricaoDaCamp,
         telefone: Telefone,
@@ -115,7 +157,7 @@ const CadastroCampanha = ({ route }) => {
     } else {
 
       postGasto({
-        nomeDaOng: nomeDaOng,
+        nomeDaOng: nomeDaOng2,
         nomeDaCampanha: nomeDaCampanha,
         descricaoDaCampanha: DescricaoDaCamp,
         telefone: Telefone,
@@ -165,7 +207,8 @@ const CadastroCampanha = ({ route }) => {
 
           <Input
             label="Nome da Ong - (Campo não editável)"
-            value={nomeDaOng}
+            value={nomeDaOng2}
+            disabled={true}
             onChangeText={(text) => setNomeDaOng(text)}
             left={<TextInput.Icon icon="chevron-right" />}
 
@@ -186,6 +229,7 @@ const CadastroCampanha = ({ route }) => {
             label="Telefone"
             //value={Telefone}
             value={Telefone.toString()}
+            maxLength={8}
             keyboardType="numeric"
             onChangeText={(text) => SetTelefone(text)}
             left={<TextInput.Icon icon="chevron-right" />}

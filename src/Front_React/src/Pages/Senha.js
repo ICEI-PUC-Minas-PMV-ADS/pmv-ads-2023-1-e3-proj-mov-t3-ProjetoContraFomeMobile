@@ -14,7 +14,7 @@ import { useUser } from '../contexts/UseContext';
 const Senha = () => {
 
     const navigation = useNavigation();
-    const {setSigned,setNomeFantasia,setIdCampanha,idCampanha,codigo,setCodigo, cnpj,setCNPJ,senha,setSenha} = useUser();
+    const {setSigned,setNomeFantasia,setIdCampanha,idCampanha,nome,setnomeDaOng,setCodigo,setCNPJ,setSenha,nomeDaOng,nomeFantasia} = useUser();
     const [CNPJ, setcnpj2] = useState('50048784');
     const [Senha, setPassword] = useState('111111');
     //const [teste, setTeste] = useState();
@@ -33,8 +33,6 @@ const Senha = () => {
             setCodigo(res.codigo)
             setCNPJ(res.cnpj)
             setSenha(res.senha)
-          
-   
 
         } else {
 
