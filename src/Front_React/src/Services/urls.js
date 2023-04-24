@@ -1,3 +1,3 @@
-export const BASE_URL = 'http://contrafome-001-site1.dtempurl.com/';
+export const BASE_URL = 'http://joaoeixo3-001-site1.etempurl.com/';
 
 

@@ -175,7 +175,7 @@ const CampanhasCadastradas = ({ route }) => {
             {'\n'}
           </Text>
           <Input style={styles.inputValor}
-            label={pix === 'Não' && cc === 'Não' && fisico === 'Não' ? "Campanha Não aceita mais nenhuim tipo de Doação" : pix === 'Não' && cc === 'Não' && fisico === 'Sim' ? "Campanha Aceita Apenas Doação Física" : "Digite sua Doação"}
+            label={pix === 'Não' && cc === 'Não' && fisico === 'Não' ? "Campanha Encerrada" : pix === 'Não' && cc === 'Não' && fisico === 'Sim' ? "Aceita Apenas Doação Física" : "Digite sua Doação"}
             disabled={pix === 'Não' && cc == 'Não' ? true : false}
             onChangeText={(text) => setValor(text)}
             left={<TextInput.Icon icon="chevron-right" />}
