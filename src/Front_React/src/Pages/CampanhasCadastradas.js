@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Component } from 'react';
 import { StyleSheet, View, FlatList, SafeAreaView, ScrollView, Alert } from 'react-native';
 import Container from '../Componentes/Container';
 import { List, FAB } from 'react-native-paper';
@@ -43,6 +43,7 @@ const CampanhasCadastradas = ({ route }) => {
 
 
   const retornoOi = () => {
+    
 
     if (tipo == '') {
       return Alert.alert('Favor informar a Forma de Doação')
@@ -63,9 +64,14 @@ const CampanhasCadastradas = ({ route }) => {
           text: 'Cancelar',
           onPress: () => {
             console.log('Doacão Cancelada')
+            Alert.alert('Doação Cancelada')
             setTipo('')
+            console.log(valor)
             setValor('')
-            
+          
+
+
+
 
           }
         },
@@ -73,8 +79,11 @@ const CampanhasCadastradas = ({ route }) => {
           text: 'OK',
           onPress: () => {
             console.log('Doacao')
+            Alert.alert('Doação Realizada Com Sucesso')
             setTipo('')
+            console.log(valor)
             setValor('')
+
           },
         }
       ],
@@ -224,9 +233,12 @@ const CampanhasCadastradas = ({ route }) => {
             label={pix === 'Não' && cc === 'Não' && fisico === 'Não' ? "Campanha Encerrada" : pix === 'Não' && cc === 'Não' && fisico === 'Sim' ? "Aceita Apenas Doação Física" : "Digite sua Doação"}
             disabled={pix === 'Não' && cc == 'Não' ? true : false}
             keyboardType="numeric"
-            onChangeText={(text) => setValor(text)}
+            value={valor}
+            onChangeText={text => setValor(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
+
+
           <View style={styles.containerRadio}>
             <View style={pix === 'Não' ? styles.containerRadioItempixn : styles.containerRadioItempixs}>
               <RadioButton
@@ -252,8 +264,9 @@ const CampanhasCadastradas = ({ route }) => {
           <Button mode="contained"
             color={'green'}
             style={pix === 'Não' && cc === 'Não' ? styles.button3 : styles.button2}
-            onPress={retornoOi} 
-            >
+            onPress={retornoOi}
+            //onPress={() => navigation.navigate('CampanhasCadastradas')}
+          >
             DOAR
           </Button>
         </ScrollView>
