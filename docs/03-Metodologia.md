@@ -59,8 +59,8 @@ Essa branch sera trabalhada localmente, enquanto a funcionalidade não estiver p
 
 - Scrum Master: Silvia Cristina de Oliveira Teixeira;
 - Product Owner: João Paulo Faria do Nascimento;
-- Equipe de Desenvolvimento: Silvia Cristina, João Paulo Faria, Bianca Campos, Armando Xavier
-- Equipe de Design: Silvia Cristina, João Paulo Faria, Bianca Campos, Armando Xavier
+- Equipe de Desenvolvimento:João Paulo Faria, Silvia Cristina, Bianca Campos, Armando Xavier
+- Equipe de Design: João Paulo Faria, Silvia Cristina, Bianca Campos, Armando Xavier
 
 ### Processo
 
