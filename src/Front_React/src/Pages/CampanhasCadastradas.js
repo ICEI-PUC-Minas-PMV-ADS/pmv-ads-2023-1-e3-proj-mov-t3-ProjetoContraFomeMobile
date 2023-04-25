@@ -34,13 +34,55 @@ const CampanhasCadastradas = ({ route }) => {
   const [cursos, setcursos] = useState(['Selecione um estado', 'RJ', 'SP', 'PI', 'MG', 'RS', 'MA'])
   const [cursoSelecionado, setCursoSelecionado] = useState([]);
   const { item } = route.params ? route.params : {};
-  const [tipo, setTipo] = useState('gas');
+  const [tipo, setTipo] = useState('');
   const [valor, setValor] = useState('');
   const [radiopix, setradiopix] = useState(true)
-  const retornoOi = () => {
-    console.log('Doar')
-  }
 
+
+
+
+
+  const retornoOi = () => {
+
+    if (tipo == '') {
+      return Alert.alert('Favor informar a Forma de Doação')
+    }
+
+    if (valor == '') {
+
+      return Alert.alert('Favor informar o valor da Doação')
+
+    }
+
+
+    Alert.alert(
+      'Doação',
+      'Confirmação de Doação!!',
+      [
+        {
+          text: 'Cancelar',
+          onPress: () => {
+            console.log('Doacão Cancelada')
+            setTipo('')
+            setValor('')
+            
+
+          }
+        },
+        {
+          text: 'OK',
+          onPress: () => {
+            console.log('Doacao')
+            setTipo('')
+            setValor('')
+          },
+        }
+      ],
+      { cancelable: false },
+    );
+
+
+  }
 
   useEffect(() => {
     if (item) {
@@ -71,6 +113,10 @@ const CampanhasCadastradas = ({ route }) => {
         setfisico('Não');
       }
       setCadastroCod(item.cadastroCod)
+    }
+    if (pix === 'sim') {
+
+
     }
 
   }, [item]);
@@ -177,6 +223,7 @@ const CampanhasCadastradas = ({ route }) => {
           <Input style={styles.inputValor}
             label={pix === 'Não' && cc === 'Não' && fisico === 'Não' ? "Campanha Encerrada" : pix === 'Não' && cc === 'Não' && fisico === 'Sim' ? "Aceita Apenas Doação Física" : "Digite sua Doação"}
             disabled={pix === 'Não' && cc == 'Não' ? true : false}
+            keyboardType="numeric"
             onChangeText={(text) => setValor(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
@@ -184,18 +231,19 @@ const CampanhasCadastradas = ({ route }) => {
             <View style={pix === 'Não' ? styles.containerRadioItempixn : styles.containerRadioItempixs}>
               <RadioButton
                 value="first"
-                status={pix === 'Não' ? 'unchecked' : 'checked'}
+                status={tipo === 'pix' ? 'checked' : 'unchecked'}
                 color={'red'}
-              //onPress={() => setTipo('gas')}
+                onPress={() => setTipo('pix')}
+
               />
               <Text>PIX</Text>
             </View>
             <View style={cc === 'Não' ? styles.containerRadioItemccn : styles.containerRadioItemccs}>
               <RadioButton
                 value="first"
-                status={cc === 'Não' ? 'unchecked' : 'checked'}
+                status={tipo === 'cc' ? 'checked' : 'unchecked'}
                 color={'green'}
-              //onPress={() => setTipo('eta')}
+                onPress={() => setTipo('cc')}
               />
               <Text>Cartão de Crédito</Text>
             </View>
@@ -204,8 +252,8 @@ const CampanhasCadastradas = ({ route }) => {
           <Button mode="contained"
             color={'green'}
             style={pix === 'Não' && cc === 'Não' ? styles.button3 : styles.button2}
-            onPress={retornoOi}
-          >
+            onPress={retornoOi} 
+            >
             DOAR
           </Button>
         </ScrollView>
