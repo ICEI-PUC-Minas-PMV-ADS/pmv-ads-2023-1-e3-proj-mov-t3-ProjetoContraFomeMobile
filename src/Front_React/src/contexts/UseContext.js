@@ -38,6 +38,11 @@ export default function UserProvider({ children }) {
     const [gastos, setGastos] =useState([]);
     const [gastos2, setGastos2] =useState([]);
     const [idCampanha2, setIdCampanha2] = useState('');
+    const [valor, SetValor]=useState('');
+    const [Camp, SetCamp]=useState([]);
+    const [Tipo, setTipoDoacao]=useState('');
+    const [idCodigo,setCodigo2]=useState('');
+
 
     return (
 
@@ -66,7 +71,16 @@ export default function UserProvider({ children }) {
                 gastos2,
                 setGastos2,
                 setIdCampanha2,
-                idCampanha2
+                idCampanha2,
+                valor,
+                SetValor,
+                Camp,
+                SetCamp,
+                Tipo,
+                setTipoDoacao,
+                idCodigo,
+                setCodigo2
+
             
             }}
         >
@@ -78,7 +92,13 @@ export default function UserProvider({ children }) {
 export function useUser() {
     const context = useContext(UserContext);
 
-    const { signed, setSigned, nomeDaOng, setnomeDaOng, nomeFantasia, setNomeFantasia, NomeDaCampanha, setNomeDaCampanha, idCampanha, setIdCampanha, DescricaoDaCamp,setDescricaoDacamp,codigo,setCodigo,cnpj,setCNPJ,senha,setSenha, gastos,setGastos,gastos2,setGastos2,idCampanha2,setIdCampanha2} = context;
+    const {idCodigo,setCodigo2,setTipoDoacao,Tipo,SetCamp,Camp,valor,SetValor,signed, setSigned, nomeDaOng, setnomeDaOng, nomeFantasia, setNomeFantasia, NomeDaCampanha, setNomeDaCampanha, idCampanha, setIdCampanha, DescricaoDaCamp,setDescricaoDacamp,codigo,setCodigo,cnpj,setCNPJ,senha,setSenha, gastos,setGastos,gastos2,setGastos2,idCampanha2,setIdCampanha2} = context;
 
-    return { signed, setSigned, nomeDaOng, setnomeDaOng, nomeFantasia, setNomeFantasia, NomeDaCampanha, setNomeDaCampanha, idCampanha, setIdCampanha,DescricaoDaCamp,setDescricaoDacamp,codigo,setCodigo,cnpj,setCNPJ,senha,setSenha, gastos,setGastos,gastos2,setGastos2,idCampanha2,setIdCampanha2};
+    return {idCodigo,setCodigo2,setTipoDoacao,Tipo,SetCamp,Camp,valor,SetValor,signed, setSigned, nomeDaOng, setnomeDaOng, nomeFantasia, setNomeFantasia, NomeDaCampanha, setNomeDaCampanha, idCampanha, setIdCampanha,DescricaoDaCamp,setDescricaoDacamp,codigo,setCodigo,cnpj,setCNPJ,senha,setSenha, gastos,setGastos,gastos2,setGastos2,idCampanha2,setIdCampanha2}; 
+
+
+
+
+
+
 }

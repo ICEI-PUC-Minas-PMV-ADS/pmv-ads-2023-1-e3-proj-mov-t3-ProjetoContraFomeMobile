@@ -3,7 +3,7 @@ import Header from '../Componentes/Header';
 import Container from '../Componentes/Container';
 import Body from '../Componentes/Body';
 import { List, Text, FAB, Button } from 'react-native-paper';
-import { FlatList, View, StyleSheet, Alert } from 'react-native';
+import { FlatList, View, StyleSheet, Alert, SafeAreaView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { useIsFocused } from '@react-navigation/native';
 import { useUser } from '../contexts/UseContext';
@@ -12,71 +12,55 @@ import Home from './Home';
 
 
 const Gastos = () => {
-  const { setSigned, nomeFantasia,codigo,cnpj,nomeDaOng} = useUser();
+  const { setSigned, nomeFantasia, codigo, cnpj, nomeDaOng, Camp, setGastos, idCampanha, SetCamp, idCodigo, setCodigo } = useUser();
   const navigation = useNavigation();
   const isFocused = useIsFocused();
-
-  //const [gastos, setGastos] = useState([]);
-
   const hand = async () => {
     setSigned(false);
-   
+    //SetCamp([])
 
   };
 
+  useEffect(() => {
+    SetCamp(idCodigo)
 
-  // useEffect(() => {
+  }, []);
 
-  //   getGasto().then((dados) => {
-  //     console.log(dados);
-  //     setGastos(dados);
 
-  //   });
+  const renderItem = ({ item }) => (
 
-  //   console.log('iniciando a tela!');
-  // }, [isFocused]);
+    <List.Item title={"Doação para "+ item.nomeDaCampanha}
+      description={props =><Text{...props} style={styles.descri}>{"Valor da Doação: R$ " + item.valor + " real/reais"}</Text>}
+      left={props =><List.Icon {...props} color={item.tipoDoacao == '2' ? 'green' : 'red'} icon="asterisk" />}
+      right={props => <Text {...props} style={styles.tipo}>{item.tipoDoacao == '1' ? 'PIX' : 'Cartão de Crédito'}</Text>}
+  
+    />
 
-  // const renderItem = ({ item }) => (
-  //   <List.Item
-  //     title={
-  //       'R$' + parseFloat(item.valor).toFixed(2) + ' (R$' + parseFloat(item.preco).toFixed(2) + ')'
-  //     }
-  //     description={item.odometro + ' Km'}
-  //     left={(props) => (
-  //       <List.Icon
-  //         {...props}
-  //         color={item.tipo == 0 ? 'red' : 'green'}
-  //         icon="gas-station"
-  //       />
-  //     )}
-  //     right={(props) => (
-  //       <Text {...props} style={{ alignSelf: 'center' }}>
-  //         {item.data}
-  //       </Text>
-  //     )}
-  //     onPress={() => {
-  //       navigation.navigate('Abastecimento', { item });
-  //     }}
-  //   />
-  // );
-  console.log(cnpj)
+  )
+
   return (
     <Container>
       <Header title={'Olá ' + nomeFantasia} />
-      
       <Body>
 
+        <SafeAreaView style={styles.container}>
+          <FlatList
+            data={Camp}
+            renderItem={renderItem}
+            keyExtractor={item => item.id}
+          />
+        </SafeAreaView>
         {/* <FAB
           icon="plus"
           style={styles.fab}
-          onPress={() => navigation.navigate('Senha')}
+        //onPress={() => navigation.navigate('CadastroCampanha')}
         /> */}
 
         <Button
           style={styles.button}
           mode="outlined"
-          onPress={hand}>
-
+          onPress={hand}
+        >
           <Text>
             voltar!!
           </Text>
@@ -95,6 +79,7 @@ const styles = StyleSheet.create({
     margin: 16,
     right: 0,
     bottom: 0,
+    textAlign: 'center',
   },
   button: {
     marginBottom: 8
@@ -106,7 +91,36 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 70,
     marginBottom: 12
+  },
+  container: {
+    flex: 1,
+  },
+  title: {
+    fontSize: 10,
+  },
+  text: {
+    textAlign: 'center',
+    margin: 10,
+  },
+  tipo: {
+    alignSelf: 'center',
+    fontSize: 10
+  },
+  descri: {
+    fontSize: 12
   }
 });
 
 export default Gastos;
+
+
+
+
+
+
+
+
+
+
+
+

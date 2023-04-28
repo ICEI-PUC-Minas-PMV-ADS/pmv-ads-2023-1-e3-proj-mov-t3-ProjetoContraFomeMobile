@@ -8,6 +8,7 @@ import Input from '../Componentes/input'
 import { useNavigation } from '@react-navigation/native';
 import { Picker } from "@react-native-picker/picker";
 import { useUser } from '../contexts/UseContext';
+import { Doar } from '../Services/AuthServices';
 import {
   RadioButton,
   Text,
@@ -15,6 +16,7 @@ import {
   Button,
   Appbar,
 } from 'react-native-paper';
+
 
 const CampanhasCadastradas = ({ route }) => {
   const { codigo, setCodigo, senha, cnpj, setSigned, setGastos, idCampanha, nomeDaOng, nomeFantasia } = useUser();
@@ -35,63 +37,75 @@ const CampanhasCadastradas = ({ route }) => {
   const [cursoSelecionado, setCursoSelecionado] = useState([]);
   const { item } = route.params ? route.params : {};
   const [tipo, setTipo] = useState('');
-  const [valor, setValor] = useState('');
+  const [valor, setValor] = useState(0);
   const [radiopix, setradiopix] = useState(true)
+  //const [meio, setMeio]=useState('')
+  let meio;
+  let tipoDoacao;
 
 
+  const retornoOi = async () => {
 
+   
 
-
-  const retornoOi = () => {
-    
 
     if (tipo == '') {
       return Alert.alert('Favor informar a Forma de Doação')
     }
 
-    if (valor == '') {
+    if (valor == 0) {
 
       return Alert.alert('Favor informar o valor da Doação')
 
     }
 
+    if (tipo == 'cc') {
+      meio = 'Cartão de Crédito'
+      tipoDoacao = 2
+
+    } else {
+      meio = "PIX"
+      tipoDoacao = 1
+    }
 
     Alert.alert(
       'Doação',
-      'Confirmação de Doação!!',
+      'Deseja Confirmar a Doação de ' + valor + ' ??',
       [
         {
           text: 'Cancelar',
           onPress: () => {
-            console.log('Doacão Cancelada')
-            Alert.alert('Doação Cancelada')
+            Alert.alert('Doação Cancelada Com sucesso')
             setTipo('')
-            console.log(valor)
-            setValor('')
-          
-
-
+            setValor(0)
 
 
           }
         },
         {
           text: 'OK',
-          onPress: () => {
-            console.log('Doacao')
-            Alert.alert('Doação Realizada Com Sucesso')
+          onPress: async () => {
+
+            Alert.alert('Doação de ' + valor + ' real(s) em ' + meio + ' finalizada com sucesso')
             setTipo('')
-            console.log(valor)
-            setValor('')
+            setValor(0)
+
+            let res = await Doar(tipoDoacao, valor, item.idCampanha, item.idCampanha);
 
           },
         }
       ],
       { cancelable: false },
+
     );
 
 
+
+
   }
+
+
+
 
   useEffect(() => {
     if (item) {
@@ -121,7 +135,8 @@ const CampanhasCadastradas = ({ route }) => {
       } else {
         setfisico('Não');
       }
-      setCadastroCod(item.cadastroCod)
+      setCadastroCod(item.idCampanha)
+
     }
     if (pix === 'sim') {
 
@@ -234,6 +249,7 @@ const CampanhasCadastradas = ({ route }) => {
             disabled={pix === 'Não' && cc == 'Não' ? true : false}
             keyboardType="numeric"
             value={valor}
+            maxLength={5}
             onChangeText={text => setValor(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
@@ -246,6 +262,7 @@ const CampanhasCadastradas = ({ route }) => {
                 status={tipo === 'pix' ? 'checked' : 'unchecked'}
                 color={'red'}
                 onPress={() => setTipo('pix')}
+
 
               />
               <Text>PIX</Text>
@@ -265,7 +282,7 @@ const CampanhasCadastradas = ({ route }) => {
             color={'green'}
             style={pix === 'Não' && cc === 'Não' ? styles.button3 : styles.button2}
             onPress={retornoOi}
-            //onPress={() => navigation.navigate('CampanhasCadastradas')}
+
           >
             DOAR
           </Button>

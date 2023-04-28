@@ -83,3 +83,38 @@ export const Atualizar = async () => {
     }
 }
 
+
+export const Doar = async (tipoDoacao, valor, idCampanha, cadastroCampanhaidCampanha) => {
+
+    try {
+        const rest = await API.post(`${BASE_URL}api/Doacao`, {
+            tipoDoacao,
+            valor,
+            idCampanha,
+            cadastroCampanhaidCampanha
+
+
+        });
+        console.log(rest.data)
+        return rest.data
+    } catch (error) {
+        console.log(error);
+        return null;
+    }
+}
+
+
+export const Receber = async (id) => {
+    
+
+    try {
+        const rest = await API.get(`${BASE_URL}api/Doacao/DoacaoPorCampanha/${id}`, {
+        });
+        return rest.data
+    } catch (error) {
+        console.log(error);
+        return null;
+    }
+}
+
+
