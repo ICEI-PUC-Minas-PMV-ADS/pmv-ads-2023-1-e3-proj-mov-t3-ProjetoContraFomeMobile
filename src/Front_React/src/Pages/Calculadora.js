@@ -31,7 +31,7 @@ const Calculadora = () => {
       title={item.nomeDaCampanha}
       description={item.descricaoDaCampanha}
       left={props => <List.Icon {...props} color={'green'} icon="copyright" />}
-      //right={props => <Text {...props} style={{ alignSelf: 'center' }}>{item.estado}</Text>}
+      right={props => <Text {...props} style={styles.tipo}>{'Editar ou Exluir? Click aqui!!'}</Text>}
       
       onPress={() => navigation.navigate('CadastroCampanha',{item})}
     />
@@ -81,6 +81,10 @@ const styles = StyleSheet.create({
   text: {
     textAlign: 'center',
     margin: 10,
+  },
+  tipo: {
+    fontSize: 10,
+    color:'green'
   },
 });
 

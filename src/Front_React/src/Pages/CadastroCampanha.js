@@ -11,11 +11,11 @@ import { Picker } from "@react-native-picker/picker";
 import { useUser } from '../contexts/UseContext';
 import { postGasto, updateGasto, deleteGasto } from '../Services/Gastos.services';
 import { useIsFocused } from '@react-navigation/native';
-import { login } from '../Services/AuthServices';
+import { Receber, login } from '../Services/AuthServices';
 
 
 const CadastroCampanha = ({ route }) => {
-  const { codigo, setCodigo, senha, cnpj, setSigned, setGastos, idCampanha, nomeDaOng, nomeFantasia } = useUser();
+  const { codigo, setCodigo, senha, cnpj, setSigned,setCNPJ,setSenha,setNomeFantasia, setGastos,setIdCampanha,setCodigo2, idCampanha, nomeDaOng, nomeFantasia } = useUser();
   const navigation = useNavigation();
   const [nomeDaOng2, setNomeDaOng] = useState(nomeFantasia);
   const [nomeDaCampanha, setNomeDaCampanha] = useState('');
@@ -44,8 +44,39 @@ const CadastroCampanha = ({ route }) => {
 
   }
 
+  const handAtualizar = async()=>{
+
+    let res = await login(cnpj, senha);
+
+   
+    if (res.cadastroCampanhas.length === 0) {
+        setNomeFantasia(res.nomeFantasia);
+        setIdCampanha(res.cadastroCampanhas)
+        setCodigo(res.codigo)
+        setCNPJ(res.cnpj)
+        setSenha(res.senha)
+        setCodigo2(res.cadastroCampanhas)
+        setGastos(res.cadastroCampanhas);
+        setSigned(true);
 
 
+    } else {
+        let res2 = await Receber(res.cadastroCampanhas[0].idCampanha)
+        setNomeFantasia(res.nomeFantasia);
+        setIdCampanha(res.cadastroCampanhas)
+        setCodigo(res.codigo)
+        setCNPJ(res.cnpj)
+        setSenha(res.senha)
+        setCodigo2(res2)
+        setGastos(res.cadastroCampanhas);
+        setSigned(true);
+
+    }
+  
+
+ 
+
+  }
 
 
   useEffect(() => {
@@ -157,8 +188,8 @@ const CadastroCampanha = ({ route }) => {
   }
   const handleExcluir = () => {
     deleteGasto(item.idCampanha).then(res => {
-      handleLogin()
-
+      handleLogin();
+      handAtualizar();
       navigation.goBack();
     })
   }

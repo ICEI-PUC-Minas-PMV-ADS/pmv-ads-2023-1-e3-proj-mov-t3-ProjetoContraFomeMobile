@@ -24,7 +24,7 @@ const Gastos = () => {
   useEffect(() => {
     SetCamp(idCodigo)
 
-  }, []);
+  }, [idCodigo]);
 
 
   const renderItem = ({ item }) => (
@@ -62,7 +62,7 @@ const Gastos = () => {
           onPress={hand}
         >
           <Text>
-            voltar!!
+            ***SAIR***
           </Text>
 
         </Button>
@@ -82,7 +82,10 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   button: {
-    marginBottom: 8
+    marginBottom: 8,
+    backgroundColor: '#DDD9CD',
+    fontStyle:'bolder'
+
   },
   textHeader: {
     textAlign: 'center'
