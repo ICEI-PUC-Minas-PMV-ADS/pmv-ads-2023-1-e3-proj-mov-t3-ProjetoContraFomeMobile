@@ -2,9 +2,7 @@
 import API from './webApiServices';
 import { BASE_URL } from './urls';
 
-
-
-export const verifica = async (CNPJ,Senha) => {
+export const verifica = async (CNPJ, Senha) => {
     console.log(CNPJ, Senha);
     try {
         const formData = new FormData()
@@ -105,7 +103,7 @@ export const Doar = async (tipoDoacao, valor, idCampanha, cadastroCampanhaidCamp
 
 
 export const Receber = async (id) => {
-    
+
 
     try {
         const rest = await API.get(`${BASE_URL}api/Doacao/DoacaoPorCampanha/${id}`, {

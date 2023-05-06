@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import Route from './src/Navegation/Route';
 import UserProvider from './src/contexts/UseContext';
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <UserProvider>
       < NavigationContainer>
-        <Route/>
+        <Route />
       </NavigationContainer>
     </UserProvider>
 

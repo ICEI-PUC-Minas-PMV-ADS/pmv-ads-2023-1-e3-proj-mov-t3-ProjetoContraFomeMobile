@@ -6,7 +6,6 @@ const Logo = () => {
     return <Image style={styles.Image} source={require('../assets/download.jpg')} />
 
 };
-
 const styles = StyleSheet.create({
     Image: {
         width: 300,
@@ -16,5 +15,4 @@ const styles = StyleSheet.create({
     },
 
 });
-
 export default Logo;

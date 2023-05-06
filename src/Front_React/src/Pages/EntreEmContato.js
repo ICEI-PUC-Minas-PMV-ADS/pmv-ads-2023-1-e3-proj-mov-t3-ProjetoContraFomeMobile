@@ -6,7 +6,6 @@ import Header from '../Componentes/Header';
 import Body from '../Componentes/Body';
 import Input from '../Componentes/input';
 import { TextInput, Button } from 'react-native-paper';
-import { useUser } from '../contexts/UseContext';
 
 
 const Contato = () => {
@@ -22,7 +21,7 @@ const Contato = () => {
             <Body>
                 <ScrollView contentContainerStyle={styles.text}>
                     <View>
-                   
+
                         <Text style={styles.titulo}>
                             Fale Conosco
                         </Text>

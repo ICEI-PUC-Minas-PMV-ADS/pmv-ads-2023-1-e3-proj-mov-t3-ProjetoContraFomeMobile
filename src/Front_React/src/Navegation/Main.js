@@ -1,49 +1,40 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from '../Pages/Home';
-import Senha from '../Pages/Senha';
-import Register from '../Pages/Register';
-import Campanhas from '../Pages/Campanhas'
-import Privacidade from '../Pages/Privacidade';
+import AcessoLogar from '../Pages/AcessoLogar';
+import AcessoRegistrar from '../Pages/AcessoRegistrar';
 import CampanhasCadastradas from '../Pages/CampanhasCadastradas';
+import AcessoDoacao from '../Pages/AcessoDoacao';
+import HomeExterno from '../Pages/HomeExterno';
 
 const Stack = createNativeStackNavigator();
-
 
 const Main = () => {
   return (
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen
-        name="Home"
-        component={Home}
+        name="HomeExterno"
+        component={HomeExterno}
         options={{
           header: () => null,
         }}
       />
       <Stack.Screen
-        name="Senha"
-        component={Senha}
+        name="AcessoLogar"
+        component={AcessoLogar}
         options={{
           header: () => null,
         }}
       />
       <Stack.Screen
-        name="Register"
-        component={Register}
+        name="AcessoRegistrar"
+        component={AcessoRegistrar}
         options={{
           header: () => null,
         }}
       />
       <Stack.Screen
-        name="Campanhas"
-        component={Campanhas}
-        options={{
-          header: () => null,
-        }}
-      />
-      <Stack.Screen
-        name="Privacidade"
-        component={Privacidade}
+        name="AcessoDoacao"
+        component={AcessoDoacao}
         options={{
           header: () => null,
         }}

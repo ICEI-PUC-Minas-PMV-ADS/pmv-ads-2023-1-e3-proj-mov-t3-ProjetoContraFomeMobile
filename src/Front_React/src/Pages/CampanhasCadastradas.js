@@ -1,12 +1,10 @@
-import React, { useEffect, useState, Component } from 'react';
-import { StyleSheet, View, FlatList, SafeAreaView, ScrollView, Alert } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { StyleSheet, View, ScrollView, Alert } from 'react-native';
 import Container from '../Componentes/Container';
-import { List, FAB } from 'react-native-paper';
 import Header from '../Componentes/Header';
 import Body from '../Componentes/Body';
 import Input from '../Componentes/input'
 import { useNavigation } from '@react-navigation/native';
-import { Picker } from "@react-native-picker/picker";
 import { useUser } from '../contexts/UseContext';
 import { Doar } from '../Services/AuthServices';
 import {
@@ -14,12 +12,11 @@ import {
   Text,
   TextInput,
   Button,
-  Appbar,
 } from 'react-native-paper';
 
 
 const CampanhasCadastradas = ({ route }) => {
-  const { codigo, setCodigo, senha, cnpj, setSigned, setGastos, idCampanha, nomeDaOng, nomeFantasia } = useUser();
+  const { nomeFantasia } = useUser();
   const navigation = useNavigation();
   const [nomeDaOng2, setNomeDaOng] = useState(nomeFantasia);
   const [nomeDaCampanha, setNomeDaCampanha] = useState('');
@@ -39,15 +36,10 @@ const CampanhasCadastradas = ({ route }) => {
   const [tipo, setTipo] = useState('');
   const [valor, setValor] = useState(0);
   const [radiopix, setradiopix] = useState(true)
-  //const [meio, setMeio]=useState('')
   let meio;
   let tipoDoacao;
 
-
   const retornoOi = async () => {
-
-   
-
 
     if (tipo == '') {
       return Alert.alert('Favor informar a Forma de Doação')
@@ -99,12 +91,7 @@ const CampanhasCadastradas = ({ route }) => {
 
     );
 
-
-
-
   }
-
-
 
 
   useEffect(() => {
@@ -140,7 +127,6 @@ const CampanhasCadastradas = ({ route }) => {
     }
     if (pix === 'sim') {
 
-
     }
 
   }, [item]);
@@ -174,7 +160,6 @@ const CampanhasCadastradas = ({ route }) => {
           />
           <Input
             label="Telefone"
-            //value={Telefone}
             value={Telefone.toString()}
             disabled={true}
             maxLength={8}

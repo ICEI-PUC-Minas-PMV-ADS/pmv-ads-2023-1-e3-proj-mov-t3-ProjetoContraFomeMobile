@@ -1,17 +1,16 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-const Body = ({children})=>{
+const Body = ({ children }) => {
 
-  return <View style = {styles.container}>{children}</View>
+  return <View style={styles.container}>{children}</View>
 
 };
-
 const styles = StyleSheet.create({
-    container: {
+  container: {
     flex: 1,
     backgroundColor: 'which',
-    margin:8
+    margin: 8
   },
 
 });

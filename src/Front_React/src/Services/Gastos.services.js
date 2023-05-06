@@ -7,7 +7,7 @@ export const getGasto = async (idCampanha) => {
 
     try {
         return await API.get(`${BASE_URL}api/CadastroCampanhas/${Object.values(idCampanha)}`).then(
-          
+
             response => {
                 console.log(response.data)
                 return response.data;

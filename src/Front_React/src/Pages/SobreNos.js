@@ -16,10 +16,10 @@ const Sobre = () => {
                 <ScrollView contentContainerStyle={styles.text}>
                     <View>
 
-                    <Text style={styles.titulo}>
+                        <Text style={styles.titulo}>
                             Sobre Nós
                         </Text>
-                    
+
 
                         <Text>
                             O dia 8 de junho de 2022 ficará marcado para sempre na história do Brasil como a data em que o país soube das catástrofe em curso: 15% da nossa população não tem o direito básico à alimentação, garantido pela nossa Constituição desde 2010.
@@ -39,7 +39,7 @@ const Sobre = () => {
                             Por isso, nós, alunos da PUC MINAS criamos este site e queremos te convocar a fazer parte deste grande movimento de combate à fome em todo o Brasil. Seja você empresa, grupo de comunicação, organização da sociedade civil ou cidadão, entre na plataforma projetocontrafome.com e apoie campanhas, crie projetos, dedique tempo ao voluntariado, invista em ações de combate à fome, mobilize-se.
                         </Text>
                         <Text>
-                        {'\n'}
+                            {'\n'}
 
                         </Text>
 

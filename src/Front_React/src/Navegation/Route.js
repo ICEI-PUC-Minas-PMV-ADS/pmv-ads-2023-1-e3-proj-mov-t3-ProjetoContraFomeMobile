@@ -1,21 +1,19 @@
 import React from "react";
-
-import {useUser} from '../contexts/UseContext';
+import { useUser } from '../contexts/UseContext';
 import Main from '../Navegation/Main';
-import Auth from '../Navegation/Auth';
-import Main2 from "./Main2";
+import Autenticado from "./Autenticado";
 
-const Route = () =>{
+const Route = () => {
 
-    const {signed} = useUser();
+    const { signed } = useUser();
 
     return (
         <>
-        {
-            signed
-            ?<Main2/>
-            :<Main/>
-        }
+            {
+                signed
+                    ? <Autenticado />
+                    : <Main />
+            }
         </>
     )
 }
