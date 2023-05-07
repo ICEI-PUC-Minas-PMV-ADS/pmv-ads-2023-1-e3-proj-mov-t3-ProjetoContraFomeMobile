@@ -38,7 +38,7 @@
 
 <img src="./img/Testes_imagem/Login.PNG" width="300">
 
-### Usuário logado - (Caso de Sucesso)
+### Usuário logado - (Caso de Sucesso - TELA PRINCIPAL)
 <img src="./img/Testes_imagem/CasoDeSucesso.PNG" width="300">
 
 ## Teste2 - Realizar Login  (Caso de Insucesso)
