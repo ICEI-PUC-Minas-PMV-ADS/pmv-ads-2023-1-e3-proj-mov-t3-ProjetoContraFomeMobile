@@ -95,7 +95,7 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 # Teste de gerenciamento de campanhas 1(Sucesso) e 2(Insucesso):
   
 ### Instituicao logada (Escolher campanha) - Caso de Sucesso)
-|Caso de Teste CT-03: |Realizar gerenciamento campanhas cadastradas.| 
+|Registro de Caso de Teste:  |Realizar gerenciamento campanhas cadastradas.| 
 | --- | --- |
 | Objetivo do teste |Verificar se a instituição cadastrada é capaz de realizar o gerenciamento de campanhas para arrecadação. |
 | Passos|1.Acessar o aplicativo através do celular. 2.Realizar o login no sistema com o usuário desejado. 3.Escolher uma campanha no qual pretende gerenciar. 4.Aparecera os detalhes da campanha no qual pretende-se editar.  |
@@ -104,7 +104,16 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 <img src="./img/Testes_imagem/GerenciarCampanha2.jpeg" width="300">
 <img src="./img/Testes_imagem/doar.jpeg" width="300">
 
+### Instituicao logada (Escolher campanha) - Caso de Insucesso)
 
+|Registro de Caso de Teste:  |Realizar gerenciamento campanhas cadastradas.| 
+| --- | --- |
+| Objetivo do teste |Verificar se a instituição cadastrada é capaz de realizar o gerenciamento de campanhas para arrecadação. |
+| Passos|1.Acessar o aplicativo através do celular. 2.Realizar o login no sistema com o usuário desejado. 3.Escolher uma campanha no qual pretende gerenciar. 4.Aparecera os detalhes da campanha no qual pretende-se editar.  |
+| Caso de Insucesso | Em caso de insucesso, se nenhum dos campos forem preenchidos, aparecera uma mensagem de alerta, informando o erro. Com isto, impede que o usuario realize a doacao antes de retificar os mesmos.|
+<img src="./img/Testes_imagem/GerenciarCampanha1.jpeg" width="300">
+<img src="./img/Testes_imagem/GerenciarCampanha2.jpeg" width="300">
+<img src="./img/Testes_imagem/InsucessoDoar.jpeg" width="300">
 
 
 
