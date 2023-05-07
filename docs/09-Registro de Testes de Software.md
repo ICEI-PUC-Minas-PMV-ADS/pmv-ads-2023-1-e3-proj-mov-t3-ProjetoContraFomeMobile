@@ -90,9 +90,9 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 <img src="./img/Testes_imagem/CasoDeInsucessoErroNaSenha.PNG" width="300">
 
 
-# TESTE DE CADASTRAR E EDITAR CAMPANHAS
+# TESTE DE GERENCIAMENTO DE CAMPANHAS CADASTRADAS
 
-# Teste de Cadastrar e Editar Campanhas 1(Sucesso) e 2(Insucesso):
+# Teste de gerenciamento de campanhas 1(Sucesso) e 2(Insucesso):
   
 ### Instituicao logada (Escolher campanha) - Caso de Sucesso)
 |Caso de Teste CT-03: |Realizar gerenciamento campanhas cadastradas.| 
