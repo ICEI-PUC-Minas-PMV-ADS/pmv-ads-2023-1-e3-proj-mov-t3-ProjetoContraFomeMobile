@@ -8,9 +8,19 @@
 <img src="./img/Testes_imagem/Home.PNG" width="300">
 
 ### Navegabilidade - sobre nós
+|Registro de caso de teste: |Permite mostrar porque surgiu o aplicativo| 
+| --- | --- |
+| Objetivo do teste |navegabilidade |1.Acessar o aplicativo através do celular. 2. Após acesso, a o sobre nos deverá ficar disponível no icone sobre nos|
+| Caso de sucesso |Em caso de êxito, o sobre nos deverá aparecer na tela para que o usuário possa realizar consultas|
 <img src="./img/Testes_imagem/SobreNos.PNG" width="300">
 
 ### Navegabilidade - Política de Privacidade
+|Registro de caso de teste: |Realizar acesso à política de privacidade.| 
+| --- | --- |
+| Objetivo do teste |O sistema deverá disponibilizar para os usuários a política de privacidade do tratamento de dados pessoais.|
+| Passos|1.Acessar o aplicativo através do celular. 2. Após acesso, a política de privacidade deverá ficar disponível no icone Privacidade|
+| Caso de sucesso |Em caso de êxito, a política de privacidade deverá aparecer na tela para que o usuário possa realizar consultas|
+
 <img src="./img/Testes_imagem/Privacidade.PNG" width="300">
 
 ### Navegabilidade - Termo de Uso
@@ -28,7 +38,7 @@
 # Teste de Login 1(Sucesso) e 2(Insucesso):
   
 ## Teste 1 - Realizar Login - (Caso de Sucesso)
-| Caso de Teste CT-01: | Realizar login para acesso e/ou criação de contas das instituições.| 
+| Registro de Caso de Teste : | Realizar login para acesso e/ou criação de contas das instituições.| 
 | --- | --- |
 | Objetivo do teste | Verificar se o usuário instituição consegue se cadastrar e/ou acessar o ambiente do sistema.|
 | Passos(Criação do Cadastro) | 1. Acessar o aplicativo através do celular. 2. Na tela de login/cadastro, realizar o cadastro no botão destinado para o cadastro. 3. O usuário será direcionado para o formulário de cadastro. 4. Preencher os campos obrigatórios. 5. Clicar em "Cadastrar". |
