@@ -54,6 +54,8 @@
 ### Usuário Não Logado - (CNPJ Cadastrado) - Caso de Insucesso)
 <img src="./img/Testes_imagem/cnpjCadastrado.jpeg" width="300">
 
+### Usuário Não Logado -  Ao inserir alguma informação inválida no formulário de cadastro, o sistema deverá informar que os dados informados são inválidos. - (Caso de Insucesso)
+<img src="./img/Testes_imagem/dadosInformadosInvalidos.jpeg" width="300">
 
 ### Usuário Não Logado - (Senha inválida) - Caso de Insucesso)
 <img src="./img/Testes_imagem/CasoDeInsucessoErroNaSenha.PNG" width="300">
