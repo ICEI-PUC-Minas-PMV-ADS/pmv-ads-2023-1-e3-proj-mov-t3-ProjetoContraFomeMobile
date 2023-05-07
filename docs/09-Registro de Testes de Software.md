@@ -148,6 +148,7 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 | Passos|1.Acessar o aplicativo através do celular. 2.Clicar em "Clique aqui e faca a sua doacao". 3.Escolher uma campanha no qual pretende doar. 4.Aparecera os detalhes da campanha no qual pretende-se editar.  |
 | Caso de sucesso | Em caso de êxito, grava-se no banco de dados a campanha gerenciada .|
 | Caso de Insucesso | Em caso de insucesso, se nenhum dos campos forem preenchidos, aparecera uma mensagem de alerta, informando o erro. Com isto, impede que o usuario realize a doacao antes de retificar os mesmos.|
+| Caso de Insucesso | Em caso de insucesso se o usuario desejar cancelar a doacao. |
 <img src="./img/Testes_imagem/doar0.jpeg" width="300"> 
 <img src="./img/Testes_imagem/g1.jpeg" width="300"> 
 <img src="./img/Testes_imagem/doar.jpeg" width="300">
