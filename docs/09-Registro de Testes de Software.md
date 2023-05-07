@@ -48,10 +48,10 @@
 | Caso de insucesso Acesso às Contas (Restrições) |1. Ao inserir uma credencial não existente ou uma senha inválida o sistema deverá retornar uma mensagem de erro informando, “usuário ou senha inválidos”. 2. Ao deixar um campo sem preenchimento, o sistema deverá retornar, “usuário ou senha não informados”.  |
 <img src="./img/Testes_imagem/Login.PNG" width="300">
 
-### Usuário Não Logadado - (CNPJ inválido) - Caso de Insucesso)
+### Usuário Não Logado - (CNPJ inválido) - Caso de Insucesso)
 <img src="./img/Testes_imagem/CasoDeInsucessoErroNoCNPJ.PNG" width="300">
 
-### Usuário Não Logadado - (Senha inválida) - Caso de Insucesso)
+### Usuário Não Logado - (Senha inválida) - Caso de Insucesso)
 <img src="./img/Testes_imagem/CasoDeInsucessoErroNaSenha.PNG" width="300">
 
 
