@@ -57,6 +57,10 @@
 ### Usuário Não Logado -  Ao inserir alguma informação inválida no formulário de cadastro, o sistema deverá informar que os dados informados são inválidos. - (Caso de Insucesso)
 <img src="./img/Testes_imagem/dadosInformadosInvalidos.jpeg" width="300">
 
+### Usuário Não Logado -  Ao deixar algum campo sem preenchimento no formulário de cadastro, o sistema não deverá permitir a continuidade do cadastro e exibir alerta, caso algum campo seja de preenchimento obrigatório.
+<img src="./img/Testes_imagem/InsucessoCampoVazio.jpeg" width="300">
+
+
 ### Usuário Não Logado - (Senha inválida) - Caso de Insucesso)
 <img src="./img/Testes_imagem/CasoDeInsucessoErroNaSenha.PNG" width="300">
 
