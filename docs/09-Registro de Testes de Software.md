@@ -102,6 +102,8 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 | Caso de sucesso | Em caso de êxito, grava-se no banco de dados a campanha gerenciada .|
 <img src="./img/Testes_imagem/GerenciarCampanha1.jpeg" width="300">
 <img src="./img/Testes_imagem/GerenciarCampanha2.jpeg" width="300">
+<img src="./img/Testes_imagem/cadastro1.jpeg" width="300">
+
 
 
 
