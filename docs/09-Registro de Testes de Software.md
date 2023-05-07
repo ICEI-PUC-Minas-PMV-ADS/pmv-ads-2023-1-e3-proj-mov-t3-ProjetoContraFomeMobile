@@ -90,7 +90,7 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 <img src="./img/Testes_imagem/CasoDeInsucessoErroNaSenha.PNG" width="300">
 
 
-# TESTE DE GERENCIAMENTO DE CAMPANHAS CADASTRADAS
+# TESTE DE GERENCIAMENTO DE CAMPANHAS CADASTRADAS E CADASTRO DE CAMPANHAS
 
 # Teste de gerenciamento de campanhas 1(Sucesso) e 2(Insucesso):
   
@@ -115,6 +115,19 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 <img src="./img/Testes_imagem/GerenciarCampanha2.jpeg" width="300">
 <img src="./img/Testes_imagem/insucessoDoar.jpeg" width="300">
 
+# Teste de cadastro de campanhas 1(Sucesso) e 2(Insucesso):
+
+| Registro de Caso de Teste: |Realizar cadastro de campanhas| 
+| --- | --- |
+| Objetivo do teste |Verificar se a instituição cadastrada é capaz de realizar o gerenciamento das campanhas que foram criadas por ela.|
+| Passos|1.Acessar o aplicativo através do celular. 2.Realizar o login no sistema com o usuário desejado. 3.Na tela principal, clicar no botão referente às campanhas cadastradas pela instituição logada. 4.Deverá abrir uma tela de gerenciamento, em formato de tabela, das campanhas cadastradas. 5.Clicar na opção desejada de gerenciamento (Editar ou Deletar). 6.Ao clicar em editar será possível realizar o gerenciamento das doações. |
+| Caso de sucesso |Em caso de êxito, o usuário deverá ser capaz de realizar o gerenciamento das doações para cada campanha de forma individual.  |
+| Caso de insucesso - (Restrições) |1.Ao inserir no formulário os dados, se a campanha já estiver cadastrada deverá apresentar uma mensagem de erro informando que a campanha já foi cadastrada. 2.Ao inserir no formulário o CNPJ, CPF ou CEP o sistema deverá puxar os dados e inserir automaticamente. 3.Ser obrigatórios o preenchimento dos campos . 4. Se a campanha já estiver registrada, deverá retornar automaticamente para a tela de login e redefinição de senha. 5.A tabela de campanhas ativas será por ordem de campanhas recentes para as mais antigas. |
+
+<img src="./img/Testes_imagem/GerenciarCampanha1.jpeg" width="300">
+<img src="./img/Testes_imagem/GerenciarCampanha2.jpeg" width="300">
+<img src="./img/Testes_imagem/cadastro1.jpeg" width="300">
+
 
 
 
@@ -126,12 +139,6 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 # Teste de gerenciar doacoes 1(Sucesso) e 2(Insucesso):
 
 
-
-
-
-# TESTE DE CADASTRO DE CAMPANHAS
-
-# Teste de cadastro de campanhas 1(Sucesso) e 2(Insucesso):
   
   
 
