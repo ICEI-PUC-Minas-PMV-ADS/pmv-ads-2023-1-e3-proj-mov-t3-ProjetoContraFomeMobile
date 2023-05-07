@@ -99,3 +99,10 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 
 
 
+
+# TESTE DE GERENCIAR DOACOES
+
+# Teste de gerenciar doacoes 1(Sucesso) e 2(Insucesso):
+  
+
+
