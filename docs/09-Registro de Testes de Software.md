@@ -126,6 +126,11 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 
 <img src="./img/Testes_imagem/cadastro2.jpeg" width="300">
 <img src="./img/Testes_imagem/cadastro1.jpeg" width="300">
+<img src="./img/Testes_imagem/cadastro3.jpeg" width="300">
+<img src="./img/Testes_imagem/cadastro4.jpeg" width="300">
+<img src="./img/Testes_imagem/cadastro5.jpeg" width="300">
+<img src="./img/Testes_imagem/cadastro6.jpeg" width="300">
+
 
 
 
