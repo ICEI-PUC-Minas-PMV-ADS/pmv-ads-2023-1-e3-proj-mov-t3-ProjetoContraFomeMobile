@@ -73,10 +73,10 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 | Caso de insucesso Acesso às Contas (Restrições) |1. Ao inserir uma credencial não existente ou uma senha inválida o sistema deverá retornar uma mensagem de erro informando, “usuário ou senha inválidos”.  |
 <img src="./img/Testes_imagem/Login.PNG" width="300">
 
-### Usuário Não Logado - (CNPJ inválido) - Caso de Insucesso)
+### Usuário Não Logado - (CNPJ inválido) - (Caso de Insucesso)
 <img src="./img/Testes_imagem/CasoDeInsucessoErroNoCNPJ.PNG" width="300">
 
-### Usuário Não Logado - (CNPJ Cadastrado) - Caso de Insucesso)
+### Usuário Não Logado - (CNPJ Cadastrado) - (Caso de Insucesso)
 <img src="./img/Testes_imagem/cnpjCadastrado.jpeg" width="300">
 
 ### Usuário Não Logado -  Ao inserir alguma informação inválida no formulário de cadastro, o sistema deverá informar que os dados informados são inválidos. - (Caso de Insucesso)
@@ -86,7 +86,7 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 <img src="./img/Testes_imagem/InsucessoCampoVazio.jpeg" width="300">
 
 
-### Usuário Não Logado - (Senha inválida) - Caso de Insucesso)
+### Usuário Não Logado - (Senha inválida) - (Caso de Insucesso)
 <img src="./img/Testes_imagem/CasoDeInsucessoErroNaSenha.PNG" width="300">
 
 
@@ -94,7 +94,7 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 
 # Teste de gerenciamento de campanhas 1(Sucesso) e 2(Insucesso):
   
-### Instituicao logada (Escolher campanha) - Caso de Sucesso)
+### Instituicao logada (Escolher campanha) - (Caso de Sucesso)
 |Registro de Caso de Teste:  |Realizar gerenciamento campanhas cadastradas.| 
 | --- | --- |
 | Objetivo do teste |Verificar se a instituição cadastrada é capaz de realizar o gerenciamento de campanhas para arrecadação. |
@@ -104,7 +104,7 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 <img src="./img/Testes_imagem/GerenciarCampanha2.jpeg" width="300">
 <img src="./img/Testes_imagem/doar.jpeg" width="300">
 
-### Instituicao logada (Escolher campanha) - Caso de Insucesso)
+### Instituicao logada (Escolher campanha) - (Caso de Insucesso)
 
 |Registro de Caso de Teste:  |Realizar gerenciamento campanhas cadastradas.| 
 | --- | --- |
@@ -124,6 +124,15 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 # TESTE DE GERENCIAR DOACOES
 
 # Teste de gerenciar doacoes 1(Sucesso) e 2(Insucesso):
+
+
+
+
+
+# TESTE DE CADASTRO DE CAMPANHAS
+
+# Teste de cadastro de campanhas 1(Sucesso) e 2(Insucesso):
+  
   
 
 
