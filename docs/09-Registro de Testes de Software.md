@@ -14,7 +14,8 @@
 ### Navegabilidade - sobre nós
 |Registro de caso de teste: |Permite mostrar porque surgiu o aplicativo| 
 | --- | --- |
-| Objetivo do teste |navegabilidade |1.Acessar o aplicativo através do celular. 2. Após acesso, o sobre nos deverá ficar disponível no icone sobre nos|
+| Objetivo do teste |navegabilidade |
+|Passos| ̇#1.Acessar o aplicativo através do celular. 2. Após acesso, o sobre nos deverá ficar disponível no icone sobre nos|
 | Caso de sucesso |Em caso de êxito, o sobre nos deverá aparecer na tela para que o usuário possa realizar consultas|
 <img src="./img/Testes_imagem/SobreNos.PNG" width="300">
 
