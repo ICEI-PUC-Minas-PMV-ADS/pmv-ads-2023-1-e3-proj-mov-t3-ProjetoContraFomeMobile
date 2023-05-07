@@ -32,9 +32,9 @@
 ### Navegabilidade - Termo de Uso
 Registro de caso de teste: |Realizar acesso ao termo de uso.| 
 | --- | --- |
-| Objetivo do teste |O sistema deverá disponibilizar para os usuários a política de privacidade do tratamento de dados pessoais.|
-| Passos|1.Acessar o aplicativo através do celular. 2. Após acesso, a política de privacidade deverá ficar disponível no icone Privacidade|
-| Caso de sucesso |Em caso de êxito, a política de privacidade deverá aparecer na tela para que o usuário possa realizar consultas|
+| Objetivo do teste |O sistema deverá disponibilizar para os usuários a política de termo de uso.|
+| Passos|1.Acessar o aplicativo através do celular. 2. Após acesso, a política de termo de uso deverá ficar disponível no icone termo de uso|
+| Caso de sucesso |Em caso de êxito, a política de termo de uso  deverá aparecer na tela para que o usuário possa realizar consultas|
 
 <img src="./img/Testes_imagem/Termo.PNG" width="300">
 
@@ -42,7 +42,7 @@ Registro de caso de teste: |Realizar acesso ao termo de uso.|
 Registro de caso de teste: |Realizar acesso à política de Fale Conosco.| 
 | --- | --- |
 | Objetivo do teste |O sistema deverá disponibilizar para os usuários a possibilidade de realizar contato com os desenvolvedores do site|
-| Passos|1.Acessar o aplicativo através do celular. 2. Após acesso, o fale conosco deverá ficar disponível no icone parecido com um clip|
+| Passos|1.Acessar o aplicativo através do celular. 2. Após acesso, o fale conosco deverá ficar disponível no icone parecido com um telefone|
 | Caso de sucesso |Em caso de êxito,  o fale conosco deverá aparecer na tela para que o usuário possa preencher o formulario de contato e em seguida, realizar o envio do mesmo|
 
 <img src="./img/Testes_imagem/FaleConosco.PNG" width="300">
