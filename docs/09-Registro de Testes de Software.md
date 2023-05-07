@@ -42,6 +42,8 @@
 <img src="./img/Testes_imagem/CasoDeSucesso.PNG" width="300">
 
 ## Teste2 - Realizar Login  (Caso de Insucesso)
+ Caso de Teste CT-02: | Realizar login para acesso e/ou criação de contas das instituições.| 
+| --- | --- |
 | Caso de insucesso - Criação do Cadastro (Restrições) |1. Ao inserir uma credencial de acesso já cadastrada o sistema deverá retornar uma mensagem de erro informando, “usuário já cadastrado”. 2. Ao inserir alguma informação inválida no formulário de cadastro, o sistema deverá informar que os dados informados são inválidos. 3. Ao deixar algum campo sem preenchimento no formulário de cadastro, o sistema não deverá permitir a continuidade do cadastro e exibir alerta, caso algum campo seja de preenchimento obrigatório.|
 | Caso de insucesso Acesso às Contas (Restrições) |1. Ao inserir uma credencial não existente ou uma senha inválida o sistema deverá retornar uma mensagem de erro informando, “usuário ou senha inválidos”. 2. Ao deixar um campo sem preenchimento, o sistema deverá retornar, “usuário ou senha não informados”.  |
 <img src="./img/Testes_imagem/Login.PNG" width="300">
