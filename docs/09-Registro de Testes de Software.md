@@ -100,8 +100,8 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 | Objetivo do teste |Verificar se a instituição cadastrada é capaz de realizar o gerenciamento de campanhas para arrecadação. |
 | Passos|1.Acessar o aplicativo através do celular. 2.Realizar o login no sistema com o usuário desejado. 3.Escolher uma campanha no qual pretende gerenciar. 4.Aparecera os detalhes da campanha no qual pretende-se editar.  |
 | Caso de sucesso | Em caso de êxito, devera ser permitido que instituição gerencie as campanhas .|
-<img src="./img/Testes_imagem/GerenciarCampanha1.PNG" width="300">
-<img src="./img/Testes_imagem/GerenciarCampanha2.PNG" width="300">
+<img src="./img/Testes_imagem/GerenciarCampanha1.jpeg" width="300">
+<img src="./img/Testes_imagem/GerenciarCampanha2.jpeg" width="300">
 
 
 
