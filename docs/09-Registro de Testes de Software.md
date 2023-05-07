@@ -90,7 +90,10 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 <img src="./img/Testes_imagem/CasoDeInsucessoErroNaSenha.PNG" width="300">
 
 
+# TESTE DE CADASTRAR E EDITAR CAMPANHAS
 
+# Teste de Cadastrar e Editar Campanhas 1(Sucesso) e 2(Insucesso):
+  
 
 
 
