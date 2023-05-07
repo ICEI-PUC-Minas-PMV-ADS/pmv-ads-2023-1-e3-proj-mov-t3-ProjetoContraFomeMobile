@@ -124,8 +124,7 @@ Registro de caso de teste: |Realizar acesso à política de Fale Conosco.|
 | Caso de sucesso |Em caso de êxito, o usuário deverá ser capaz de realizar o gerenciamento das doações para cada campanha de forma individual.  |
 | Caso de insucesso - (Restrições) |1.Ao inserir no formulário os dados, se a campanha já estiver cadastrada deverá apresentar uma mensagem de erro informando que a campanha já foi cadastrada. 2.Ao inserir no formulário o CNPJ, CPF ou CEP o sistema deverá puxar os dados e inserir automaticamente. 3.Ser obrigatórios o preenchimento dos campos . 4. Se a campanha já estiver registrada, deverá retornar automaticamente para a tela de login e redefinição de senha. 5.A tabela de campanhas ativas será por ordem de campanhas recentes para as mais antigas. |
 
-<img src="./img/Testes_imagem/GerenciarCampanha1.jpeg" width="300">
-<img src="./img/Testes_imagem/GerenciarCampanha2.jpeg" width="300">
+<img src="./img/Testes_imagem/cadastro2.jpeg" width="300">
 <img src="./img/Testes_imagem/cadastro1.jpeg" width="300">
 
 
