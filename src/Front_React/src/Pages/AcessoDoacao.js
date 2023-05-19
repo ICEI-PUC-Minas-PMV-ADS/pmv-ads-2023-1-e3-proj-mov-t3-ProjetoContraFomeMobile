@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { StyleSheet, FlatList, SafeAreaView } from 'react-native';
 import Container from '../Componentes/Container';
-import { List } from 'react-native-paper';
+import { List, Card, IconButton, Text } from 'react-native-paper';
 import { useUser } from '../contexts/UseContext';
 
 const AcessoDoacao = () => {
@@ -12,14 +12,15 @@ const AcessoDoacao = () => {
     const { gastos2 } = useUser();
 
     const renderItem = ({ item }) => (
-
-        <List.Item
-            title={`Nome da Ong: ` + item.nomeDaOng}
-            description={`Nome da Campanha: ` + item.nomeDaCampanha}
-            left={props => <List.Icon {...props} color={'green'} icon="copyright" />}
-
-            onPress={() => navigation.navigate('CampanhasCadastradas', { item })}
-        />
+        <Card onPress={() => navigation.navigate('CampanhasCadastradas', { item })}>
+            <Card.Title style={styles.card}
+                title={<Text style={styles.letra} >{`Ong: ` + item.nomeDaOng}</Text>}
+                subtitle={<Text style={styles.sub}  >{`Campanha: ` + item.nomeDaCampanha} </Text>} 
+                left={(props) => <List.Icon style={styles.camp} {...props} color={'green'} icon="copyright" />}
+                right={(props) => <IconButton {...props} icon="cursor-default-click" />}
+               
+            />
+        </Card>
 
     );
 
@@ -59,6 +60,34 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         margin: 10,
     },
+    card: {
+        height: 120,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#DFE9F5',
+        borderRadius: 10,
+        shadowColor: 'black',
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 1,
+        shadowRadius: 10,
+        elevation: 10,
+        flexDirection: 'row',
+        paddingLeft: 16,
+        paddingRight: 14,
+        marginTop: 8,
+        marginBottom: 8,
+        marginLeft: 5,
+        marginRight: 5,
+
+
+    },
+    letra: {
+        fontSize: 19,
+    },
+    sub: {
+        fontSize: 11,
+    },
+
 
 
 

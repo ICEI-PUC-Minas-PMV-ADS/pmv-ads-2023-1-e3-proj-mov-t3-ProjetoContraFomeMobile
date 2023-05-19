@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { Button, Headline } from 'react-native-paper';
 import Container from '../Componentes/Container';
 import Body from '../Componentes/Body';
 import Logo from '../Componentes/Logo';
+import ModalComponent from '../Componentes/Modal/index'
 import { useNavigation } from '@react-navigation/native';
 import { useUser } from '../contexts/UseContext';
 import { Atualizar } from '../Services/AuthServices';
@@ -11,13 +12,29 @@ import { Atualizar } from '../Services/AuthServices';
 const HomeExterno_Botoes = () => {
 
     const navigation = useNavigation();
-    const { setGastos2 } = useUser();
+    const { setGastos2, acceptTerm } = useUser();
+    const [showModal, setShowModal] = useState(false)
+
+    useEffect(() => {        
+        hand()
+        showAccepTerms()
+    },[])
 
     const hand = async () => {
         let res = await Atualizar();
         setGastos2(res);
     }
-    hand()
+
+    const showAccepTerms = () => {
+        if(!acceptTerm) {
+            setShowModal(true)
+        }
+    }
+
+    const close = () => {
+        setShowModal(false)
+    }
+
     return (
         <Container>
             <View style={styles.header}>
@@ -32,7 +49,7 @@ const HomeExterno_Botoes = () => {
                 <Button
                     style={styles.button}
                     mode="contained"
-                    onPress={() => navigation.navigate('AcessoDoacao')}>
+                    onPress={() =>  navigation.navigate('AcessoDoacao')}>
                     <Text style={styles.buttonTextStyle}>
                         CLIQUE AQUI E FAÇA SUA DOAÇÃO!!
                     </Text>
@@ -59,6 +76,8 @@ const HomeExterno_Botoes = () => {
 
                 </Button>
             </Body>
+
+            <ModalComponent showModal={showModal} closeModal={close} />
         </Container>
     );
 };
@@ -89,8 +108,7 @@ const styles = StyleSheet.create({
         marginBottom: 4,
         marginLeft: 10,
         fontWeight: 'bold',
-    },
-
+    }
 });
 
 export default HomeExterno_Botoes;

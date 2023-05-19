@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, View, ScrollView, Alert } from 'react-native';
-import { Appbar, TextInput, Button } from 'react-native-paper';
+import { Appbar, TextInput, Button, Checkbox, Text } from 'react-native-paper';
 import Container from '../Componentes/Container';
 import Header from '../Componentes/Header';
 import Body from '../Componentes/Body';
@@ -13,6 +13,7 @@ import { Receber, login } from '../Services/AuthServices';
 
 
 const GerenciamentoCampanha = ({ route }) => {
+  const [showError, setShowError] = useState(false)
   const { codigo, setCodigo, senha, cnpj, setSigned, setCNPJ, setSenha, setNomeFantasia, setGastos, setIdCampanha, setCodigo2, nomeFantasia } = useUser();
   const navigation = useNavigation();
   const [nomeDaOng2, setNomeDaOng] = useState(nomeFantasia);
@@ -23,13 +24,16 @@ const GerenciamentoCampanha = ({ route }) => {
   const [Endereco, setEndereco] = useState('');
   const [Pais, setPais] = useState('');
   const [Cidade, setCidade] = useState('');
-  const [pix, setpix] = useState('');
-  const [cc, setcc] = useState('');
-  const [fisico, setfisico] = useState('');
+  const [pix, setpix] = useState(false);
+  const [cc, setcc] = useState(false);
+  const [fisico, setfisico] = useState(false);
   const [cadastroCod, setCadastroCod] = useState('');
   const [cursos] = useState(['Selecione um estado', 'RJ', 'SP', 'PI', 'MG', 'RS', 'MA'])
   const [cursoSelecionado, setCursoSelecionado] = useState([]);
   const { item } = route.params ? route.params : {};
+
+
+  
 
 
   const handleLogin = async () => {
@@ -91,20 +95,20 @@ const GerenciamentoCampanha = ({ route }) => {
       setPais(item.pais);
 
 
-      if (item.pix === true) {
-        setpix('Sim');
+      if (item.pix === false) {
+        setpix(false);
       } else {
-        setpix('Não');
+        setpix(true);
       }
-      if (item.cartaoDeCredito === true) {
-        setcc('Sim');
+      if (item.cartaoDeCredito === false) {
+        setcc(false);
       } else {
-        setcc('Não');
+        setcc(true);
       }
-      if (item.receberFisico === true) {
-        setfisico('Sim');
+      if (item.receberFisico === false){
+        setfisico(false);
       } else {
-        setfisico('Não');
+        setfisico(true);
       }
       setCadastroCod(item.cadastroCod)
 
@@ -145,9 +149,9 @@ const GerenciamentoCampanha = ({ route }) => {
         cidade: Cidade,
         estado: cursoSelecionado,
         pais: Pais,
-        pix: pix == 'Sim' ? true : false,
-        cartaoDeCredito: cc == 'Sim' ? true : false,
-        receberFisico: fisico == 'Sim' ? true : false,
+        pix: pix == false ? false : true,
+        cartaoDeCredito: cc == false ? false : true,
+        receberFisico: fisico == false ? false : true,
         cadastroCodigo: item.cadastroCodigo
 
       }).then(res => {
@@ -171,9 +175,9 @@ const GerenciamentoCampanha = ({ route }) => {
         cidade: Cidade,
         estado: cursoSelecionado,
         pais: Pais,
-        pix: pix == 'Sim' ? true : false,
-        cartaoDeCredito: cc == 'Sim' ? true : false,
-        receberFisico: fisico == 'Sim' ? true : false,
+        pix: pix == false ? false : true,
+        cartaoDeCredito: cc == false ? false : true,
+        receberFisico: fisico == false ? false : true,
         cadastroCodigo: codigo,
 
       }).then(res => {
@@ -194,15 +198,17 @@ const GerenciamentoCampanha = ({ route }) => {
 
   return (
 
+
+
     <Container>
-      <Header title={'Cadastrar/Editar Campanha'} goBack={() => navigation.goBack()}>
-        <Appbar.Action icon="check" onPress={handleSalvar} />
+      <Header title={nomeDaCampanha == "" ? 'Cadastrar Nova Campanha' : 'Editar Campanha'} goBack={() => navigation.goBack()}>
+        {/* <Appbar.Action icon="check" onPress={handleSalvar} />
         {
           item &&
           <Appbar.Action icon="trash-can" onPress={handleExcluir} />
 
 
-        }
+        } */}
 
       </Header>
 
@@ -283,6 +289,42 @@ const GerenciamentoCampanha = ({ route }) => {
 
 
           />
+
+          <View style={styles.containerTerms}>
+            <Checkbox
+              status={pix ? 'checked' : 'unchecked'}
+              onPress={() => {
+                setpix(!pix)
+              }}
+            />
+            <Text>
+              Aceita PIX?
+            </Text>
+          </View>
+          <View style={styles.containerTerms}>
+            <Checkbox
+              status={cc ? 'checked' : 'unchecked'}
+              onPress={() => {
+                setcc(!cc)
+              }}
+            />
+            <Text>
+              Aceita Cartão de Crédito?
+            </Text>
+          </View>
+          <View style={styles.containerTerms}>
+            <Checkbox
+              status={fisico ? 'checked' : 'unchecked'}
+              onPress={() => {
+                setfisico(!fisico)
+              }}
+            />
+            <Text>
+              Aceita Doação Física?
+            </Text>
+          </View>
+
+{/* 
           <Input
             label="Aceita PIX? - (Digite Sim ou Não)"
             value={pix}
@@ -300,7 +342,7 @@ const GerenciamentoCampanha = ({ route }) => {
             value={fisico}
             onChangeText={(text) => setfisico(text)}
             left={<TextInput.Icon icon="chevron-right" />}
-          />
+          /> */}
           <Button mode="contained"
             style={styles.button1}
             onPress={handleSalvar}>
@@ -314,7 +356,7 @@ const GerenciamentoCampanha = ({ route }) => {
               color={'red'}
               style={styles.button2}
               onPress={handleExcluir}>
-              EXCLUIR
+              EXCLUIR CAMPANHA
             </Button>
           )}
 
@@ -366,6 +408,16 @@ const styles = StyleSheet.create({
     marginBottom: 23,
 
   },
+  containerTerms: {
+    marginTop: 10,
+    width: "100%",
+    flexDirection: "row",
+    alignItems: "center"
+  },
+  textError: {
+    marginBottom: 10,
+    color: "red"
+}
 });
 
 

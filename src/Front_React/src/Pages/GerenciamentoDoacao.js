@@ -2,8 +2,10 @@ import React, { useEffect } from 'react';
 import Header from '../Componentes/Header';
 import Container from '../Componentes/Container';
 import Body from '../Componentes/Body';
-import { List, Text, Button } from 'react-native-paper';
+import { Card, Text, Appbar, List } from 'react-native-paper';
 import { FlatList, StyleSheet, SafeAreaView } from 'react-native';
+
+
 
 import { useUser } from '../contexts/UseContext';
 
@@ -23,20 +25,26 @@ const GerenciamentoDoacao = () => {
 
   const renderItem = ({ item }) => (
 
-    <List.Item title={"Doação para " + item.nomeDaCampanha}
-      description={props => <Text{...props} style={styles.descri}>{"Valor da Doação: R$ " + item.valor + " real/reais"}</Text>}
-      left={props => <List.Icon {...props} color={item.tipoDoacao == '2' ? 'green' : 'red'} icon="asterisk" />}
-      right={props => <Text {...props} style={styles.tipo}>{item.tipoDoacao == '1' ? 'PIX' : 'Cartão de Crédito'}</Text>}
+
+    <Card.Title style={styles.card}
+      title={<Text style={styles.letra}>{"Doação para " + item.nomeDaCampanha}</Text>}
+      subtitle={<Text style={styles.descri}>{"Valor da Doação: R$ " + item.valor + " real/reais"}</Text>}
+      left={(props) => <List.Icon {...props} color={item.tipoDoacao == '2' ? 'green' : 'red'} icon={item.tipoDoacao == '2' ? "credit-card" : "cash-check"} />}
+    //right={(props) => <Text {...props} style={styles.tipo}>{item.tipoDoacao == '1' ? 'PIX' : 'Cartão de Crédito'}</Text>}
 
     />
 
   )
 
+
+
   return (
     <Container>
-      <Header title={'Olá ' + nomeFantasia} />
+      <Appbar.Header>
+        <Appbar.Content title={'Olá ' + nomeFantasia} />
+        <Appbar.Action icon="exit-run" onPress={hand} />
+      </Appbar.Header>
       <Body>
-
         <SafeAreaView style={styles.container}>
           <FlatList
             data={Camp}
@@ -44,18 +52,6 @@ const GerenciamentoDoacao = () => {
             keyExtractor={item => item.id}
           />
         </SafeAreaView>
-
-        <Button
-          style={styles.button}
-          mode="outlined"
-          onPress={hand}
-        >
-          <Text>
-            ***SAIR***
-          </Text>
-
-        </Button>
-
       </Body>
 
     </Container>
@@ -100,7 +96,34 @@ const styles = StyleSheet.create({
   },
   descri: {
     fontSize: 12
-  }
+  },
+  card: {
+    height: 80,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#DFE9F5',
+    borderRadius: 10,
+    shadowColor: 'black',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 1,
+    shadowRadius: 10,
+    elevation: 10,
+    flexDirection: 'row',
+    paddingLeft: 16,
+    paddingRight: 14,
+    marginTop: 8,
+    marginBottom: 8,
+    marginLeft: 5,
+    marginRight: 5,
+
+
+  },
+  letra: {
+    fontSize: 19,
+  },
+  sub: {
+    fontSize: 11,
+  },
 });
 
 export default GerenciamentoDoacao;

@@ -7,8 +7,6 @@ import Body from '../Componentes/Body';
 
 
 const Privacidade = () => {
-
-
     return (
         <Container>
             <Header title={'Política de Privacidade'} />

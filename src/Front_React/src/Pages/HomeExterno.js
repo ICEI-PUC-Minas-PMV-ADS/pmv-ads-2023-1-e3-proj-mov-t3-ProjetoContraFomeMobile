@@ -10,17 +10,17 @@ const HomeExterno = () => {
   const [index, setIndex] = useState(0);
   const [routes] = React.useState([
     { key: 'HomeExterno_Botoes', title: 'Home', icon: 'home' },
-    { key: 'privacidade', title: 'Privacidade', icon: 'police-badge' },
+    //{ key: 'privacidade', title: 'Privacidade', icon: 'police-badge' },
     { key: 'sobre', title: 'Sobre Nós', icon: 'account-supervisor' },
-    { key: 'termo', title: 'Termo', icon: 'paperclip' },
-    { key: 'contato', title: 'Contato', icon: 'phone-cancel' },
+   // { key: 'termo', title: 'Termo', icon: 'paperclip' },
+    //{ key: 'contato', title: 'Contato', icon: 'phone-cancel' },
 
   ]);
   const renderScene = BottomNavigation.SceneMap({
     HomeExterno_Botoes: HomeExterno_Botoes,
-    privacidade: Privacidade,
-    termo: Termo,
-    contato: Contato,
+    //privacidade: Privacidade,
+   // termo: Termo,
+    //contato: Contato,
     sobre: Sobre,
 
   });

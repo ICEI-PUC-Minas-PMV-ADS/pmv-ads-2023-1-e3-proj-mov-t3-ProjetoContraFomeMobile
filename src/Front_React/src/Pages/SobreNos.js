@@ -1,12 +1,19 @@
-import React from 'react';
-import { StyleSheet, View, ScrollView } from 'react-native';
-import { Text } from 'react-native-paper';
+import React, { useState } from 'react';
+//import { StyleSheet, } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
+//import { Text } from 'react-native-paper';
 import Container from '../Componentes/Container';
 import Header from '../Componentes/Header';
 import Body from '../Componentes/Body';
+import Input from '../Componentes/input';
+import { TextInput, Button } from 'react-native-paper';
 
 
 const Sobre = () => {
+    const [Name, setName] = useState('');
+    const [Email, setEmail] = useState('');
+    const [TELEFONE, setTelefone] = useState('');
+    const [mensagem, setmensagem] = useState('');
 
 
     return (
@@ -38,11 +45,55 @@ const Sobre = () => {
 
                             Por isso, nós, alunos da PUC MINAS criamos este site e queremos te convocar a fazer parte deste grande movimento de combate à fome em todo o Brasil. Seja você empresa, grupo de comunicação, organização da sociedade civil ou cidadão, entre na plataforma projetocontrafome.com e apoie campanhas, crie projetos, dedique tempo ao voluntariado, invista em ações de combate à fome, mobilize-se.
                         </Text>
-                        <Text>
-                            {'\n'}
+        
+                    </View>
 
+                    <View>
+                      
+                    <Text style={styles.titulo2}>
+                            Fale Conosco
+                        </Text>
+                    </View>   
+
+                    <View>
+                        <Text style={styles.text}>
+                            Está com algum problema ou dúvida?
+                        
+                            Nós podemos te ajudar, basta preencher o formulário abaixo:
                         </Text>
 
+        
+
+                        <Input
+                            label="SEU NOME"
+                            value={Name}
+                            onChangeText={(text) => setName(text)}
+                            left={<TextInput.Icon icon="account" />}
+                        />
+                        <Input
+                            label="SEU E-MAIL"
+                            value={Email}
+                            onChangeText={(text) => setEmail(text)}
+                            left={<TextInput.Icon icon="email" />}
+                        />
+                        <Input
+                            label="SEU TELEFONE"
+                            value={TELEFONE}
+                            onChangeText={(text) => setTelefone(text)}
+                            left={<TextInput.Icon icon="cellphone-basic" />}
+                        />
+                        <Input style={styles.inputMensagem}
+                            label="DIGITE SUA MENSAGEM AQUI!!"
+                            value={mensagem}
+                            onChangeText={(text) => setmensagem(text)}
+                            left={<TextInput.Icon icon="message-text" />}
+                        />
+                        <Button style={styles.distancia} mode="contained" onPress={() => console.log('Pressed')}>
+                            Enviar Sua Mensagem
+                        </Button>
+                        <Text>
+                            {'\n'}
+                        </Text>
                     </View>
                 </ScrollView>
             </Body>
@@ -53,18 +104,37 @@ const styles = StyleSheet.create({
     text: {
         textAlign: 'center',
         margin: 10,
+        marginBottom:10,
     },
     titulo: {
         textAlign: 'left',
         margin: 2,
         fontWeight: 'bold',
-        fontSize: 20,
+        fontSize: 25,
     },
     marcador: {
         fontWeight: 'bold',
         fontSize: 15,
         color: 'red'
-    }
+    },
+
+    titulo2: {
+        textAlign: 'center',
+        margin: 2,
+        fontWeight: 'bold',
+        fontSize: 23,
+        marginTop:15,
+    },
+    inputMensagem: {
+        height: 200,
+        backgroundColor: '#90ee90',
+        marginBottom: 8,
+    },
+    distancia:{
+        marginTop: 8,
+        marginBottom: 8,
+    },
+  
 });
 
 export default Sobre;
