@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { StyleSheet, FlatList, SafeAreaView } from 'react-native';
 import Container from '../Componentes/Container';
-import { List, Text, FAB, Card, IconButton } from 'react-native-paper';
+import { List, Text, FAB, Card, IconButton,Appbar } from 'react-native-paper';
 import Header from '../Componentes/Header';
 import Body from '../Componentes/Body';
 import { useNavigation } from '@react-navigation/native';
@@ -9,10 +9,15 @@ import { useUser } from '../contexts/UseContext';
 import { View } from 'react-native-web';
 
 const GerenciamentoCampanhaTopicos = () => {
-  const { gastos, idCampanha, setGastos } = useUser();
+  const { setSigned, gastos, idCampanha, setGastos } = useUser();
   const navigation = useNavigation();
+  const hand = async () => {
+    setSigned(false);
+
+  };
 
   useEffect(() => {
+    
 
     setGastos(idCampanha)
 
@@ -21,13 +26,13 @@ const GerenciamentoCampanhaTopicos = () => {
   const renderItem = ({ item }) => (
 
     //<Card onPress={() => navigation.navigate('GerenciamentoCampanha', { item })}>
-      <Card.Title style={styles.card}
-        title={<Text style={styles.letra} >{item.nomeDaCampanha}</Text>}
-        subtitle={<Text style={styles.sub}>{item.descricaoDaCampanha} </Text>}
-        left={(props) => <List.Icon style={styles.camp} {...props} color={'green'} icon="copyright" />}
-        right={(props) => <IconButton {...props} color={'red'} icon={"file-edit"} onPress={() => navigation.navigate('GerenciamentoCampanha', { item })} />}
+    <Card.Title style={styles.card}
+      title={<Text style={styles.letra} >{item.nomeDaCampanha}</Text>}
+      subtitle={<Text style={styles.sub}>{item.descricaoDaCampanha} </Text>}
+      left={(props) => <List.Icon style={styles.camp} {...props} color={'green'} icon="copyright" />}
+      right={(props) => <IconButton {...props} color={'red'} icon={"file-edit"} onPress={() => navigation.navigate('GerenciamentoCampanha', { item })} />}
 
-      />
+    />
     //</Card>
 
 
@@ -35,8 +40,15 @@ const GerenciamentoCampanhaTopicos = () => {
 
 
   return (
+
+
+
     <Container>
-      <Header title={'Cadastrar e Editar Campanhas'} />
+      <Appbar.Header>
+        <Appbar.Content title={'Cadastrar e Editar Campanhas'}/>
+        <Appbar.Action icon="exit-run" onPress={hand} />
+      </Appbar.Header>
+      {/* <Header title={'Cadastrar e Editar Campanhas'} /> */}
       <Body>
         <SafeAreaView style={styles.container}>
           <FlatList
