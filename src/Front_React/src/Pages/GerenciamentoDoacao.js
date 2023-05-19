@@ -1,11 +1,8 @@
 import React, { useEffect } from 'react';
-import Header from '../Componentes/Header';
 import Container from '../Componentes/Container';
 import Body from '../Componentes/Body';
 import { Card, Text, Appbar, List } from 'react-native-paper';
-import { FlatList, StyleSheet, SafeAreaView } from 'react-native';
-
-
+import { FlatList, StyleSheet, SafeAreaView, View } from 'react-native';
 
 import { useUser } from '../contexts/UseContext';
 
@@ -14,29 +11,23 @@ const GerenciamentoDoacao = () => {
 
   const hand = async () => {
     setSigned(false);
-
   };
 
   useEffect(() => {
     SetCamp(idCodigo)
-
   }, [idCodigo]);
 
 
   const renderItem = ({ item }) => (
-
-
-    <Card.Title style={styles.card}
-      title={<Text style={styles.letra}>{"Doação para " + item.nomeDaCampanha}</Text>}
-      subtitle={<Text style={styles.descri}>{"Valor da Doação: R$ " + item.valor + " real/reais"}</Text>}
-      left={(props) => <List.Icon {...props} color={item.tipoDoacao == '2' ? 'green' : 'red'} icon={item.tipoDoacao == '2' ? "credit-card" : "cash-check"} />}
-    //right={(props) => <Text {...props} style={styles.tipo}>{item.tipoDoacao == '1' ? 'PIX' : 'Cartão de Crédito'}</Text>}
-
-    />
-
+    <View style={styles.card}>
+      <List.Icon color={item.tipoDoacao == '2' ? 'green' : 'red'} icon={item.tipoDoacao == '2' ? "credit-card" : "cash-check"} />
+      <View style={styles.containerA}>
+        <Text style={styles.titleTipoTransacao}>{`Doação feita por ${item.tipoDoacao == 2 ? "cartão de crédito" : "pix"} `}</Text>
+        <Text style={styles.letra}>{"Doação para " + item.nomeDaCampanha}</Text>
+        <Text style={styles.descri}>{"Valor da Doação: R$ " + item.valor + " real/reais"}</Text>
+      </View>
+    </View>
   )
-
-
 
   return (
     <Container>
@@ -45,15 +36,12 @@ const GerenciamentoDoacao = () => {
         <Appbar.Action icon="exit-run" onPress={hand} />
       </Appbar.Header>
       <Body>
-        <SafeAreaView style={styles.container}>
-          <FlatList
-            data={Camp}
-            renderItem={renderItem}
-            keyExtractor={item => item.id}
-          />
-        </SafeAreaView>
+        <FlatList
+          data={Camp}
+          renderItem={renderItem}
+          keyExtractor={item => item.id}
+        />
       </Body>
-
     </Container>
   );
 };
@@ -83,6 +71,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  titleTipoTransacao: {
+    fontSize: 14,
+    color: "gray",
+    fontWeight: "bold"
+  },
   title: {
     fontSize: 10,
   },
@@ -98,25 +91,22 @@ const styles = StyleSheet.create({
     fontSize: 12
   },
   card: {
-    height: 80,
+    flexDirection: 'row',
+    padding: 10,
     alignItems: 'center',
-    justifyContent: 'center',
     backgroundColor: '#DFE9F5',
     borderRadius: 10,
     shadowColor: 'black',
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 1,
     shadowRadius: 10,
-    elevation: 10,
+    elevation: 5,
     flexDirection: 'row',
-    paddingLeft: 16,
-    paddingRight: 14,
-    marginTop: 8,
-    marginBottom: 8,
-    marginLeft: 5,
-    marginRight: 5,
-
-
+    marginBottom: 10,
+    marginHorizontal: 3
+  },
+  containerA: {
+    width: "80%",
   },
   letra: {
     fontSize: 19,
