@@ -17,9 +17,10 @@ const Sobre = () => {
 
 
     return (
-        <Container>
+        <Container >
+
             <Header title={'Sobre Nós'} />
-            <Body>
+            <Body >
                 <ScrollView contentContainerStyle={styles.text}>
                     <View>
 
@@ -45,24 +46,24 @@ const Sobre = () => {
 
                             Por isso, nós, alunos da PUC MINAS criamos este site e queremos te convocar a fazer parte deste grande movimento de combate à fome em todo o Brasil. Seja você empresa, grupo de comunicação, organização da sociedade civil ou cidadão, entre na plataforma projetocontrafome.com e apoie campanhas, crie projetos, dedique tempo ao voluntariado, invista em ações de combate à fome, mobilize-se.
                         </Text>
-        
+
                     </View>
 
                     <View>
-                      
-                    <Text style={styles.titulo2}>
+
+                        <Text style={styles.titulo2}>
                             Fale Conosco
                         </Text>
-                    </View>   
+                    </View>
 
                     <View>
                         <Text style={styles.text}>
                             Está com algum problema ou dúvida?
-                        
+
                             Nós podemos te ajudar, basta preencher o formulário abaixo:
                         </Text>
 
-        
+
 
                         <Input
                             label="SEU NOME"
@@ -88,15 +89,16 @@ const Sobre = () => {
                             onChangeText={(text) => setmensagem(text)}
                             left={<TextInput.Icon icon="message-text" />}
                         />
-                        <Button style={styles.distancia} mode="contained" onPress={() => console.log('Pressed')}>
-                            Enviar Sua Mensagem
+                        <Button style={styles.button} mode="contained" onPress={() => console.log('Pressed')}>
+                            <Text style={styles.buttonTextStyle}>
+                                Envie Sua Mensagem
+                            </Text>
                         </Button>
-                        <Text>
-                            {'\n'}
-                        </Text>
+
                     </View>
                 </ScrollView>
             </Body>
+
         </Container>
     );
 };
@@ -104,7 +106,7 @@ const styles = StyleSheet.create({
     text: {
         textAlign: 'center',
         margin: 10,
-        marginBottom:10,
+        marginBottom: 10,
     },
     titulo: {
         textAlign: 'left',
@@ -123,18 +125,41 @@ const styles = StyleSheet.create({
         margin: 2,
         fontWeight: 'bold',
         fontSize: 23,
-        marginTop:15,
+        marginTop: 15,
     },
     inputMensagem: {
         height: 200,
         backgroundColor: '#90ee90',
         marginBottom: 8,
     },
-    distancia:{
+    distancia: {
         marginTop: 8,
         marginBottom: 8,
     },
-  
+    conta: {
+        marginLeft: 0
+    },
+    button: {
+        marginBottom: 30,
+        marginTop: 12,
+        backgroundColor: '#6a5acd',
+        flex: 0.19,
+        justifyContent: "center",
+        width: "100%",
+        alignItems: 'center',
+        borderRadius: 10,
+        shadowColor: 'black',
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 1,
+        shadowRadius: 10,
+        elevation: 5,
+    },
+    buttonTextStyle: {
+        color: 'white',
+        fontSize:13,
+
+    },
+
 });
 
 export default Sobre;

@@ -102,8 +102,11 @@ const AcessoRegistrar = () => {
             <View style={styles.header}>
                 <Logo />
             </View>
+            <Text style={styles.Login}>
+            Cadastrar Nova Ong
+            </Text>
 
-            <Headline style={styles.textHeader}>Cadastrar Nova Conta</Headline>
+    
             <Body>
                 <ScrollView contentContainerStyle={styles.text}>
                     <Input
@@ -232,23 +235,26 @@ const AcessoRegistrar = () => {
                         left={<TextInput.Icon icon="chevron-right" />}
                     />
 
-
                     <Button
-                        style={styles.button}
-                        mode="contained"
-                        onPress={handleRegister}>
-                        CADASTRAR
-                    </Button>
-                    <Button
-                        style={styles.button}
-                        mode="outlined"
-                        onPress={() => navigation.goBack()}>
-                        CANCELAR
-                    </Button>
-
-                    <Text>
-                        {'\n'}
+                    style={styles.button}
+                    mode="contained"
+                    onPress={handleRegister}>
+                    <Text style={styles.buttonTextStyle}>
+                        Cadastrar
                     </Text>
+
+                </Button>
+                <Button
+                    style={styles.button2}
+                    mode="outlined"
+                    onPress={() => navigation.goBack()}>
+                    <Text style={styles.buttonTextStyle}>
+                       Cancelar
+                    </Text>
+
+                </Button>
+
+                    
                 </ScrollView>
             </Body>
         </Container>
@@ -258,16 +264,13 @@ const AcessoRegistrar = () => {
 };
 
 const styles = StyleSheet.create({
-    button: {
-        marginBottom: 8
-    },
     textHeader: {
         textAlign: 'center'
     },
     header: {
         alignItems: "center",
-        marginTop: 70,
-        marginBottom: 12
+        marginTop: 10,
+       
     },
     TextInputMask: {
         backgroundColor: '#90ee90',
@@ -290,6 +293,47 @@ const styles = StyleSheet.create({
         backgroundColor: "#fff",
         alignItems: "center",
         justifyContent: "center",
+    },
+    Login: {
+        fontSize: 30,
+        textAlign: 'center',
+        marginTop: 12,
+        fontWeight: 'bold',
+        marginBottom: 12,
+    },
+    buttonTextStyle: {
+        color: 'white',
+        fontWeight: 'bold',
+    },
+    button: {
+        marginBottom: 10,
+        marginTop: 10,
+        backgroundColor: '#6a5acd',
+        flex: 0.2,
+        justifyContent: "center",
+        height: "100%",
+        alignItems: 'center',
+        borderRadius: 10,
+        shadowColor: 'black',
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 1,
+        shadowRadius: 10,
+        elevation: 2,
+    },
+    button2: {
+        marginBottom: 40,
+        marginTop: 10,
+        backgroundColor: 'red',
+        flex: 0.2,
+        justifyContent: "center",
+        height: "100%",
+        alignItems: 'center',
+        borderRadius: 10,
+        shadowColor: 'black',
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 1,
+        shadowRadius: 10,
+        elevation: 2,
     },
 });
 

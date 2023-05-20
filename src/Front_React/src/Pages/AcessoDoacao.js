@@ -26,7 +26,7 @@ const AcessoDoacao = () => {
 
     return (
         <Container>
-            <Header title={'Escolha uma Campanha'} goBack={() => navigation.goBack()}>
+            <Header title={'Click no Card da Campanha'} goBack={() => navigation.goBack()}>
             </Header>
             <Body>
                 <SafeAreaView style={styles.container}>

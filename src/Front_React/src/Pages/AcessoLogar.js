@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Alert } from 'react-native';
+import { StyleSheet, View, Alert, Text } from 'react-native';
 import { TextInput, Button, Headline } from 'react-native-paper';
 import Container from '../Componentes/Container';
 import Body from '../Componentes/Body';
@@ -8,7 +8,7 @@ import Logo from '../Componentes/Logo';
 import { useNavigation } from '@react-navigation/native';
 import { login, Receber } from '../Services/AuthServices';
 import { useUser } from '../contexts/UseContext';
-
+import AcessoRegistrar from './AcessoRegistrar';
 
 const AcessoLogar = () => {
 
@@ -51,7 +51,9 @@ const AcessoLogar = () => {
                 <Logo />
             </View>
 
-            <Headline style={styles.textHeader}>Fazer Login</Headline>
+            <Text style={styles.Login}>
+                Fazer Login
+            </Text>
             <Body>
                 <Input
                     label="CNPJ"
@@ -76,14 +78,21 @@ const AcessoLogar = () => {
                     style={styles.button}
                     mode="contained"
                     onPress={handleLogin}>
-                    ENTRAR
+                    <Text style={styles.buttonTextStyle}>
+                        Entrar
+                    </Text>
+
                 </Button>
                 <Button
                     style={styles.button}
                     mode="outlined"
-                    onPress={() => navigation.goBack()}>
-                    CANCELAR
+                    onPress={() => navigation.navigate('AcessoRegistrar')}>
+                    <Text style={styles.buttonTextStyle}>
+                       Cadastrar Nova Ong
+                    </Text>
+
                 </Button>
+
             </Body>
         </Container>
 
@@ -92,17 +101,43 @@ const AcessoLogar = () => {
 };
 
 const styles = StyleSheet.create({
-    button: {
-        marginBottom: 8
-    },
+
     textHeader: {
         textAlign: 'center'
     },
     header: {
         alignItems: "center",
-        marginTop: 70,
-        marginBottom: 12
-    }
+        marginTop: 10,
+
+    },
+    buttonTextStyle: {
+        color: 'white',
+        fontWeight: 'bold',
+    },
+    button: {
+        marginBottom: 10,
+        marginTop: 10,
+        backgroundColor: '#6a5acd',
+        flex: 0.2,
+        justifyContent: "center",
+        height: "100%",
+        alignItems: 'center',
+        borderRadius: 10,
+        shadowColor: 'black',
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 1,
+        shadowRadius: 10,
+        elevation: 5,
+    },
+    Login: {
+        fontSize: 30,
+        textAlign: 'center',
+        marginTop: 12,
+        fontWeight: 'bold',
+        marginBottom: 12,
+
+
+    },
 });
 
 

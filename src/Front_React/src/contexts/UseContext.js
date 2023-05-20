@@ -21,6 +21,8 @@ export default function UserProvider({ children }) {
     const [Tipo, setTipoDoacao] = useState('');
     const [idCodigo, setCodigo2] = useState('');
     const [acceptTerm, setAcceptTerm] = useState(false)
+    const [gastos3, setGastos3] = useState([]);
+    
 
     return (
 
@@ -59,7 +61,9 @@ export default function UserProvider({ children }) {
                 idCodigo,
                 setCodigo2,
                 acceptTerm, 
-                setAcceptTerm
+                setAcceptTerm,
+                gastos3,
+                setGastos3
             }}
         >
             {children}
@@ -70,8 +74,8 @@ export default function UserProvider({ children }) {
 export function useUser() {
     const context = useContext(UserContext);
 
-    const { idCodigo, setCodigo2, setTipoDoacao, Tipo, SetCamp, Camp, valor, SetValor, signed, setSigned, nomeDaOng, setnomeDaOng, nomeFantasia, setNomeFantasia, NomeDaCampanha, setNomeDaCampanha, idCampanha, setIdCampanha, DescricaoDaCamp, setDescricaoDacamp, codigo, setCodigo, cnpj, setCNPJ, senha, setSenha, gastos, setGastos, gastos2, setGastos2, idCampanha2, setIdCampanha2, acceptTerm, setAcceptTerm} = context;
+    const { idCodigo, setCodigo2, setTipoDoacao, Tipo, SetCamp, Camp, valor, SetValor, signed, setSigned, nomeDaOng, setnomeDaOng, nomeFantasia, setNomeFantasia, NomeDaCampanha, setNomeDaCampanha, idCampanha, setIdCampanha, DescricaoDaCamp, setDescricaoDacamp, codigo, setCodigo, cnpj, setCNPJ, senha, setSenha, gastos, setGastos, gastos2, setGastos2, idCampanha2, setIdCampanha2, acceptTerm, setAcceptTerm,gastos3,setGastos3} = context;
 
-    return { idCodigo, setCodigo2, setTipoDoacao, Tipo, SetCamp, Camp, valor, SetValor, signed, setSigned, nomeDaOng, setnomeDaOng, nomeFantasia, setNomeFantasia, NomeDaCampanha, setNomeDaCampanha, idCampanha, setIdCampanha, DescricaoDaCamp, setDescricaoDacamp, codigo, setCodigo, cnpj, setCNPJ, senha, setSenha, gastos, setGastos, gastos2, setGastos2, idCampanha2, setIdCampanha2, acceptTerm, setAcceptTerm };
+    return { idCodigo, setCodigo2, setTipoDoacao, Tipo, SetCamp, Camp, valor, SetValor, signed, setSigned, nomeDaOng, setnomeDaOng, nomeFantasia, setNomeFantasia, NomeDaCampanha, setNomeDaCampanha, idCampanha, setIdCampanha, DescricaoDaCamp, setDescricaoDacamp, codigo, setCodigo, cnpj, setCNPJ, senha, setSenha, gastos, setGastos, gastos2, setGastos2, idCampanha2, setIdCampanha2, acceptTerm, setAcceptTerm,gastos3,setGastos3 };
 
 }

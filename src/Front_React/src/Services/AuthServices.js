@@ -70,6 +70,7 @@ export const login = async (CNPJ, Senha) => {
 export const Atualizar = async () => {
     try {
         const rest = await API.get(`${BASE_URL}api/CadastroCampanhas/`);
+       
         return rest.data
     } catch (error) {
         console.log(error);

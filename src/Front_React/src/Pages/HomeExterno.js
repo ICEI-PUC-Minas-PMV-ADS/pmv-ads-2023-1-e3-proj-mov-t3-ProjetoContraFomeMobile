@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { BottomNavigation } from 'react-native-paper';
 import HomeExterno_Botoes from './HomeExterno_Botoes';
-import Privacidade from './Privacidade';
 import Termo from './TermoDeUso';
-import Contato from './EntreEmContato';
+import AcessoLogar from './AcessoLogar';
 import Sobre from './SobreNos';
 
 const HomeExterno = () => {
@@ -12,14 +11,14 @@ const HomeExterno = () => {
     { key: 'HomeExterno_Botoes', title: 'Home', icon: 'home' },
     //{ key: 'privacidade', title: 'Privacidade', icon: 'police-badge' },
     { key: 'sobre', title: 'Sobre Nós', icon: 'account-supervisor' },
-   // { key: 'termo', title: 'Termo', icon: 'paperclip' },
+    { key: 'AcessoLogar', title: 'Login Da Ong', icon: 'login' },
     //{ key: 'contato', title: 'Contato', icon: 'phone-cancel' },
 
   ]);
   const renderScene = BottomNavigation.SceneMap({
     HomeExterno_Botoes: HomeExterno_Botoes,
     //privacidade: Privacidade,
-   // termo: Termo,
+    AcessoLogar: AcessoLogar,
     //contato: Contato,
     sobre: Sobre,
 

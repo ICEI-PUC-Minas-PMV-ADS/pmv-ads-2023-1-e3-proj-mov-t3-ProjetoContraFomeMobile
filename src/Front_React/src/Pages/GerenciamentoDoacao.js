@@ -51,6 +51,7 @@ const GerenciamentoDoacao = () => {
         <Appbar.Action icon="exit-run" onPress={hand} />
       </Appbar.Header>
       <Body>
+    
         {/* <SafeAreaView style={styles.container}>
           <FlatList
             data={Camp}
@@ -113,6 +114,7 @@ const styles = StyleSheet.create({
   },
   card: {
     //height: 80,
+    marginTop:8,
     flexDirection: 'row',
     padding: 10,
     alignItems: 'center',
@@ -124,15 +126,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 1,
     shadowRadius: 10,
     elevation: 5,  
-    // paddingLeft: 16,
-    // paddingRight: 14,
-    // marginTop: 8,
-    // marginBottom: 8,
-    // marginLeft: 5,
-    // marginRight: 5,
-
-
-    marginBottom: 10,
     marginHorizontal: 3
   },
   containerA: {
