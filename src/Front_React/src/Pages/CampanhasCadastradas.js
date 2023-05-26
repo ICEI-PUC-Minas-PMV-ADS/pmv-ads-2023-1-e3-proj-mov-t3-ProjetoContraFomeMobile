@@ -302,15 +302,19 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     flex: 1,
     height: 62,
+    margin:8,
   },
   inputValor: {
     backgroundColor: '#C0C0C0',
     fontWeight: 'bold',
+    margin:8,
 
   },
   inputValor2: {
     backgroundColor: '#C0C0C0',
-    disabled: '{true}'
+    disabled: '{true}',
+    margin:8,
+    
   },
   text: {
     textAlign: 'center',
@@ -328,11 +332,13 @@ const styles = StyleSheet.create({
   },
   button2: {
     marginBottom: 23,
+    margin:8,
 
   },
   button3: {
     marginBottom: 23,
-    display: 'none'
+    display: 'none',
+    margin:8,
 
   },
   containerRadio: {

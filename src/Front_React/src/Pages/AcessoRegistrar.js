@@ -269,7 +269,8 @@ const styles = StyleSheet.create({
     },
     header: {
         alignItems: "center",
-        marginTop: 10,
+        marginLeft:16,
+        marginRight:16,
        
     },
     TextInputMask: {
@@ -283,6 +284,7 @@ const styles = StyleSheet.create({
         marginBottom: 8,
         flex: 1,
         height: 62,
+        margin:8
     },
     text: {
         textAlign: 'center',
@@ -297,9 +299,8 @@ const styles = StyleSheet.create({
     Login: {
         fontSize: 30,
         textAlign: 'center',
-        marginTop: 12,
         fontWeight: 'bold',
-        marginBottom: 12,
+   
     },
     buttonTextStyle: {
         color: 'white',
@@ -319,6 +320,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 1,
         shadowRadius: 10,
         elevation: 2,
+        margin:8,
     },
     button2: {
         marginBottom: 40,
@@ -334,6 +336,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 1,
         shadowRadius: 10,
         elevation: 2,
+        margin:8,
     },
 });
 

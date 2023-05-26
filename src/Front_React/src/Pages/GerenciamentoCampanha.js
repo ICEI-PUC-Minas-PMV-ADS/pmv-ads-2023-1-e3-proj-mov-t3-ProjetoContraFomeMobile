@@ -389,6 +389,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     flex: 1,
     height: 62,
+    margin:8
   },
   text: {
     textAlign: 'center',
@@ -402,10 +403,12 @@ const styles = StyleSheet.create({
   },
   button1: {
     marginBottom: 23,
+    margin:8,
 
   },
   button2: {
     marginBottom: 23,
+    margin:8,
 
   },
   containerTerms: {

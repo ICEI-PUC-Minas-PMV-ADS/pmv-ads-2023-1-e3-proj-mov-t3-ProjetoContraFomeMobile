@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     },
     header: {
         alignItems: "center",
-        marginTop: 10,
+        margin:8,
 
     },
     buttonTextStyle: {
@@ -117,10 +117,11 @@ const styles = StyleSheet.create({
     button: {
         marginBottom: 10,
         marginTop: 10,
+        margin:8,
         backgroundColor: '#6a5acd',
         flex: 0.2,
         justifyContent: "center",
-        height: "100%",
+        //height: "100%",
         alignItems: 'center',
         borderRadius: 10,
         shadowColor: 'black',
@@ -132,9 +133,9 @@ const styles = StyleSheet.create({
     Login: {
         fontSize: 30,
         textAlign: 'center',
-        marginTop: 12,
+        marginTop: 2,
         fontWeight: 'bold',
-        marginBottom: 12,
+        marginBottom: 15,
 
 
     },

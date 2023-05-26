@@ -22,10 +22,10 @@ const HomeExterno_Botoes = () => {
 
     const hand = async () => {
         let res = await Atualizar();
-        let a = [1, 2,3];
-  
+        let a = [1, 2, 3];
+
         setGastos2(res);
-      
+
         if (Object.keys(res).length >= 3) {
             a[0] = res[0]
             a[1] = res[1]
@@ -53,7 +53,7 @@ const HomeExterno_Botoes = () => {
                 title={<Text style={styles.letra} >{`Ong: ` + item.nomeDaOng}</Text>}
                 subtitle={<Text style={styles.sub}  >{`Campanha: ` + item.nomeDaCampanha} </Text>}
                 left={(props) => <List.Icon style={styles.camp} {...props} color={'green'} icon="copyright" />}
-                right={(props) => <IconButton {...props} icon="cursor-default-click" />}
+            //right={(props) => <IconButton {...props} icon="cursor-default-click" />}
 
             />
         </Card>
@@ -62,8 +62,8 @@ const HomeExterno_Botoes = () => {
 
 
     return (
-        <Container>
-            <View>
+      <Container>
+            <View style={styles.log}>
                 <Logo />
             </View>
             <Text style={styles.Doacao}>
@@ -82,7 +82,7 @@ const HomeExterno_Botoes = () => {
                     </Text>
                 </Button>
                 <Text style={styles.Andamento}>
-                    Campannhas em andamento
+                    Campanhas em andamento
                 </Text>
 
                 <SafeAreaView style={styles.container}>
@@ -110,12 +110,12 @@ const HomeExterno_Botoes = () => {
 
 const styles = StyleSheet.create({
     button: {
-        marginBottom: 12,
+        marginBottom: 6,
         marginTop: 12,
+        margin:8,
         backgroundColor: '#6a5acd',
         flex: 0.19,
         justifyContent: "center",
-        width: "100%",
         alignItems: 'center',
         borderRadius: 10,
         shadowColor: 'black',
@@ -129,6 +129,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         color: 'black',
         fontSize: 14,
+        margin:8,
 
 
     },
@@ -136,6 +137,7 @@ const styles = StyleSheet.create({
     buttonTextStyle: {
         color: 'white',
         fontSize: 13,
+        margin:8,
 
     },
     Doacao: {
@@ -143,17 +145,21 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginTop: 5,
         fontWeight: 'bold',
+        marginLeft:8,
+        marginRight:8,
     },
     Andamento: {
         textAlign: 'center',
         color: 'black',
         fontSize: 25,
         fontWeight: 'bold',
-        marginBottom: 10,
+        margin:8,
+        
 
     },
     container: {
-        flex: 0.81
+        flex: 0.81,
+        margin:8,
     },
     fab: {
         position: 'absolute',
@@ -178,8 +184,8 @@ const styles = StyleSheet.create({
         shadowColor: 'black',
         shadowOffset: { width: 0, height: 0 },
         shadowOpacity: 1,
-        shadowRadius: 10,
-        elevation: 10,
+        shadowRadius: 8,
+        elevation: 4,
         flexDirection: 'row',
         paddingLeft: 16,
         paddingRight: 14,
@@ -194,8 +200,11 @@ const styles = StyleSheet.create({
         fontSize: 19,
     },
     sub: {
-        fontSize: 11,
+        fontSize: 15,
     },
+    log:{
+        margin:8
+    }
 });
 
 export default HomeExterno_Botoes;

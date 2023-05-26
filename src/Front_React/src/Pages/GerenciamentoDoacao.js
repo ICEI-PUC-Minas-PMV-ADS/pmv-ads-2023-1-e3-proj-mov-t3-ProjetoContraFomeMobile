@@ -51,7 +51,7 @@ const GerenciamentoDoacao = () => {
         <Appbar.Action icon="exit-run" onPress={hand} />
       </Appbar.Header>
       <Body>
-    
+
         {/* <SafeAreaView style={styles.container}>
           <FlatList
             data={Camp}
@@ -59,6 +59,9 @@ const GerenciamentoDoacao = () => {
             keyExtractor={item => item.id}
           />
         </SafeAreaView> */}
+        <Text style={Camp == '' ? styles.st : styles.st2}>Você não possui Doações!!</Text>
+
+
         <FlatList
           data={Camp}
           renderItem={renderItem}
@@ -114,7 +117,8 @@ const styles = StyleSheet.create({
   },
   card: {
     //height: 80,
-    marginTop:8,
+    marginTop: 8,
+    marginBottom: 5,
     flexDirection: 'row',
     padding: 10,
     alignItems: 'center',
@@ -125,8 +129,8 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 1,
     shadowRadius: 10,
-    elevation: 5,  
-    marginHorizontal: 3
+    elevation: 5,
+    marginHorizontal: 10
   },
   containerA: {
     width: "80%",
@@ -137,5 +141,17 @@ const styles = StyleSheet.create({
   sub: {
     fontSize: 11,
   },
+  st: {
+    color: "black",
+    fontSize: 30,
+    textAlign: 'center',
+    marginTop: 20,
+    fontWeight: 'bold',
+    marginLeft:8,
+    marginRight:8,
+  },
+  st2: {
+    display: "none"
+  }
 });
 export default GerenciamentoDoacao;

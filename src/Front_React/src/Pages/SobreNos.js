@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
     inputMensagem: {
         height: 200,
         backgroundColor: '#90ee90',
-        marginBottom: 8,
+        marginHorizontal: 8,
     },
     distancia: {
         marginTop: 8,
@@ -140,12 +140,12 @@ const styles = StyleSheet.create({
         marginLeft: 0
     },
     button: {
-        marginBottom: 30,
-        marginTop: 12,
+        marginBottom: 20,
+        marginTop: 20,
         backgroundColor: '#6a5acd',
         flex: 0.19,
         justifyContent: "center",
-        width: "100%",
+        //width: "100%",
         alignItems: 'center',
         borderRadius: 10,
         shadowColor: 'black',
@@ -153,6 +153,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 1,
         shadowRadius: 10,
         elevation: 5,
+        margin:8
     },
     buttonTextStyle: {
         color: 'white',

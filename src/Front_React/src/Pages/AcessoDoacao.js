@@ -6,6 +6,7 @@ import { StyleSheet, FlatList, SafeAreaView } from 'react-native';
 import Container from '../Componentes/Container';
 import { List, Card, IconButton, Text } from 'react-native-paper';
 import { useUser } from '../contexts/UseContext';
+import { View } from 'react-native-web';
 
 const AcessoDoacao = () => {
     const navigation = useNavigation();
@@ -15,10 +16,10 @@ const AcessoDoacao = () => {
         <Card onPress={() => navigation.navigate('CampanhasCadastradas', { item })}>
             <Card.Title style={styles.card}
                 title={<Text style={styles.letra} >{`Ong: ` + item.nomeDaOng}</Text>}
-                subtitle={<Text style={styles.sub}  >{`Campanha: ` + item.nomeDaCampanha} </Text>} 
+                subtitle={<Text style={styles.sub}  >{`Campanha: ` + item.nomeDaCampanha} </Text>}
                 left={(props) => <List.Icon style={styles.camp} {...props} color={'green'} icon="copyright" />}
                 right={(props) => <IconButton {...props} icon="cursor-default-click" />}
-               
+
             />
         </Card>
 
@@ -26,8 +27,10 @@ const AcessoDoacao = () => {
 
     return (
         <Container>
+
             <Header title={'Click no Card da Campanha'} goBack={() => navigation.goBack()}>
             </Header>
+
             <Body>
                 <SafeAreaView style={styles.container}>
                     <FlatList
@@ -70,14 +73,14 @@ const styles = StyleSheet.create({
         shadowOffset: { width: 0, height: 0 },
         shadowOpacity: 1,
         shadowRadius: 10,
-        elevation: 10,
+        elevation: 5,
         flexDirection: 'row',
         paddingLeft: 16,
         paddingRight: 14,
         marginTop: 8,
         marginBottom: 8,
-        marginLeft: 5,
-        marginRight: 5,
+        marginLeft: 10,
+        marginRight: 10,
 
 
     },
@@ -87,6 +90,7 @@ const styles = StyleSheet.create({
     sub: {
         fontSize: 11,
     },
+
 
 
 

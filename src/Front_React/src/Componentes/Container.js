@@ -10,7 +10,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'which',
-    margin:8,
+    //margin:8,
+  
   },
 
 });

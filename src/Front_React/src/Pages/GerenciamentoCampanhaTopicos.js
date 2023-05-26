@@ -50,6 +50,9 @@ const GerenciamentoCampanhaTopicos = () => {
       </Appbar.Header>
       {/* <Header title={'Cadastrar e Editar Campanhas'} /> */}
       <Body>
+
+      <Text style={gastos == '' ? styles.st : styles.st2}>Você não possui campanha cadastrada!</Text>
+
         <SafeAreaView style={styles.container}>
           <FlatList
             data={gastos}
@@ -100,14 +103,14 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 1,
     shadowRadius: 10,
-    elevation: 10,
+    elevation: 5,
     flexDirection: 'row',
     paddingLeft: 16,
     paddingRight: 14,
     marginTop: 8,
     marginBottom: 8,
-    marginLeft: 5,
-    marginRight: 5,
+    marginLeft: 10,
+    marginRight: 10,
 
 
   },
@@ -117,6 +120,18 @@ const styles = StyleSheet.create({
   sub: {
     fontSize: 11,
   },
+  st: {
+    color: "black",
+    fontSize: 30,
+    textAlign: 'center',
+    marginTop: 20,
+    fontWeight: 'bold',
+    marginLeft:8,
+    marginRight:8,
+  },
+  st2: {
+    display: "none"
+  }
 });
 
 
