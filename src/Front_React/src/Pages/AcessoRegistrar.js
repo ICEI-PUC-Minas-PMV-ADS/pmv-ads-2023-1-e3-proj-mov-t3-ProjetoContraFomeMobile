@@ -103,10 +103,10 @@ const AcessoRegistrar = () => {
                 <Logo />
             </View>
             <Text style={styles.Login}>
-            Cadastrar Nova Ong
+                Cadastrar Nova Ong
             </Text>
 
-    
+
             <Body>
                 <ScrollView contentContainerStyle={styles.text}>
                     <Input
@@ -236,25 +236,25 @@ const AcessoRegistrar = () => {
                     />
 
                     <Button
-                    style={styles.button}
-                    mode="contained"
-                    onPress={handleRegister}>
-                    <Text style={styles.buttonTextStyle}>
-                        Cadastrar
-                    </Text>
+                        style={styles.button}
+                        mode="contained"
+                        onPress={handleRegister}>
+                        <Text style={styles.buttonTextStyle}>
+                            Cadastrar
+                        </Text>
 
-                </Button>
-                <Button
-                    style={styles.button2}
-                    mode="outlined"
-                    onPress={() => navigation.goBack()}>
-                    <Text style={styles.buttonTextStyle}>
-                       Cancelar
-                    </Text>
+                    </Button>
+                    <Button
+                        style={styles.button2}
+                        mode="contained"
+                        onPress={() => navigation.goBack()}>
+                        <Text style={styles.buttonTextStyle}>
+                            Cancelar
+                        </Text>
 
-                </Button>
+                    </Button>
 
-                    
+
                 </ScrollView>
             </Body>
         </Container>
@@ -269,9 +269,9 @@ const styles = StyleSheet.create({
     },
     header: {
         alignItems: "center",
-        marginLeft:16,
-        marginRight:16,
-       
+        marginLeft: 16,
+        marginRight: 16,
+
     },
     TextInputMask: {
         backgroundColor: '#90ee90',
@@ -284,7 +284,7 @@ const styles = StyleSheet.create({
         marginBottom: 8,
         flex: 1,
         height: 62,
-        margin:8
+        margin: 8
     },
     text: {
         textAlign: 'center',
@@ -300,7 +300,7 @@ const styles = StyleSheet.create({
         fontSize: 30,
         textAlign: 'center',
         fontWeight: 'bold',
-   
+
     },
     buttonTextStyle: {
         color: 'white',
@@ -313,14 +313,14 @@ const styles = StyleSheet.create({
         flex: 0.2,
         justifyContent: "center",
         height: "100%",
-        alignItems: 'center',
+        //alignItems: 'center',
         borderRadius: 10,
         shadowColor: 'black',
         shadowOffset: { width: 0, height: 0 },
         shadowOpacity: 1,
         shadowRadius: 10,
         elevation: 2,
-        margin:8,
+        margin: 8,
     },
     button2: {
         marginBottom: 40,
@@ -329,14 +329,14 @@ const styles = StyleSheet.create({
         flex: 0.2,
         justifyContent: "center",
         height: "100%",
-        alignItems: 'center',
+        // alignItems: 'center',
         borderRadius: 10,
         shadowColor: 'black',
         shadowOffset: { width: 0, height: 0 },
         shadowOpacity: 1,
         shadowRadius: 10,
         elevation: 2,
-        margin:8,
+        margin: 8,
     },
 });
 

@@ -5,11 +5,12 @@ import AcessoRegistrar from '../Pages/AcessoRegistrar';
 import CampanhasCadastradas from '../Pages/CampanhasCadastradas';
 import AcessoDoacao from '../Pages/AcessoDoacao';
 import HomeExterno from '../Pages/HomeExterno';
-
+import { useUser } from '../contexts/UseContext'
 const Stack = createNativeStackNavigator();
-
 const Main = () => {
+
   return (
+   
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen
         name="HomeExterno"
@@ -42,6 +43,7 @@ const Main = () => {
       <Stack.Screen
         name="CampanhasCadastradas"
         component={CampanhasCadastradas}
+        
         options={{
           header: () => null,
         }}

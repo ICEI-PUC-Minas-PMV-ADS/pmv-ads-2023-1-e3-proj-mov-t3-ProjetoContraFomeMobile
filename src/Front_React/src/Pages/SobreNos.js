@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
         flex: 0.19,
         justifyContent: "center",
         //width: "100%",
-        alignItems: 'center',
+        //alignItems: 'center',
         borderRadius: 10,
         shadowColor: 'black',
         shadowOffset: { width: 0, height: 0 },

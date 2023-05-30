@@ -61,8 +61,14 @@ const Contato = () => {
                             onChangeText={(text) => setmensagem(text)}
                             left={<TextInput.Icon icon="message-text" />}
                         />
-                        <Button mode="contained" onPress={() => console.log('Pressed')}>
-                            Enviar Sua Mensagem
+                        {/* <Button mode="contained" onPress={() => console.log('Pressed')}>
+                          
+                        </Button> */}
+                        <Button
+                            style={styles.button}
+                            mode="contained"
+                            onPress={() => console.log('Pressed')}>
+                             Enviar Sua Mensagem
                         </Button>
 
 
@@ -77,6 +83,21 @@ const styles = StyleSheet.create({
     text: {
         textAlign: 'center',
         margin: 5,
+    },
+    button: {
+        marginBottom: 7,
+        marginTop: 8,
+        margin: 8,
+        backgroundColor: '#6a5acd',
+        flex: 0.17,
+        justifyContent: "center",
+        //alignItems: 'center',
+        borderRadius: 10,
+        shadowColor: 'black',
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 1,
+        shadowRadius: 10,
+        elevation: 5,
     },
     titulo: {
         textAlign: 'center',

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, View, Text, FlatList, SafeAreaView, Alert } from 'react-native';
+import { StyleSheet, View, Text, FlatList, SafeAreaView, ActivityIndicator } from 'react-native';
 import { Button } from 'react-native-paper';
 import Container from '../Componentes/Container';
 import Body from '../Componentes/Body';
@@ -14,13 +14,16 @@ const HomeExterno_Botoes = () => {
     const { acceptTerm, gastos3, setGastos3, setGastos2 } = useUser();
     const [showModal, setShowModal] = useState(false)
     const navigation = useNavigation();
+    const [loading, setLoading] = useState(false)
 
     useEffect(() => {
         hand()
         showAccepTerms()
+
     }, [])
 
     const hand = async () => {
+        
         let res = await Atualizar();
         let a = [1, 2, 3];
 
@@ -34,7 +37,7 @@ const HomeExterno_Botoes = () => {
         } else {
             setGastos3(res);
         }
-
+        setLoading(true)
 
     }
     const showAccepTerms = () => {
@@ -62,7 +65,7 @@ const HomeExterno_Botoes = () => {
 
 
     return (
-      <Container>
+        <Container>
             <View style={styles.log}>
                 <Logo />
             </View>
@@ -86,11 +89,18 @@ const HomeExterno_Botoes = () => {
                 </Text>
 
                 <SafeAreaView style={styles.container}>
-                    <FlatList
-                        data={gastos3}
-                        renderItem={renderItem}
-                        keyExtractor={item => item.id}
-                    />
+
+                    {loading == false ?
+                        <View style={[styles.container2, styles.horizontal]}>
+                            <ActivityIndicator size="small" color="#0000ff" />
+                        </View> :
+                        <FlatList
+                            data={gastos3}
+                            renderItem={renderItem}
+                            keyExtractor={item => item.id}
+                        />
+                    }
+
                 </SafeAreaView>
                 <Button
                     style={styles.button}
@@ -110,13 +120,13 @@ const HomeExterno_Botoes = () => {
 
 const styles = StyleSheet.create({
     button: {
-        marginBottom: 6,
-        marginTop: 12,
-        margin:8,
+        marginBottom: 7,
+        marginTop: 8,
+        margin: 8,
         backgroundColor: '#6a5acd',
-        flex: 0.19,
+        flex: 0.17,
         justifyContent: "center",
-        alignItems: 'center',
+        //alignItems: 'center',
         borderRadius: 10,
         shadowColor: 'black',
         shadowOffset: { width: 0, height: 0 },
@@ -129,7 +139,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         color: 'black',
         fontSize: 14,
-        margin:8,
+        margin: 8,
 
 
     },
@@ -137,7 +147,7 @@ const styles = StyleSheet.create({
     buttonTextStyle: {
         color: 'white',
         fontSize: 13,
-        margin:8,
+        margin: 8,
 
     },
     Doacao: {
@@ -145,21 +155,21 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginTop: 5,
         fontWeight: 'bold',
-        marginLeft:8,
-        marginRight:8,
+        marginLeft: 8,
+        marginRight: 8,
     },
     Andamento: {
         textAlign: 'center',
         color: 'black',
         fontSize: 25,
         fontWeight: 'bold',
-        margin:8,
-        
+        margin: 8,
+
 
     },
     container: {
-        flex: 0.81,
-        margin:8,
+        flex: 0.84,
+        margin: 8,
     },
     fab: {
         position: 'absolute',
@@ -202,9 +212,19 @@ const styles = StyleSheet.create({
     sub: {
         fontSize: 15,
     },
-    log:{
-        margin:8
-    }
+    log: {
+        margin: 8
+    },
+    container2: {
+        flex: 1,
+        justifyContent: 'center',
+    },
+    horizontal: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        padding: 10,
+      },
+
 });
 
 export default HomeExterno_Botoes;

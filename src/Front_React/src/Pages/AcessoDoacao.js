@@ -1,16 +1,16 @@
 import Header from '../Componentes/Header';
 import Body from '../Componentes/Body';
 import { useNavigation } from '@react-navigation/native';
-import React from 'react';
-import { StyleSheet, FlatList, SafeAreaView } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { StyleSheet, FlatList, SafeAreaView, ActivityIndicator, View, Alert } from 'react-native';
 import Container from '../Componentes/Container';
 import { List, Card, IconButton, Text } from 'react-native-paper';
 import { useUser } from '../contexts/UseContext';
-import { View } from 'react-native-web';
 
 const AcessoDoacao = () => {
     const navigation = useNavigation();
     const { gastos2 } = useUser();
+
 
     const renderItem = ({ item }) => (
         <Card onPress={() => navigation.navigate('CampanhasCadastradas', { item })}>
@@ -27,10 +27,8 @@ const AcessoDoacao = () => {
 
     return (
         <Container>
-
             <Header title={'Click no Card da Campanha'} goBack={() => navigation.goBack()}>
             </Header>
-
             <Body>
                 <SafeAreaView style={styles.container}>
                     <FlatList
@@ -39,12 +37,10 @@ const AcessoDoacao = () => {
                         keyExtractor={item => item.id}
                     />
                 </SafeAreaView>
-
             </Body>
-
         </Container>
     );
-}
+};
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -90,10 +86,15 @@ const styles = StyleSheet.create({
     sub: {
         fontSize: 11,
     },
-
-
-
-
+    container2: {
+        flex: 1,
+        justifyContent: 'center',
+    },
+    horizontal: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        padding: 10,
+    },
 
 });
 

@@ -59,7 +59,8 @@ const GerenciamentoDoacao = () => {
             keyExtractor={item => item.id}
           />
         </SafeAreaView> */}
-        <Text style={Camp == '' ? styles.st : styles.st2}>Você não possui Doações!!</Text>
+        
+        <Text style={Camp.length == 0 ? styles.st : styles.st2}> Você não possui Doações!!</Text>
 
 
         <FlatList

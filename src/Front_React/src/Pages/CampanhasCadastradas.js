@@ -16,7 +16,7 @@ import {
 
 
 const CampanhasCadastradas = ({ route }) => {
-  const { nomeFantasia } = useUser();
+  const { nomeFantasia,loading2,setloading2 } = useUser();
   const navigation = useNavigation();
   const [nomeDaOng2, setNomeDaOng] = useState(nomeFantasia);
   const [nomeDaCampanha, setNomeDaCampanha] = useState('');
@@ -128,7 +128,7 @@ const CampanhasCadastradas = ({ route }) => {
     if (pix === 'sim') {
 
     }
-
+    setloading2(false)
   }, [item]);
   return (
     <Container>
