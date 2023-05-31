@@ -19,8 +19,8 @@ const AcessoLogar = () => {
 
     const navigation = useNavigation();
     const { setSigned, setNomeFantasia, setIdCampanha, setCodigo, setCNPJ, setSenha, setCodigo2 } = useUser();
-    const [CNPJ, setcnpj2] = useState('50048784');
-    const [Senha, setPassword] = useState('111111');
+    const [CNPJ, setcnpj2] = useState('');
+    const [Senha, setPassword] = useState('');
     const [loading, setLoading] = useState(false);
 
 
@@ -30,7 +30,8 @@ const AcessoLogar = () => {
         let res = await login(CNPJ, Senha);
 
         if (!res.nomeFantasia) {
-            return Alert.alert("Usuário e/ou Senha Inválido(s)")
+            Alert.alert("Usuário e/ou Senha Inválido(s)")
+            setLoading(false)
         }
 
         if (res.cadastroCampanhas.length == 0) {
