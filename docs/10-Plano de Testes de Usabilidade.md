@@ -13,13 +13,13 @@ Os testes de usabilidade permitem avaliar a qualidade da interface com o usuári
 
 |   | Passo a Passo  |
 |---|----------------| 
-|   | 1) Serão selecionadas 5 pessoas para análise da aplicação.|
+|   | 1) Serão selecionadas 5 pessoas para análise da aplicação. Onde três indivíduos irá representar a ONG cadastrada e 2 pessoas representarão  os doadores|
 |   | 2) Será enviado para cada pessoa o link da nossa aplicação juntamente com o formulário onde encontram os pontos a serem analisados como descrito abaixo.|
-|   | 3) 1º desafio: cadastrar um usuário e fazer o login na aplicação. |
-|   | 4) 2º desafio: cadastrar um projeto. |
-|   | 5) 3º desafio: visualizar as informações do projeto cadastrado.|
-|   | 6) 4º desafio: Buscar por projetos cadastrados filtrando por linguagem de programação.|
-|   | 7) 5º desafio: Conectar-se ao projeto encontrado.| 
+|   | 3) 1º desafio: cadastrar a ong e fazer o login na aplicação. |
+|   | 4) 2º desafio: cadastrar uma campanha. |
+|   | 5) 3º desafio: visualizar as informações da campanha cadastrada.|
+|   | 6) 4º desafio: Usuário irá buscar por campanha.|
+|   | 7) 5º desafio: O usuário  irá efetuar a doação na campanha escolhida.| 
 |   | 8) 6º desafio: " a definir na etapa 4"|
 |   | 9) 7º desafio: "a definir na etapa 4" |
 |   |10) 8º desafio:  "a definir na etapa 4"|
@@ -39,7 +39,7 @@ Para esta etapa do projeto, os testes serão realizados nas principais funcional
 
 | Tarefa 1 | Critério de êxito | O que será avaliado |
 |----------|-------------------|---------------------|
-| Cadastro de novo usuário |  Concluir o cadastro com sucesso|-Concretização da tarefa <br>-Quantidade de erros cometidos<br>-Tempo necessário para se concluir|
+| Cadastro de Ong |  Concluir o cadastro com sucesso|-Concretização da tarefa <br>-Quantidade de erros cometidos<br>-Tempo necessário para se concluir|
 
 | Tarefa 2 | Critério de êxito | O que será avaliado |
 |----------|-------------------|---------------------|
@@ -47,15 +47,15 @@ Para esta etapa do projeto, os testes serão realizados nas principais funcional
 
 | Tarefa 3 | Critério de êxito | O que será avaliado |
 |----------|-------------------|---------------------|
-| Cadastro de novo projeto| Concluir o cadastro com sucesso|-Concretização da tarefa<br>-Quantidade de erros cometidos<br>-Tempo necessário para se concluir|
+| Cadastro de nova campanha| Concluir o cadastro com sucesso|-Concretização da tarefa<br>-Quantidade de erros cometidos<br>-Tempo necessário para se concluir|
 
 | Tarefa 4 | Critério de êxito | O que será avaliado |
 |----------|-------------------|---------------------|
-|Buscar projeto cadastrado através de um filtro de linguagem de programação| Apresentar o resultado da busca à partir das informações filtradas. |-Concretização da tarefa<br>-Quantidade de erros cometidos<br>-Tempo necessário para se concluir|
+|Buscar campanha cadastrada| Apresentar o resultado da busca à partir das informações filtradas. |-Concretização da tarefa<br>-Quantidade de erros cometidos<br>-Tempo necessário para se concluir|
 
 | Tarefa 5 | Critério de êxito | O que será avaliado |
 |----------|-------------------|---------------------|
-|Conectar-se a um projeto cadastrado | Conseguir conectar-se a um projeto cadastrado |-Concretização da tarefa<br>-Quantidade de erros cometidos<br>-Tempo necessário para se concluir|
+|O usuário  irá efetuar a doação na campanha escolhida. | O usuário  irá efetuar a doação na campanha escolhida. |-Concretização da tarefa<br>-Quantidade de erros cometidos<br>-Tempo necessário para se concluir|
 
 
 ### Interpretação e Consolidação dos dados 
