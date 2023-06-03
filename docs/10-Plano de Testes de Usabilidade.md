@@ -20,9 +20,7 @@ Os testes de usabilidade permitem avaliar a qualidade da interface com o usuári
 |   | 5) 3º desafio: visualizar as informações da campanha cadastrada.|
 |   | 6) 4º desafio: Usuário irá buscar por campanha.|
 |   | 7) 5º desafio: O usuário  irá efetuar a doação para a campanha escolhida.| 
-|   | 8) 6º desafio: " a definir na etapa 4"|
-|   | 9) 7º desafio: "a definir na etapa 4" |
-|   |10) 8º desafio:  "a definir na etapa 4"|
+
 
 |   | Itens a serem avaliados pós teste |
 |---|---------| 
