@@ -19,7 +19,7 @@ Os testes de usabilidade permitem avaliar a qualidade da interface com o usuári
 |   | 4) 2º desafio: cadastrar uma campanha. |
 |   | 5) 3º desafio: visualizar as informações da campanha cadastrada.|
 |   | 6) 4º desafio: Usuário irá buscar por campanha.|
-|   | 7) 5º desafio: O usuário  irá efetuar a doação na campanha escolhida.| 
+|   | 7) 5º desafio: O usuário  irá efetuar a doação para a campanha escolhida.| 
 |   | 8) 6º desafio: " a definir na etapa 4"|
 |   | 9) 7º desafio: "a definir na etapa 4" |
 |   |10) 8º desafio:  "a definir na etapa 4"|
@@ -35,7 +35,7 @@ Os testes de usabilidade permitem avaliar a qualidade da interface com o usuári
 |   | 7) Problemas observados (questão aberta).|
 |   | 8) Tempo de execução para concluir a tarefa (questão aberta).|
 
-Para esta etapa do projeto, os testes serão realizados nas principais funcionalidades do sistema: cadastro do usuário, login, cadastro de projeto, busca por projeto.
+Para esta etapa do projeto, os testes serão realizados nas principais funcionalidades do sistema: Cadastro de Ong , login, Cadastro de nova campanha, Buscar campanha cadastrada e doação para a campanha escolhida
 
 | Tarefa 1 | Critério de êxito | O que será avaliado |
 |----------|-------------------|---------------------|
@@ -55,7 +55,7 @@ Para esta etapa do projeto, os testes serão realizados nas principais funcional
 
 | Tarefa 5 | Critério de êxito | O que será avaliado |
 |----------|-------------------|---------------------|
-|O usuário  irá efetuar a doação na campanha escolhida. | O usuário  irá efetuar a doação na campanha escolhida. |-Concretização da tarefa<br>-Quantidade de erros cometidos<br>-Tempo necessário para se concluir|
+|O usuário  irá efetuar a doação para a campanha escolhida. | O usuário  irá efetuar a doação na campanha escolhida. |-Concretização da tarefa<br>-Quantidade de erros cometidos<br>-Tempo necessário para se concluir|
 
 
 ### Interpretação e Consolidação dos dados 
