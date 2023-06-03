@@ -132,7 +132,7 @@ const ModalComponent = ({ showModal, closeModal }) => {
                                 <Text style={styles.marcador}>A)</Text> Não se envolver em atividades que sejam ilegais ou contrárias à boa fé a à ordem pública;
                             </Text>
                             <Text>
-                                <Text style={styles.marcador}>B</Text>  Não difundir propaganda ou conteúdo de natureza racista, xenofóbica, ERROR ou azar, qualquer tipo de pornografia ilegal, de apologia ao terrorismo ou contra os direitos humanos;
+                                <Text style={styles.marcador}>B)</Text>  Não difundir propaganda ou conteúdo de natureza racista, xenofóbica, ERROR ou azar, qualquer tipo de pornografia ilegal, de apologia ao terrorismo ou contra os direitos humanos;
                             </Text>
                             <Text>
                                 <Text style={styles.marcador}>C)</Text>  Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) do Projeto Contra Fome, de seus fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros sistemas de hardware ou software que sejam capazes de causar danos anteriormente mencionados.

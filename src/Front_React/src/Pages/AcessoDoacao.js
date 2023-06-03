@@ -24,7 +24,7 @@ const AcessoDoacao = () => {
         </Card>
 
     );
-
+    
     return (
         <Container>
             <Header title={'Click no Card da Campanha'} goBack={() => navigation.goBack()}>

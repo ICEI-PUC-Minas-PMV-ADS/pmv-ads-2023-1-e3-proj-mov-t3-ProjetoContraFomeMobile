@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 //import { StyleSheet, } from 'react-native';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Alert } from 'react-native';
 //import { Text } from 'react-native-paper';
 import Container from '../Componentes/Container';
 import Header from '../Componentes/Header';
@@ -14,6 +14,78 @@ const Sobre = () => {
     const [Email, setEmail] = useState('');
     const [TELEFONE, setTelefone] = useState('');
     const [mensagem, setmensagem] = useState('');
+
+
+
+    const retornoOi = async () => {
+
+        if (Name == '') {
+            return Alert.alert('Favor informar o seu nome')
+        }
+
+        if (Email == '') {
+
+            return Alert.alert('Favor informar o seu e-mail')
+
+        }
+
+        if (TELEFONE == '') {
+
+            return Alert.alert('Favor informar o seu Telefone')
+
+
+        }
+        if (TELEFONE.length !== 8) {
+
+            return Alert.alert('Favor informar os 8 dígitos do telefone')
+
+
+        }
+
+
+        if (mensagem == '') {
+
+            return Alert.alert('Favor informar sua mensagem')
+
+
+        }
+
+        Alert.alert(
+            'Mensagem',
+            'Deseja Confirmar o Envio da Mensagem: ' + mensagem + ' ??',
+            [
+                {
+                    text: 'Cancelar',
+                    onPress: () => {
+                        Alert.alert('Envio da Mensagem Cancelado com Sucesso')
+                        setName('')
+                        setEmail('')
+                        setTelefone('')
+                        setmensagem('')
+
+
+                    }
+                },
+                {
+                    text: 'OK',
+                    onPress: async () => {
+
+                        Alert.alert('Mensagem ' + mensagem + ' Enviada com sucesso ')
+                        setName('')
+                        setEmail('')
+                        setTelefone('')
+                        setmensagem('')
+
+                    },
+                }
+            ],
+            { cancelable: false },
+
+        );
+
+
+    }
+
 
 
     return (
@@ -78,8 +150,10 @@ const Sobre = () => {
                             left={<TextInput.Icon icon="email" />}
                         />
                         <Input
-                            label="SEU TELEFONE"
+                            label="TELEFONE - (Apenas número xxxx-xxxx)"
                             value={TELEFONE}
+                            maxLength={8}
+                            keyboardType="numeric"
                             onChangeText={(text) => setTelefone(text)}
                             left={<TextInput.Icon icon="cellphone-basic" />}
                         />
@@ -89,7 +163,7 @@ const Sobre = () => {
                             onChangeText={(text) => setmensagem(text)}
                             left={<TextInput.Icon icon="message-text" />}
                         />
-                        <Button style={styles.button} mode="contained" onPress={() => console.log('Pressed')}>
+                        <Button style={styles.button} mode="contained" onPress={retornoOi}>
                             <Text style={styles.buttonTextStyle}>
                                 Envie Sua Mensagem
                             </Text>
@@ -153,11 +227,11 @@ const styles = StyleSheet.create({
         shadowOpacity: 1,
         shadowRadius: 10,
         elevation: 5,
-        margin:8
+        margin: 8
     },
     buttonTextStyle: {
         color: 'white',
-        fontSize:13,
+        fontSize: 13,
 
     },
 

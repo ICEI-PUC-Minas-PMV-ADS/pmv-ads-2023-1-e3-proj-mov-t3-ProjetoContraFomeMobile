@@ -95,7 +95,7 @@ const GerenciamentoCampanha = ({ route }) => {
       setPais(item.pais);
 
 
-      if (item.pix === false) {
+      if (Pais=='Não Possui chave PIX') {
         setpix(false);
       } else {
         setpix(true);
@@ -128,10 +128,11 @@ const GerenciamentoCampanha = ({ route }) => {
       return
     }
 
-    if (Telefone == "" || nomeDaCampanha == "" || DescricaoDaCamp == "" || Email == "" || Pais == "" || Cidade == "" || Endereco == "") {
+    if (Telefone == "" || nomeDaCampanha == "" || DescricaoDaCamp == "" || Email == "" || Cidade == "" || Endereco == "") {
       Alert.alert('Existe campo(s) vazio(s), favor, verificar!!')
       return
     }
+  
     if (cursoSelecionado == 'Selecione um estado' || cursoSelecionado == '') {
       Alert.alert('Favor, selecionar um estado')
       return
@@ -148,8 +149,8 @@ const GerenciamentoCampanha = ({ route }) => {
         endereco: Endereco,
         cidade: Cidade,
         estado: cursoSelecionado,
-        pais: Pais,
-        pix: pix == false ? false : true,
+        pais: Pais==""?'Não Possui chave PIX':Pais,
+        pix: pix == false || Pais=='Não Possui chave PIX' ? false : true,
         cartaoDeCredito: cc == false ? false : true,
         receberFisico: fisico == false ? false : true,
         cadastroCodigo: item.cadastroCodigo
@@ -158,13 +159,7 @@ const GerenciamentoCampanha = ({ route }) => {
         handleLogin()
         navigation.goBack();
       });
-
-
-
-
-
     } else {
-
       postGasto({
         nomeDaOng: nomeDaOng2,
         nomeDaCampanha: nomeDaCampanha,
@@ -174,8 +169,8 @@ const GerenciamentoCampanha = ({ route }) => {
         endereco: Endereco,
         cidade: Cidade,
         estado: cursoSelecionado,
-        pais: Pais,
-        pix: pix == false ? false : true,
+        pais: Pais==""?'Não Possui chave PIX':Pais,
+        pix: pix == false || Pais=='Não Possui chave PIX' ? false : true,
         cartaoDeCredito: cc == false ? false : true,
         receberFisico: fisico == false ? false : true,
         cadastroCodigo: codigo,
@@ -282,17 +277,26 @@ const GerenciamentoCampanha = ({ route }) => {
           </View>
 
           <Input
-            label="Pais"
+            label="Informe a Chave PIX"
             value={Pais}
             onChangeText={(text) => setPais(text)}
             left={<TextInput.Icon icon="chevron-right" />}
 
 
           />
+           <Text style={styles.inputValor3}>
+                * O campo "Aceita Doação física" significa que a campanha aceita doação no endereço informado no formulário acima.
+            </Text>
+            <Text style={styles.inputValor3}>
+                ** Se a campanha não aceitar doação em PIX, favor, deixar o campo "Informe a Chave PIX" em branco, que automaticamente o campo "Aceita PIX" não será marcado com flag
+            </Text>
+            <Text style={styles.inputValor3}>
+                *** Se a campanha aceitar doação em PIX, favor, preencher o campo "Informe a Chave PIX", que automaticamente o campo "Aceita PIX" será marcado com flag
+            </Text>
 
           <View style={styles.containerTerms}>
             <Checkbox
-              status={pix ? 'checked' : 'unchecked'}
+              status={Pais=='' || Pais=="Não Possui chave PIX" ? 'unchecked' : 'checked'}
               onPress={() => {
                 setpix(!pix)
               }}
@@ -416,6 +420,12 @@ const styles = StyleSheet.create({
     width: "100%",
     flexDirection: "row",
     alignItems: "center"
+  },
+  inputValor3: {
+    backgroundColor: 'orange',
+    fontWeight: 'bold',
+    margin: 8,
+
   },
   textError: {
     marginBottom: 10,

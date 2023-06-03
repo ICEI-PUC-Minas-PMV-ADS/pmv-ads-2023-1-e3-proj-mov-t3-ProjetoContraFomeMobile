@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "mf-calculadora-flex",
+    "name": "Doe Aqui!!",
     "slug": "snack-3589ffaa-fb27-47a3-8050-6533b10a824b",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -24,10 +24,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.jpnascfaria.snack3589ffaafb2747a380506533b10a824b"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "743de8d4-94c4-4418-acd8-9707393878d6"
+      }
     }
   }
 }

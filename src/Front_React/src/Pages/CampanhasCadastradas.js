@@ -16,7 +16,7 @@ import {
 
 
 const CampanhasCadastradas = ({ route }) => {
-  const { nomeFantasia,loading2,setloading2 } = useUser();
+  const { nomeFantasia, loading2, setloading2 } = useUser();
   const navigation = useNavigation();
   const [nomeDaOng2, setNomeDaOng] = useState(nomeFantasia);
   const [nomeDaCampanha, setNomeDaCampanha] = useState('');
@@ -78,7 +78,7 @@ const CampanhasCadastradas = ({ route }) => {
           text: 'OK',
           onPress: async () => {
 
-            Alert.alert('Doação de ' + valor + ' real(s) em ' + meio + ' finalizada com sucesso')
+            Alert.alert('Doação de ' + valor + ' real(is) em ' + meio + ' finalizada com sucesso')
             setTipo('')
             setValor(0)
 
@@ -107,10 +107,10 @@ const CampanhasCadastradas = ({ route }) => {
       setPais(item.pais);
 
 
-      if (item.pix === true) {
-        setpix('Sim');
-      } else {
+      if (item.pais === "Não Possui chave PIX") {
         setpix('Não');
+      } else {
+        setpix('Sim');
       }
       if (item.cartaoDeCredito === true) {
         setcc('Sim');
@@ -137,7 +137,7 @@ const CampanhasCadastradas = ({ route }) => {
       <Body>
         <ScrollView contentContainerStyle={styles.text}>
           <Input
-            label="Nome da Ong - (Campo não editável)"
+            label="Nome da Ong"
             value={nomeDaOng2}
             disabled={true}
             onChangeText={(text) => setNomeDaOng(text)}
@@ -197,37 +197,44 @@ const CampanhasCadastradas = ({ route }) => {
             onChangeText={(text) => setCidade(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
-
           <Input
-            label="Pais"
-            value={Pais}
-            disabled={true}
-            onChangeText={(text) => setPais(text)}
-            left={<TextInput.Icon icon="chevron-right" />}
-          />
-          <Input
-            label="Aceita PIX? - (Digite Sim ou Não)"
+            label="Aceita PIX?"
             value={pix}
             disabled={true}
             onChangeText={(text) => setpix(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
+
           <Input
-            label="Aceita Cartão de Crédito? - (Digite Sim ou Não)"
+            label="Informe a Chave PIX"
+            value={Pais}
+            disabled={true}
+            onChangeText={(text) => setPais(text)}
+            left={<TextInput.Icon icon="chevron-right" />}
+          />
+
+          <Input
+            label="Aceita Cartão de Crédito?"
             value={cc}
             disabled={true}
             onChangeText={(text) => setcc(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
           <Input
-            label="Aceita Doação física? - (Digite Sim ou Não)"
+            label="Aceita Doação física?"
             value={fisico}
             disabled={true}
             onChangeText={(text) => setfisico(text)}
             left={<TextInput.Icon icon="chevron-right" />}
           />
-          <Text>
-            {'\n'}
+          <Text style={styles.inputValor3}>
+            * Se o campo "Aceita Doação física" estiver com o status "sim", significa que a campanha aceita doações físicas no endereço informado no formulário acima.
+          </Text>
+          <Text style={styles.inputValor3}>
+            ** Se o campo "Aceita PIX" estiver com o status "sim", significa que a campanha aceita Doações em PIX e no campo "Informe a Chave PIX" estará preenchido com a chave.
+          </Text>
+          <Text style={styles.inputValor3}>
+            *** Se o campo "Aceita PIX" estiver com o status "Não", significa que a campanha não aceita Doações em PIX e no campo "Informe a Chave PIX" estará preenchido com o status "Não Possui Chave PIX".
           </Text>
           <Input style={styles.inputValor}
             label={pix === 'Não' && cc === 'Não' && fisico === 'Não' ? "Campanha Encerrada" : pix === 'Não' && cc === 'Não' && fisico === 'Sim' ? "Aceita Apenas Doação Física" : "Digite sua Doação"}
@@ -302,19 +309,26 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     flex: 1,
     height: 62,
-    margin:8,
+    margin: 8,
   },
   inputValor: {
     backgroundColor: '#C0C0C0',
     fontWeight: 'bold',
-    margin:8,
+    margin: 8,
 
   },
+  inputValor3: {
+    backgroundColor: 'orange',
+    fontWeight: 'bold',
+    margin: 8,
+
+  },
+
   inputValor2: {
     backgroundColor: '#C0C0C0',
     disabled: '{true}',
-    margin:8,
-    
+    margin: 8,
+
   },
   text: {
     textAlign: 'center',
@@ -332,13 +346,13 @@ const styles = StyleSheet.create({
   },
   button2: {
     marginBottom: 23,
-    margin:8,
+    margin: 8,
 
   },
   button3: {
     marginBottom: 23,
     display: 'none',
-    margin:8,
+    margin: 8,
 
   },
   containerRadio: {

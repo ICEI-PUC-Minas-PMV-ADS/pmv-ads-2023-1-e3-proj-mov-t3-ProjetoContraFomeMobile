@@ -15,6 +15,7 @@ const HomeExterno_Botoes = () => {
     const [showModal, setShowModal] = useState(false)
     const navigation = useNavigation();
     const [loading, setLoading] = useState(false)
+   
 
     useEffect(() => {
         hand()
@@ -213,7 +214,7 @@ const styles = StyleSheet.create({
         fontSize: 15,
     },
     log: {
-        margin: 8
+        margin: 5
     },
     container2: {
         flex: 1,
