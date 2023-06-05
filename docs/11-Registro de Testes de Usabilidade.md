@@ -9,3 +9,5 @@ https://docs.google.com/spreadsheets/d/1r-k5H9NlsPsu2lU_fw0beQhzgz_XR156JbmBaWzG
 https://docs.google.com/spreadsheets/d/11g1m3j00dJY_m6U4-Qm5MEPnCQCykWDlu3MvRaBBhwk/edit?resourcekey#gid=1912279951
 ## TAREFA 04 - Visualizar as informações da Campanha cadastrada (ONG E USUÁRIOS)
 https://docs.google.com/spreadsheets/d/1l0lE9z17V5U7qQS3c6ZBTRDsjXG0tG98tzBBMxT-xAc/edit?resourcekey#gid=180407730
+## TAREFA 05 - Efetuar doação para campanha escolhida (SOMENTE USUÁRIOS)
+https://docs.google.com/spreadsheets/d/1M1ZellNxJRuzyLmbta8o_tclRC7lUs0mYkIAyM9EW1U/edit?resourcekey#gid=1293438500
