@@ -1,8 +1,6 @@
 # Apresentação
+Assista ao vídeo clicando [aqui](https://www.canva.com/design/DAFmpbEckI0/4Fvp9dAqRaanWQAI53NSgA/watch?utm_content=DAFmpbEckI0&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel)
 
-<span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
-
-Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do projeto contemplando todos os itens trabalhados nos demais artefatos.
 
 ## Título do Projeto
 

@@ -1,7 +1,4 @@
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
-
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+> - [APP DOE AQUI - PLAY STORE](https://play.google.com/store/search?q=Doe%20Aqui!!&c=apps)
+> - [Doações de fim de ano - Dicas](https://www.dicasdemulher.com.br/doacao-fim-de-ano/)
