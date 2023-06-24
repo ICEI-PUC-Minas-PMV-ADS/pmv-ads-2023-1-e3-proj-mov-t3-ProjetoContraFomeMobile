@@ -12,4 +12,4 @@ Doe Aqui!!! Projeto contra fome Mobile
 
 ## Conjunto de Slides (Estrutura)
 
-Acesse os slides clicando [aqui](https://www.canva.com/design/DAFmsNFQGC8/1JPp6kbCC1A5juLCRhM0Iw/edit?utm_content=DAFmsNFQGC8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+Acesse os slides clicando [aqui](https://www.canva.com/design/DAFmsNFQGC8/xxKo4PeikbDnwGS3mQswZQ/view?utm_content=DAFmsNFQGC8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
