@@ -1,3 +1,3 @@
 # Apresentação da Solução
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
+Assista ao vídeo clicando [aqui](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t1-projeto-firstep/blob/main/presentation/Firstep%20Video%20Oficial.mp4)
